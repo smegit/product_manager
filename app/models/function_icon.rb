@@ -1,0 +1,2 @@
+class FunctionIcon < ApplicationRecord
+end

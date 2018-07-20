@@ -1,0 +1,10 @@
+.container
+  .row
+    .col-xs-12
+      h1 Edit Approval
+  .row
+    .col-xs-12
+      = simple_form_for @approval do |f|
+        = render partial: 'form', locals: { f: f }
+        .bottom.bottom-full
+          = f.submit 'Update', class: 'btn btn-primary'

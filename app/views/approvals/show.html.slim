@@ -1,0 +1,25 @@
+.container
+  h3 #{@approval.approval_type}
+  .btn-group.pull-right
+    = link_to edit_approval_path(@approval), class: 'btn btn-default btn-xs' do
+      i.fa.fa-pencil
+
+  br
+  br
+  br
+
+  table.table
+    tr
+      th Type
+      td = @approval.approval_type
+    / tr
+    /   th Category
+    /   td = @feature.feature_type
+
+    tr
+      th Date
+      td = @approval.date
+
+    tr
+      th Sub Type
+      td = @approval.sub_type
