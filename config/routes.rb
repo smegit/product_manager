@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :system_controls
   resources :approvals
   mount Ckeditor::Engine => '/ckeditor'
     devise_for :users, :controllers => {  :sessions => "sessions",

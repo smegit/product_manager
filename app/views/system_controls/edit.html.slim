@@ -1,0 +1,11 @@
+.container
+  .row
+    .col-xs-12
+      h1 Edit System Control
+
+  .row
+    .col-xs-12
+      = simple_form_for @system_control do |f|
+        = render partial: 'form', locals: { f: f }
+        .bottom.bottom-full
+          = f.submit 'Update', class: 'btn btn-primary'

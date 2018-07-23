@@ -8,7 +8,7 @@ require 'mina/rails'
 require 'mina/git'
 require 'mina/rbenv'
 
-set :shared_dirs,   ["local", "log", "node_modules", "pids", "sockets", "public/uploads", "vendor/bundle"]
+set :shared_dirs,   ["local", "log", "node_modules", "pids", "sockets", "public/uploads", "vendor/bundle", "public/production", "public/development"]
 set :shared_files,  [".env"]
 
 # Basic settings:
@@ -21,7 +21,7 @@ set :servers,        [""]
 set :app_name,      "smeg"
 set :user,          "deploy"
 set :deploy_to,     "/home/deploy/smeg_it"
-set :repository,    "git@github.com:zgkdzjj/smeg.git"
+set :repository,    "git@github.com:smegit/product_manager.git"
 set :forward_agent, true
 
 # This task is the environment that is loaded for all remote run commands, such as
