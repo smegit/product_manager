@@ -1,0 +1,27 @@
+h1 Listing functions
+
+table
+  thead
+    tr
+      th Control type
+      th Product type
+      th Function code
+      th Descritpion
+      th
+      th
+      th
+
+  tbody
+    - @functions.each do |function|
+      tr
+        td = function.control_type
+        td = function.product_type
+        td = function.function_code
+        td = function.descritpion
+        td = link_to 'Show', function
+        td = link_to 'Edit', edit_function_path(function)
+        td = link_to 'Destroy', function, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New Function', new_function_path

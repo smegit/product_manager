@@ -1,0 +1,10 @@
+= simple_form_for(@aesthetic) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :control_type
+    = f.input :aesthetic_description
+    = f.input :aesthetic_code
+
+  .form-actions
+    = f.button :submit

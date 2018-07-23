@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Control type:
+  = @aesthetic.control_type
+p
+  strong Aesthetic description:
+  = @aesthetic.aesthetic_description
+p
+  strong Aesthetic code:
+  = @aesthetic.aesthetic_code
+
+= link_to 'Edit', edit_aesthetic_path(@aesthetic)
+'|
+= link_to 'Back', aesthetics_path

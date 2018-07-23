@@ -1,0 +1,2 @@
+class Aesthetic < ApplicationRecord
+end

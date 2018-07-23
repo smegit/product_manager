@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :aesthetics
+  resources :functions
   resources :system_controls
   resources :approvals
   mount Ckeditor::Engine => '/ckeditor'

@@ -1,0 +1,11 @@
+= simple_form_for(@function) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :control_type
+    = f.input :product_type
+    = f.input :function_code
+    = f.input :descritpion
+
+  .form-actions
+    = f.button :submit

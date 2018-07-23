@@ -1,0 +1,25 @@
+h1 Listing aesthetics
+
+table
+  thead
+    tr
+      th Control type
+      th Aesthetic description
+      th Aesthetic code
+      th
+      th
+      th
+
+  tbody
+    - @aesthetics.each do |aesthetic|
+      tr
+        td = aesthetic.control_type
+        td = aesthetic.aesthetic_description
+        td = aesthetic.aesthetic_code
+        td = link_to 'Show', aesthetic
+        td = link_to 'Edit', edit_aesthetic_path(aesthetic)
+        td = link_to 'Destroy', aesthetic, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New Aesthetic', new_aesthetic_path
