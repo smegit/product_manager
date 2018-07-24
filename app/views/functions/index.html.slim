@@ -65,25 +65,25 @@
   br
   table.table
     tr
-      th Control Type
+      / th Control Type
       / th Type
       th Product Type
       th Function Code
       th Description
-      th Icon Url
-      th Created At
+      th Icon
+      / th Created At
       th style='min-width:300px;'
 
     - for function in @functions
       tr
-        td= function.control_type
+        / td= function.control_type
         / td= I18n.t(feature.feature_type, scope: [:options, :product_types])
 
         td= function.product_type
         td= function.function_code
         td= function.description
-        td= function.url
-        td= function.created_at
+        td.icon_size= image_tag(function.url)
+        / td= function.created_at
         td
           .btn-group.pull-right
             = link_to function_path(function), class: 'btn btn-default btn-xs' do

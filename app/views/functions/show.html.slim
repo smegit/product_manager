@@ -30,9 +30,9 @@
 
 .container
   table.table
-    tr
-      th Control Type
-      td = @function.control_type
+    / tr
+    /   th Control Type
+    /   td = @function.control_type
     / tr
     /   th Category
     /   td = @feature.feature_type
@@ -49,4 +49,4 @@
       td = @function.description
     tr
       th Icon
-      td = image_tag('no_image.jpg')
+      td.icon_size = image_tag(@function.url)

@@ -40,7 +40,7 @@
       th System Type
       / th Type
       th Description
-      th Created At
+      / th Created At
       th style='min-width:300px;'
 
     - for system_control in @system_controls
@@ -49,7 +49,7 @@
         / td= I18n.t(feature.feature_type, scope: [:options, :product_types])
 
         td= system_control.description
-        td= system_control.created_at
+        / td= system_control.created_at
         td
           .btn-group.pull-right
             = link_to system_control.control_type, class: 'btn btn-default btn-xs' do

@@ -10,12 +10,11 @@
 /   .form-actions
 /     = f.button :submit
 
-h3 #{@function.control_type}
-br
 
-.row
-  .col-xs-6
-    = f.input :control_type, as: :string
+
+/ .row
+/   .col-xs-6
+/     = f.input :control_type, as: :string
 .row
   .col-xs-6
     = f.input :product_type, as: :string
@@ -29,8 +28,8 @@ br
   .col-xs-6
     = f.input :url, as: :string
 .row
-  .col-xs-6
-    = image_tag(:url)
+  .col-xs-6.icon_size
+    = image_tag(@function.url)
 .row
   .col-xs-6
     = f.file_field :url
