@@ -2,45 +2,9 @@ h3 #{@system_control.control_type}
 br
 
 
-/ .row
-/   .col-xs-6
-/     = f.input :feature_type, as: :select, collection: Options::Products::Types.select_form, include_blank: false, prompt: "Select Category"
-- if @system_control.control_type ==  'functions'
-  .row
-    .col-xs-6
-      = f.input :control_type, as: :string
-  .row
-    .col-xs-6
-      = f.input :product_type, as: :string
-  .row
-    .col-xs-6
-      = f.input :function_code, as: :string
-  .row
-    .col-xs-6
-      = f.input :description, as: :string
-  .row
-    .col-xs-6
-      = f.input :function_icon_url, as: :string
-  .row
-    .col-xs-6
-      .image-container
-        = image_tag :function_icon_url
-
-  / br
-  / hr
-  / .row
-  /   .col-xs-12
-  /     h3 Function Icon
-  /     .row
-  /       = f.simple_fields_for :system_control_url do |icon|
-  /         .col-xs-12.col-md-3
-  /           = render 'function_icon_fields', f: icon
-  /     .links
-  /       = link_to_add_association '+ add icon', f, :system_control_url, class: 'btn btn-success'
-- elsif @system_control.control_type ==  'aesthetic'
-  .row
-    .col-xs-6
-      = f.input :aesthetic_description, as: :string
-  .row
-    .col-xs-6
-      = f.input :aesthetic_code, as: :string
+.row
+  .col-xs-6
+    = f.input :control_type, as: :string
+.row
+  .col-xs-6
+    = f.input :description, as: :string

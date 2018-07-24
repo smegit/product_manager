@@ -23,8 +23,8 @@
   .row
     .col-xs-6
       h1 System Controls
-    .col-xs-2.col-xs-offset-4
-      = link_to "+ Add System Control", new_system_control_path, class: 'btn btn-success btn-xs pull-right'
+    / .col-xs-2.col-xs-offset-4
+    /   = link_to "+ Add System Control", new_system_control_path, class: 'btn btn-success btn-xs pull-right'
   br
   .row
     = form_tag(system_controls_path, method: :get) do
@@ -52,12 +52,10 @@
         td= system_control.created_at
         td
           .btn-group.pull-right
-            = link_to functions_path, class: 'btn btn-default btn-xs' do
+            = link_to system_control.control_type, class: 'btn btn-default btn-xs' do
               i.fa.fa-eye
-            = link_to aesthetics_path, class: 'btn btn-default btn-xs' do
-              i.fa.fa-eye
-            = link_to system_control_path(system_control), class: 'btn btn-default btn-xs' do
-              i.fa.fa-eye
+            / = link_to system_control_path(system_control), class: 'btn btn-default btn-xs' do
+            /   i.fa.fa-eye
             = link_to edit_system_control_path(system_control), class: 'btn btn-default btn-xs' do
               i.fa.fa-pencil
             = link_to system_control_path(system_control), method: :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-default btn-xs' do
