@@ -1,27 +1,95 @@
-h1 Listing functions
+/ h1 Listing functions
+/
+/ table
+/   thead
+/     tr
+/       th Control type
+/       th Product type
+/       th Function code
+/       th Descritpion
+/       th
+/       th
+/       th
+/
+/   tbody
+/     - @functions.each do |function|
+/       tr
+/         td = function.control_type
+/         td = function.product_type
+/         td = function.function_code
+/         td = function.description
+/         td = link_to 'Show', function
+/         td = link_to 'Edit', edit_function_path(function)
+/         td = link_to 'Destroy', function, data: { confirm: 'Are you sure?' }, method: :delete
+/
+/ br
+/
+/ = link_to 'New Function', new_function_path
 
-table
-  thead
+/ h1 System Controls
+
+/ table
+/   thead
+/     tr
+/       th
+/       th
+/       th
+
+/   tbody
+/     - @system_controls.each do |system_control|
+/       tr
+/         td = link_to 'Show', system_control
+/         td = link_to 'Edit', edit_system_control_path(system_control)
+/         td = link_to 'Destroy', system_control, data: { confirm: 'Are you sure?' }, method: :delete
+
+/ br
+
+/ = link_to 'New System control', new_system_control_path
+
+
+.container
+  .row
+    .col-xs-6
+      h1 Functions
+    .col-xs-2.col-xs-offset-4
+      = link_to "+ Add System Control", new_function_path, class: 'btn btn-success btn-xs pull-right'
+  br
+  .row
+    = form_tag(functions_path, method: :get) do
+      .col-xs-4
+        = text_field_tag :search_functions, nil, placeholder: "Search Functions ...", class: "form-control"
+      / .col-xs-4
+      /   = select_tag :by_feature_type, options_for_select(Options::Products::Types.select_form), prompt: 'All Feature Types', class: "form-control"
+
+      = submit_tag "", style: "display: none;"
+  br
+  table.table
     tr
-      th Control type
-      th Product type
-      th Function code
-      th Descritpion
-      th
-      th
-      th
+      th Control Type
+      / th Type
+      th Product Type
+      th Function Code
+      th Description
+      th Created At
+      th style='min-width:300px;'
 
-  tbody
-    - @functions.each do |function|
+    - for function in @functions
       tr
-        td = function.control_type
-        td = function.product_type
-        td = function.function_code
-        td = function.descritpion
-        td = link_to 'Show', function
-        td = link_to 'Edit', edit_function_path(function)
-        td = link_to 'Destroy', function, data: { confirm: 'Are you sure?' }, method: :delete
+        td= function.control_type
+        / td= I18n.t(feature.feature_type, scope: [:options, :product_types])
 
-br
-
-= link_to 'New Function', new_function_path
+        td= function.product_type
+        td= function.function_code
+        td= function.description
+        td= function.created_at
+        td
+          .btn-group.pull-right
+            = link_to functions_path, class: 'btn btn-default btn-xs' do
+              i.fa.fa-eye
+            = link_to function_path(function), class: 'btn btn-default btn-xs' do
+              i.fa.fa-eye
+            = link_to edit_function_path(function), class: 'btn btn-default btn-xs' do
+              i.fa.fa-pencil
+            = link_to function_path(function), method: :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-default btn-xs' do
+              i.fa.fa-trash-o
+  = paginate @functions

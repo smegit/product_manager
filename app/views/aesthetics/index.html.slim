@@ -1,25 +1,69 @@
-h1 Listing aesthetics
+/ h1 Listing aesthetics
+/
+/ table
+/   thead
+/     tr
+/       th Control type
+/       th Aesthetic description
+/       th Aesthetic code
+/       th
+/       th
+/       th
+/
+/   tbody
+/     - @aesthetics.each do |aesthetic|
+/       tr
+/         td = aesthetic.control_type
+/         td = aesthetic.aesthetic_description
+/         td = aesthetic.aesthetic_code
+/         td = link_to 'Show', aesthetic
+/         td = link_to 'Edit', edit_aesthetic_path(aesthetic)
+/         td = link_to 'Destroy', aesthetic, data: { confirm: 'Are you sure?' }, method: :delete
+/
+/ br
+/
+/ = link_to 'New Aesthetic', new_aesthetic_path
 
-table
-  thead
+
+.container
+  .row
+    .col-xs-6
+      h1 Aesthetics
+    .col-xs-2.col-xs-offset-4
+      = link_to "+ Add Aesthetic", new_aesthetic_path, class: 'btn btn-success btn-xs pull-right'
+  br
+  .row
+    = form_tag(aesthetics_path, method: :get) do
+      .col-xs-4
+        = text_field_tag :search_aesthetics, nil, placeholder: "Search Aesthetics ...", class: "form-control"
+      / .col-xs-4
+      /   = select_tag :by_feature_type, options_for_select(Options::Products::Types.select_form), prompt: 'All Feature Types', class: "form-control"
+
+      = submit_tag "", style: "display: none;"
+  br
+  table.table
     tr
-      th Control type
-      th Aesthetic description
-      th Aesthetic code
-      th
-      th
-      th
+      /th Control Type
+      / th Type
+      th Aesthetic Code
+      th Aesthetic Descrption
+      th Created At
+      th style='min-width:300px;'
 
-  tbody
-    - @aesthetics.each do |aesthetic|
+    - for aesthetic in @aesthetics
       tr
-        td = aesthetic.control_type
-        td = aesthetic.aesthetic_description
-        td = aesthetic.aesthetic_code
-        td = link_to 'Show', aesthetic
-        td = link_to 'Edit', edit_aesthetic_path(aesthetic)
-        td = link_to 'Destroy', aesthetic, data: { confirm: 'Are you sure?' }, method: :delete
+        /td= aesthetic.control_type
+        / td= I18n.t(feature.feature_type, scope: [:options, :product_types])
 
-br
-
-= link_to 'New Aesthetic', new_aesthetic_path
+        td= aesthetic.aesthetic_code
+        td= aesthetic.aesthetic_description
+        td= aesthetic.created_at
+        td
+          .btn-group.pull-right
+            = link_to aesthetic_path(aesthetic), class: 'btn btn-default btn-xs' do
+              i.fa.fa-eye
+            = link_to edit_aesthetic_path(aesthetic), class: 'btn btn-default btn-xs' do
+              i.fa.fa-pencil
+            = link_to aesthetic_path(aesthetic), method: :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-default btn-xs' do
+              i.fa.fa-trash-o
+  = paginate @aesthetics

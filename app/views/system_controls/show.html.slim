@@ -17,37 +17,22 @@
   br
 
 .container
-  - if @system_control.control_type ==  'functions'
-    table.table
-      tr
-        th Control Type
-        td = @system_control.control_type
-      / tr
-      /   th Category
-      /   td = @feature.feature_type
-      tr
-        th Product Type
-        td = @system_control.value['product_type']
+  table.table
+    tr
+      th Control Type
+      td = @system_control.control_type
+    / tr
+    /   th Category
+    /   td = @feature.feature_type
+    tr
+      th Description
+      td = @system_control.description
 
-      tr
-        th Function Code
-        td = @system_control.value['function_code']
+    tr
+      th Function Code
+      td = @system_control.created_at
 
-      tr
-        th Description
-        td = @system_control.value['description']
 
       / tr
       /   th Long Description
       /   td = @feature.long_description
-  - elsif @system_control.control_type ==  'aesthetic'
-    table.table
-      tr
-        th Control Type
-        td = @system_control.control_type
-      tr
-        th Aesthetic Description
-        td = @system_control.value['aesthetic_description']
-      tr
-        th Aesthetic Code
-        td = @system_control.value['aesthetic_code']

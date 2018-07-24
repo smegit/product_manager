@@ -39,7 +39,7 @@
     tr
       th System Type
       / th Type
-      th Value
+      th Description
       th Created At
       th style='min-width:300px;'
 
@@ -48,10 +48,14 @@
         td= system_control.control_type
         / td= I18n.t(feature.feature_type, scope: [:options, :product_types])
 
-        td= system_control.aesthetic_description || system_control.function_code
+        td= system_control.description
         td= system_control.created_at
         td
           .btn-group.pull-right
+            = link_to functions_path, class: 'btn btn-default btn-xs' do
+              i.fa.fa-eye
+            = link_to aesthetics_path, class: 'btn btn-default btn-xs' do
+              i.fa.fa-eye
             = link_to system_control_path(system_control), class: 'btn btn-default btn-xs' do
               i.fa.fa-eye
             = link_to edit_system_control_path(system_control), class: 'btn btn-default btn-xs' do

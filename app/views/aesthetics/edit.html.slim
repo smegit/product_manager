@@ -1,8 +1,21 @@
-h1 Editing aesthetic
+/ h1 Editing aesthetic
+/
+/ == render 'form'
+/
+/ = link_to 'Show', @aesthetic
+/ '|
+/ = link_to 'Back', aesthetics_path
+/
 
-== render 'form'
 
-= link_to 'Show', @aesthetic
-'|
-= link_to 'Back', aesthetics_path
+.container
+  .row
+    .col-xs-12
+      h1 Edit Aesthetic
 
+  .row
+    .col-xs-12
+      = simple_form_for @aesthetic do |f|
+        = render partial: 'form', locals: { f: f }
+        .bottom.bottom-full
+          = f.submit 'Update', class: 'btn btn-primary'

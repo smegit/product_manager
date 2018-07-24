@@ -1,9 +1,11 @@
 class SystemControlsController < ApplicationController
   before_action :set_system_control, only: %i[show edit update destroy]
+
+  has_scope :search_system_controls
 
   # GET /system_controls
   def index
-    @system_controls = SystemControl.all
+    @system_controls = apply_scopes(SystemControl).page(params[:page]).per(10)
   end
 
   # GET /system_controls/1

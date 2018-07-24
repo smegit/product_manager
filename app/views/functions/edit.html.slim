@@ -1,8 +1,19 @@
-h1 Editing function
+/ h1 Editing function
+/
+/ == render 'form'
+/
+/ = link_to 'Show', @function
+/ '|
+/ = link_to 'Back', functions_path
 
-== render 'form'
+.container
+  .row
+    .col-xs-12
+      h1 Edit Function
 
-= link_to 'Show', @function
-'|
-= link_to 'Back', functions_path
-
+  .row
+    .col-xs-12
+      = simple_form_for @function do |f|
+        = render partial: 'form', locals: { f: f }
+        .bottom.bottom-full
+          = f.submit 'Update', class: 'btn btn-primary'
