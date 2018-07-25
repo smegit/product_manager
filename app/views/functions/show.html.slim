@@ -19,7 +19,7 @@
 
 
 .container
-  h3 #{@function.control_type}
+  h3 Function
   .btn-group.pull-right
     = link_to edit_function_path(@function), class: 'btn btn-default btn-xs' do
       i.fa.fa-pencil
@@ -50,3 +50,7 @@
     tr
       th Icon
       td.icon_size = image_tag(@function.url)
+
+  .btn-group.pull-left
+    = link_to functions_path, class: 'btn btn-default btn-xs' do
+      i.fa.fa-arrow-left

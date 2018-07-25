@@ -17,7 +17,7 @@
 
 
 .container
-  h3 #{@aesthetic.control_type}
+  h3 Aesthetic
   .btn-group.pull-right
     = link_to edit_aesthetic_path(@aesthetic), class: 'btn btn-default btn-xs' do
       i.fa.fa-pencil
@@ -28,9 +28,9 @@
 
 .container
   table.table
-    tr
-      th Control Type
-      td = @aesthetic.control_type
+    / tr
+    /   th Control Type
+    /   td = @aesthetic.control_type
     / tr
     /   th Category
     /   td = @feature.feature_type
@@ -41,3 +41,6 @@
     tr
       th Aesthetic Description
       td = @aesthetic.aesthetic_description
+  .btn-group.pull-left
+    = link_to aesthetics_path(@aesthetic), class: 'btn btn-default btn-xs' do
+      i.fa.fa-arrow-left

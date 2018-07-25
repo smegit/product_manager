@@ -5,7 +5,7 @@ class AestheticsController < ApplicationController
 
   # GET /aesthetics
   def index
-    @aesthetics = apply_scopes(Aesthetic).page(params[:page]).per(10)
+    @aesthetics = apply_scopes(Aesthetic).page(params[:page]).per(10).order(updated_at: :desc)
   end
 
   # GET /aesthetics/1
