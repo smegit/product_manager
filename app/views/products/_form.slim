@@ -20,7 +20,8 @@ br
   .col-xs-6
     = f.input :description, as: :string
   .col-xs-6
-    = f.input :aesthetic, as: :select, collection: Options::Aesthetics.select_form
+    /= f.input :aesthetic, as: :select, collection: Options::Aesthetics.select_form
+    = f.input :aesthetic, as: :select, collection: Aesthetic.pluck('DISTINCT aesthetic_description')
 
 .row
   .col-xs-12
