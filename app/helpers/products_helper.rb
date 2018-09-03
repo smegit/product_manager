@@ -3,14 +3,22 @@ module ProductsHelper
   def function_icon function
     puts function 
     # return "/pdf/images/products/function_icons/#{function.humanize.downcase}.jpg"
-    icon_url = FunctionIcon.find_by(code: "#{function}").icon_url
-    return icon_url
+    icon_url = Function.where(function_code: "#{function}").pluck(:url)[0]
+    if icon_url
+     return "/pdf/images/products/function_icons/#{icon_url}"
+    else 
+      return '/pdf/images/products/function_icons/no_image.jpg'
+    end
   end
 
   def function_des function 
     puts function
-    fun_des = FunctionIcon.find_by(code: "#{function}").function_des
-    return fun_des
+    fun_des = Function.where(function_code: "#{function}").pluck(:description)[0]
+    if fun_des
+      return fun_des
+    else
+      return 'No Image'
+    end
   end
 
 

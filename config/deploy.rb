@@ -19,7 +19,9 @@ set :shared_files,  ['.env']
 #   repository   - Git repo to clone from. (needed by mina/git)
 #   branch       - Branch name to deploy. (needed by mina/git)
 
-set :servers, ['']
+set :servers, ['10.1.1.23']
+
+set :commit, ENV['COMMIT']
 set :app_name,      'smeg'
 set :user,          'deploy'
 set :deploy_to,     '/home/deploy/smeg_it'

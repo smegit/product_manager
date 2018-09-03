@@ -1,5 +1,6 @@
 # ignore images
 /files/products_test/
+/files/products
 /public/development/*
 
 *.rbc
