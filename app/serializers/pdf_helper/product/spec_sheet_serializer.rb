@@ -41,11 +41,13 @@ class PdfHelper::Product::SpecSheetSerializer < PdfHelper::Base
 
   def function_icon function
     # return "/products/function_icons/#{function.humanize.downcase}.jpg"
-    pdf_icon_url = FunctionIcon.find_by(code: "#{function}").icon_url.from(12)
-    # pdf_icon_url = "/products/function_icons/no image.jpg"
-
-    return pdf_icon_url
-
+    # pdf_icon_url = FunctionIcon.find_by(code: "#{function}").icon_url.from(12)
+    pdf_icon_url = Function.where(function_code: "#{function}").pluck(:url)[0]
+    if pdf_icon_url
+     return "/pdf/images/products/function_icons/#{icon_url}"
+    else 
+      return '/pdf/images/products/function_icons/no_image.jpg'
+    end
   end
 
 
