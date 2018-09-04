@@ -19,7 +19,7 @@ capybara-*.html
 
 /public/system
 /public/uploads/
-/public/pdf/images/products/*
+/public/pdf/images/products/file_list/*
 /public/pdf/images/products/*.tif
 /public/pdf/images/products/*.TIF
 /public/pdf/images/products/*.jpg
