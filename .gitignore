@@ -25,6 +25,7 @@ capybara-*.html
 /public/pdf/images/products/*.png
 /public/pdf/images/products/function_icons/*.jpg
 /public/pdf/images/products/function_icons/*.TIF
+/public/pdf/images/products/*
 
 
 .byebug_history
