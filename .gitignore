@@ -20,8 +20,12 @@ capybara-*.html
 /public/system
 /public/uploads/
 /public/pdf/images/products/*.tif
+/public/pdf/images/products/*.TIF
 /public/pdf/images/products/*.jpg
 /public/pdf/images/products/*.png
+/public/pdf/images/products/function_icons/*.jpg
+/public/pdf/images/products/function_icons/*.TIF
+
 
 .byebug_history
 .DS_Store
