@@ -24,8 +24,6 @@ capybara-*.html
 /public/pdf/images/products/*.TIF
 /public/pdf/images/products/*.jpg
 /public/pdf/images/products/*.png
-/public/pdf/images/products/function_icons/*.jpg
-/public/pdf/images/products/function_icons/*.TIF
 
 
 
@@ -67,8 +65,4 @@ Makefile
 /public/packs-test
 /node_modules
 
-# Images
-*.jpg
-*.tif
-*.TIF
 
