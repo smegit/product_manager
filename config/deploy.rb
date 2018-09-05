@@ -10,7 +10,7 @@ require 'mina/rails'
 require 'mina/git'
 require 'mina/rbenv'
 
-set :shared_dirs,   ['local', 'log', 'node_modules', 'pids', 'sockets', 'public/uploads', 'vendor/bundle', 'public/production', 'public/development','public/pdf/images/products/function_icons']
+set :shared_dirs,   ['local', 'log', 'node_modules', 'pids', 'sockets', 'public/uploads', 'vendor/bundle', 'public/production', 'public/development']
 set :shared_files,  ['.env']
 
 # Basic settings:

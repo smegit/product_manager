@@ -32,6 +32,7 @@ class PdfHelper::Product::SpecSheetSerializer < PdfHelper::Base
     paths = []
 
     object.function_list.each do |function|
+      puts function
       next if function.blank?
       paths << function_icon(function)
     end

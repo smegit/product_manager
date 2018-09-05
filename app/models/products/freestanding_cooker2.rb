@@ -36,6 +36,7 @@ class FreestandingCooker2 < Product
     
     function_list_main_oven: [:string, array: true, default: []],
     function_list_aux_oven: [:string, array: true, default: []],
+    function_list: [:string, array: true, default: []],
     capacity: :string,
     # added
     cleaning: :string

@@ -26,6 +26,8 @@ class VictoriaDoubleOven < Product
     cleaning_aux_oven: :string,
     lighting_aux_oven: :string,
 
+    function_list: [:string, array: true, default: []],
+
     function_list_main_oven: [:string, array: true, default: []],
     function_list_aux_oven: [:string, array: true, default: []]
 

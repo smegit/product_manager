@@ -7,6 +7,6 @@ class InductionCooktop < Product
     size: :string,
     timers: :string,
     controls: :string,
-    capacity: [:string, array: true, default: []]
-
+    capacity: [:string, array: true, default: []],
+    function_list: [:string, array: true, default: []]
 end

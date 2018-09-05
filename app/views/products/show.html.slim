@@ -64,7 +64,7 @@
       tr
         th Function List
         td
-          ul
+          ul style="column-count: 2;"
             - @product.function_list.reject { |x| x.empty? }.each do |function|
               li
                 => image_tag(function_icon(function))

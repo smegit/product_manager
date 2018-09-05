@@ -10,5 +10,4 @@ class UndermountRangehood < Product
     delay_stop: :string,
     ducting_options: [:string, array: true, default: []],
     function_list: [:string, array: true, default: []]
-
 end
