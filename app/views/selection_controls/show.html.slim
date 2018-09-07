@@ -1,0 +1,56 @@
+/ p#notice = notice
+
+/ p
+/   strong Name:
+/   = @selection_control.name
+/ p
+/   strong Value:
+/   = @selection_control.value
+/ p
+/   strong Code:
+/   = @selection_control.code
+/ p
+/   strong Label:
+/   = @selection_control.label
+/ p
+/   strong Description:
+/   = @selection_control.description
+
+/ = link_to 'Edit', edit_selection_control_path(@selection_control)
+/ '|
+/ = link_to 'Back', selection_controls_path
+
+
+
+.container
+  h3 Selection Control
+  .btn-group.pull-right
+    = link_to edit_selection_control_path(@selection_control), class: 'btn btn-default btn-xs' do
+      i.fa.fa-pencil
+
+  br
+  br
+  br
+
+.container
+  table.table
+    tr
+      th Name
+      td = @selection_control.name
+
+    tr
+      th Value
+      td = @selection_control.value
+    tr
+      th Code
+      td = @selection_control.code
+    tr
+      th Label
+      td = @selection_control.label
+    tr
+      th Description
+      td = @selection_control.description
+
+  .btn-group.pull-left
+    = link_to selection_controls_path, class: 'btn btn-default btn-xs' do
+      i.fa.fa-arrow-left

@@ -4,6 +4,7 @@
 
 Rails.application.routes.draw do
 
+  resources :selection_controls
   resources :aesthetics
 
   resources :functions

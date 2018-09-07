@@ -62,3 +62,4 @@
               i.fa.fa-pencil
             = link_to approval_path(approval), method: :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-default btn-xs' do
               i.fa.fa-trash-o
+  = paginate @approvals

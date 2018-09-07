@@ -3,7 +3,8 @@ br
 
 .row
   .col-xs-6
-    = f.input :approval_type, as: :string
+    /= f.input :approval_type, as: :string
+    = f.input :approval_type, as: :select, collection: SelectionControl.where(name: 'approval type').pluck(:label), placeholder: "Choose a approval type"
   .col-xs-6
     = f.input :date, as: :string, placeholder: "DD/MM/YYYY"
 .row
