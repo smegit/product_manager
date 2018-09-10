@@ -8,6 +8,8 @@ class Approval < ApplicationRecord
   accepts_nested_attributes_for :products, reject_if: :all_blank, allow_destroy: true
   mount_uploader :approval_doc, ApprovalDocUploader
 
+  validates :approval_no, presence: true, uniqueness: { case_sensitive: false}
+
   def to_s
     @model_number
   end

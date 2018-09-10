@@ -20,6 +20,7 @@ class Product < ApplicationRecord
   accepts_nested_attributes_for :schematic_attachments, reject_if: :all_blank, allow_destroy: true
   accepts_nested_attributes_for :file_attachments, reject_if: :all_blank, allow_destroy: true
 
+  accepts_nested_attributes_for :approvals, reject_if: :all_blank, allow_destroy: true
   pg_search_scope :search_products,
                   against: %i[model_number type description],
                   using: { tsearch: { prefix: true } }

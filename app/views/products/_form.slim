@@ -60,6 +60,13 @@ br
   .col-xs-6
     = f.input :status, as: :radio_buttons, collection: [['Active', true], ['Inactive', false]]
 
+.row
+  .col-xs-12
+    h3 Approvals
+    #product_approvals
+      = f.association :approvals, collection: Approval.all.map { |appr| [appr.approval_no, appr.id] }, label: "Choose approvals", input_html: { data: { toggle: 'multi-select2-fixed' }, multiple: true }
+
+
 br
 hr
 .row

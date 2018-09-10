@@ -51,6 +51,7 @@ class ProductsController < BaseController
   private
   def load_product
     @product = Product.friendly.find params[:id]
+    puts @product.approvals.to_yaml
   end
 
   def fetch_pdf

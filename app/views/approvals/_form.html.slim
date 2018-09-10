@@ -26,7 +26,7 @@ br
   .col-xs-6
     = f.input :expiry_date, as: :string, placeholder: "DD/MM/YYYY"
   .col-xs-6
-    = f.input :status, as: :string
+    = f.input :status, as: :select, collection: ['Active', 'Inactive']
 .row
   .col-xs-12
     = f.input :notes, as: :text

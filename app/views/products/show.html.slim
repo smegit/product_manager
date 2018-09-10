@@ -147,9 +147,27 @@
   /     - if @product.approvals.any?
   /       ul
   /         - @product.approvals.each do |file|
-  /           li = link_to "#{file.attachment.file.filename}", file.attachment.url, target: '_blank'
+  /           li = link_to "#{file.approval_no}", file.approval_doc.url, target: '_blank'
   /     - else
-  /       p = "No Documents Uploaded."
+  /       p = "No Approvals Uploaded."
+
+  hr
+  h3 Approvals
+  .row
+    .col-xs-12
+      - if @product.approvals.any?
+        table class="table table-sm"
+          tr 
+            th Approval NO.
+            th Approval Type
+            th Status
+          - for appr in @product.approvals
+            tr 
+              td = link_to "#{appr.approval_no}", approval_path(appr)
+              td.approval_type = appr.approval_type
+              td = appr.status 
+      - else
+        p = "No Approvals Uploaded."
 
 br
 br

@@ -52,6 +52,16 @@
     tr
       th Notes
       td = @approval.notes
+  
+  h3 Products
+  .row
+    .col-xs-12
+      - if @approval.products.any?
+        ul
+          - @approval.products.each do |prd|
+            li = link_to "#{prd.model_number}", product_path(prd)
+      - else
+        p = "No Products Connected."
 
   h3 Documents
   .row

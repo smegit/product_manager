@@ -16,6 +16,10 @@ class PermittedParams < Struct.new(:params, :user)
 
   end
 
+  # def approval
+  #   params.require(:approval).permit(*approval_attributes)
+  # end
+
 
 
   def system_control
@@ -33,6 +37,7 @@ class PermittedParams < Struct.new(:params, :user)
   def product_attributes
 
     [
+      
 
       :id,
 
@@ -302,6 +307,10 @@ class PermittedParams < Struct.new(:params, :user)
 
       :temperature,
 
+      approval_ids: [],
+
+      # approval_nos: [],
+
       function_list_main_oven: [],
 
       function_list_aux_oven: [],
@@ -347,6 +356,8 @@ class PermittedParams < Struct.new(:params, :user)
       auxiliary_list: [],
 
       feature_list: [],
+
+      approval_list: [],
 
       door_shelves_main_compartment: [],
 
@@ -442,7 +453,7 @@ class PermittedParams < Struct.new(:params, :user)
 
         _destroy
 
-      ]
+      ],
 
     ]
 
@@ -463,6 +474,20 @@ class PermittedParams < Struct.new(:params, :user)
       long_description
 
       short_description
+
+    ]
+
+  end
+
+  def approval_attributes
+
+    %i[
+
+      id
+
+      approval_type
+
+      approval_no
 
     ]
 
@@ -493,4 +518,3 @@ class PermittedParams < Struct.new(:params, :user)
   end
 
 end
-

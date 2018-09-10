@@ -22,9 +22,9 @@
       tr
         td= product.model_number
         td= I18n.t product.type, scope: [:options, :product_types]
-        th= number_to_currency(product.price)
+        td= number_to_currency(product.price)
         td= product.description
-        th
+        td
           .btn-group.pull-right
             = link_to product_path(product), class: 'btn btn-default btn-xs' do
               i.fa.fa-eye

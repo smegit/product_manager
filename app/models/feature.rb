@@ -6,5 +6,4 @@ class Feature < ApplicationRecord
                   using: { tsearch: { prefix: true, any_word: false } }
 
   validates :name, presence: true, uniqueness: { case_sensitive: false }
-
 end
