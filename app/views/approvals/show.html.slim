@@ -57,9 +57,14 @@
   .row
     .col-xs-12
       - if @approval.products.any?
-        ul
-          - @approval.products.each do |prd|
-            li = link_to "#{prd.model_number}", product_path(prd)
+        table class="table table-sm"
+          tr 
+            th Model NO.
+            th Description
+          - for prd in @approval.products
+            tr
+              td = link_to "#{prd.model_number}", product_path(prd)
+              td = prd.description
       - else
         p = "No Products Connected."
 

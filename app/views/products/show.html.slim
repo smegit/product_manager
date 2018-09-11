@@ -160,11 +160,17 @@
           tr 
             th Approval NO.
             th Approval Type
+            th Description
+            th Effective Date
+            th Expiry Date
             th Status
           - for appr in @product.approvals
             tr 
               td = link_to "#{appr.approval_no}", approval_path(appr)
               td.approval_type = appr.approval_type
+              td = appr.description
+              td = appr.effective_date
+              td = appr.expiry_date
               td = appr.status 
       - else
         p = "No Approvals Uploaded."
