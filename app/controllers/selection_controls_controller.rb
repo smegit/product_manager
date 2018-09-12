@@ -1,10 +1,11 @@
 class SelectionControlsController < ApplicationController
   before_action :set_selection_control, only: [:show, :edit, :update, :destroy]
+
   has_scope :search_selection_controls
 
   # GET /selection_controls
   def index
-    @selection_controls = SelectionControl.all
+    @selection_controls = apply_scopes(SelectionControl).page(params[:page]).per(10)
   end
 
   # GET /selection_controls/1
