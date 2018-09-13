@@ -4,8 +4,8 @@ class ProductsController < BaseController
   has_scope :search_products
   def index
     @products = apply_scopes(Product).page(params[:page]).per(10).order(type: :asc)
-    puts Feature.all
-    puts Hash[Product.all.map { |product| [product.model_number, product.id] }]
+    # puts Feature.all
+    # puts Hash[Product.all.map { |product| [product.model_number, product.id] }]
   end
 
   def show
@@ -40,18 +40,19 @@ class ProductsController < BaseController
   end
 
   def history
+    puts 'in history'
     respond_to do |format|
       format.json do
-        render json: json_success_response('/products/modal_product_history',
-                                           product: @product), status: :ok
+        render json: json_success_response('/products/modal_product_history', product: @product), status: :ok
       end
     end
   end
 
+
   private
   def load_product
     @product = Product.friendly.find params[:id]
-    puts @product.approvals.to_yaml
+    # puts @product.approvals.to_yaml
   end
 
   def fetch_pdf

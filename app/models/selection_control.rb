@@ -3,7 +3,6 @@ class SelectionControl < ApplicationRecord
   pg_search_scope :search_selection_controls, 
                   against: %i[name value code label],
                   using: { tsearch: { prefix: true, any_word: false } }
-  has_paper_trail
   validates :name, presence: true
   validates :value, presence: true
   validates :code, presence: true

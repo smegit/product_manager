@@ -9,6 +9,8 @@ class ApplicationController < ActionController::Base
   before_action :set_paper_trail_whodunnit
 
   def permitted_params
+    puts 'params'
+    puts params
     @permitted_params ||= PermittedParams.new(params, current_user)
   end
   helper_method :permitted_params
