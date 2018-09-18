@@ -34,7 +34,7 @@ class FeaturesController < ApplicationController
 
   def update
     if @feature.update(permitted_params.feature)
-      redirect_to features_path
+      redirect_to features_path, notice: "Updated successfully"
     else
       render :edit, notice: "Failed to update feature - #{@feature.errors.full_messages.join(', ')}"
     end

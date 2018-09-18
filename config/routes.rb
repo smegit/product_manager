@@ -59,6 +59,10 @@ Rails.application.routes.draw do
 
     end
 
+    
+    get 'model_selection', on: :new
+   
+    
   end
 
   resources :features

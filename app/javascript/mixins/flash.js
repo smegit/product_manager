@@ -1,14 +1,14 @@
 import $ from "jquery";
 import "bootstrap-notify";
 
-const FlashMessages = function(custom_flash) {
+const FlashMessages = function (custom_flash) {
   if ($.isEmptyObject(custom_flash)) {
     // Flash messages in the view
     let view_flash = $('#flash');
 
     if (view_flash.length > 0) {
-      let default_options   = customFlashOptions.call(this, { message: view_flash.data("message") });
-      let default_settings  = customFlashSettings.call(this, { type: view_flash.data("type") });
+      let default_options = customFlashOptions.call(this, { message: view_flash.data("message") });
+      let default_settings = customFlashSettings.call(this, { type: view_flash.data("type") });
 
       flash.call(this, default_options, default_settings);
     }
@@ -18,15 +18,15 @@ const FlashMessages = function(custom_flash) {
   }
 }
 
-const flash = function(options, settings) {
+const flash = function (options, settings) {
   $.notify(options, settings);
 }
 
-const customFlashOptions = function(options) {
+const customFlashOptions = function (options) {
   return { ...defaultFlashOptions.call(this), ...options };
 }
 
-const customFlashSettings = function(settings) {
+const customFlashSettings = function (settings) {
   // If the type of flash alert is "alert" - a common rails thing, we map this to "danger" for bootstrap
   Object.assign(settings,
     Object.keys(settings)
@@ -37,17 +37,17 @@ const customFlashSettings = function(settings) {
   return { ...defaultFlashSettings.call(this), ...settings };
 }
 
-const defaultFlashOptions = function() {
-  return { }
+const defaultFlashOptions = function () {
+  return {}
 }
 
-const defaultFlashSettings = function() {
+const defaultFlashSettings = function () {
   return {
     type: "info",
     allow_dismiss: true,
     placement: {
-      from:   "top",
-      align:  "center"
+      from: "top",
+      align: "center"
     },
     timer: 20000,
   }

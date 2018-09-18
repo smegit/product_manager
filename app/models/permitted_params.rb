@@ -3,9 +3,7 @@ class PermittedParams < Struct.new(:params, :user)
   # Example
 
   def product
-
     params.require(:product).permit(*product_attributes)
-
   end
 
 
@@ -68,8 +66,6 @@ class PermittedParams < Struct.new(:params, :user)
       :aesthetic,
 
       :dimensions,
-
-      :finish,
 
       :power,
 
@@ -346,6 +342,8 @@ class PermittedParams < Struct.new(:params, :user)
       capacity: [],
 
       safety: [],
+
+      finish: [],
 
       wash_system: [],
 
