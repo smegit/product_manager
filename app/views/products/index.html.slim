@@ -1,7 +1,12 @@
 .container
+  - if flash[:notice].present?
+    div.alert.alert-danger role="alert"
+      = notice
   .row
     .col-xs-6
       h1 Products
+    .col-xs-2.col-xs-offset-4
+      = link_to "+ Add Prodct", model_selection_new_product_path, class: 'btn btn-default btn-xs btn-model-selection'
   br
   .row
     = form_tag(products_path, method: :get) do
@@ -34,3 +39,5 @@
               i.fa.fa-trash-o
 
   = paginate @products
+
+#modal-holder

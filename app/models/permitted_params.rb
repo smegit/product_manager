@@ -3,11 +3,7 @@ class PermittedParams < Struct.new(:params, :user)
   # Example
 
   def product
-    puts 'params PermittedParams'
-    puts params
-
     params.require(:product).permit(*product_attributes)
-
   end
 
 

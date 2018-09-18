@@ -32,6 +32,8 @@ class FunctionsController < ApplicationController
   def update
     if @function.update(function_params)
       redirect_to functions_url, notice: 'Function was successfully updated.'
+      # flash[:notice] = "This is notice"
+      # redirect_to functions_url
     else
       render :edit
     end

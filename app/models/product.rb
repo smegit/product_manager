@@ -25,12 +25,13 @@ class Product < ApplicationRecord
                   against: %i[model_number type description],
                   using: { tsearch: { prefix: true } }
   validates :model_number, presence: true, uniqueness: { case_sensitive: false }
-  validates :type, presence: true
+  validates :type, presence: true, exclusion: { in: %w(Product), message: ": Please select product type." }
   before_validation :assign_type
 
   def history
     own_papertrail_history = papertrail_history || []
   end
+
 
   private
   def assign_type

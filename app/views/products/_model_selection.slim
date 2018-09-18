@@ -1,0 +1,27 @@
+= simple_form_for @product do |f|
+  #model-selection-modal.modal.fade aria-labelledby="model-selectionLabel" role="dialog" tabindex="-1"
+    .modal-dialog.modal-sm role="document" 
+      .modal-content
+        .modal-header
+          button.close aria-label="Close" data-dismiss="modal" type="button"
+            span aria-hidden="true"  &times;
+          h4#model-selectionLabel.modal-title Select Model
+        .modal-body
+          .row
+            .col-xs-12
+              = f.error_notification
+              = f.input :type,required: true, collection: @models
+              = f.input :model_number,required: true, as: :string    
+        .modal-footer
+          .row
+            .col-xs-12
+              / = f.submit 'Create', class: 'btn btn-primary'      
+              = f.button :submit, "Create", class: "submit btn btn-primary", data: { disable_with: "Creating New Product..." }
+          
+
+            
+
+  /= select_tag(:model_number, options_for_select(@models), {class: 'custom-select'})
+            
+            
+            
