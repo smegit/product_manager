@@ -1,0 +1,29 @@
+/ = simple_form_for(@selection_control) do |f|
+/   = f.error_notification
+
+/   .form-inputs
+/     = f.input :name
+/     = f.input :value
+/     = f.input :code
+/     = f.input :label
+/     = f.input :description
+
+/   .form-actions
+/     = f.button :submit
+
+
+.row
+  .col-xs-6
+    = f.input :name, as: :string
+.row
+  .col-xs-6
+    = f.input :value, as: :string
+.row
+  .col-xs-6
+    = f.input :code, as: :string
+.row
+  .col-xs-6
+    = f.input :label, as: :string
+.row
+  .col-xs-6
+    = f.input :description, as: :text

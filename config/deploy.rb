@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'mina/bundler'
 require 'mina/multi_server'
 require 'mina/multi_server/select'
@@ -8,8 +10,8 @@ require 'mina/rails'
 require 'mina/git'
 require 'mina/rbenv'
 
-set :shared_dirs,   ["local", "log", "node_modules", "pids", "sockets", "public/uploads", "vendor/bundle"]
-set :shared_files,  [".env"]
+set :shared_dirs,   ['local', 'log', 'node_modules', 'pids', 'sockets', 'public/uploads', 'vendor/bundle', 'public/production', 'public/development']
+set :shared_files,  ['.env']
 
 # Basic settings:
 #   domain       - The hostname to SSH to.
@@ -17,11 +19,14 @@ set :shared_files,  [".env"]
 #   repository   - Git repo to clone from. (needed by mina/git)
 #   branch       - Branch name to deploy. (needed by mina/git)
 
-set :servers,        [""]
-set :app_name,      "smeg"
-set :user,          "deploy"
-set :deploy_to,     "/home/deploy/smeg_it"
-set :repository,    "git@github.com:zgkdzjj/smeg.git"
+set :servers, ['10.1.1.23']
+
+set :commit, ENV['COMMIT']
+set :app_name,      'smeg'
+set :user,          'deploy'
+set :branch,      'develop'
+set :deploy_to,     '/home/deploy/smeg_it'
+set :repository,    'git@github.com:smegit/product_manager.git'
 set :forward_agent, true
 
 # This task is the environment that is loaded for all remote run commands, such as
@@ -37,39 +42,39 @@ task :setup do
 end
 
 namespace :git do
-  desc "Create a tag to denote the current commit and push to git"
+  desc 'Create a tag to denote the current commit and push to git'
   task :push_tag do
-    comment %{Creating tag for current #{fetch(:stage)}}
-    command %{git tag -f smeg-#{fetch(:stage)}}
-    command %{git push origin smeg-#{fetch(:stage)} --force}
+    comment %(Creating tag for current #{fetch(:stage)})
+    command %(git tag -f smeg-#{fetch(:stage)})
+    command %(git push origin smeg-#{fetch(:stage)} --force)
   end
 end
 
 namespace :npm do
-  desc "Install node modules using npm"
+  desc 'Install node modules using npm'
   task install: :environment do
-    comment %{Installing node modules using npm}
-    command %{yarn install}
+    comment %(Installing node modules using npm)
+    command %(yarn install)
   end
 end
 
-desc "Restarts Services"
+desc 'Restarts Services'
 task :restart_services do
-  comment %{Restarting System Services for #{fetch(:app_name)}}
+  comment %(Restarting System Services for #{fetch(:app_name)})
 
-  command %{sudo systemctl restart puma}
-  command %{sudo systemctl restart sidekiq}
+  command %(sudo systemctl restart puma)
+  command %(sudo systemctl restart sidekiq)
 end
 
-desc "Update Whenever tasks"
+desc 'Update Whenever tasks'
 task :update_whenever do
-  comment %{Updating whenever tasks}
+  comment %(Updating whenever tasks)
 
   set :whenever_name, fetch(:rails_env)
   invoke :'whenever:update'
 end
 
-desc "Deploys the current version to the server."
+desc 'Deploys the current version to the server.'
 task :deploy do
   deploy do
     invoke :'git:clone'

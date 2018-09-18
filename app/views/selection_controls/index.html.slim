@@ -1,0 +1,78 @@
+/ h1 Listing selection_controls
+
+/ table
+/   thead
+/     tr
+/       th Name
+/       th Value
+/       th Code
+/       th Label
+/       th Description
+/       th
+/       th
+/       th
+
+/   tbody
+/     - @selection_controls.each do |selection_control|
+/       tr
+/         td = selection_control.name
+/         td = selection_control.value
+/         td = selection_control.code
+/         td = selection_control.label
+/         td = selection_control.description
+/         td = link_to 'Show', selection_control
+/         td = link_to 'Edit', edit_selection_control_path(selection_control)
+/         td = link_to 'Destroy', selection_control, data: { confirm: 'Are you sure?' }, method: :delete
+
+/ br
+
+/ = link_to 'New Selection control', new_selection_control_path
+
+
+
+.container
+  .row
+    .col-xs-6
+      h1 Selection Controls
+    .col-xs-2.col-xs-offset-4
+      = link_to "+ Add Selection", new_selection_control_path, class: 'btn btn-success btn-xs pull-right'
+  br
+  .row
+    = form_tag(selection_controls_path, method: :get) do
+      .col-xs-4
+        = text_field_tag :search_selection_controls, nil, placeholder: "Search Selection Controls ...", class: "form-control"
+      / .col-xs-4
+      /   = select_tag :by_feature_type, options_for_select(Options::Products::Types.select_form), prompt: 'All Feature Types', class: "form-control"
+
+      = submit_tag "Search / Reset", class: "btn btn-info btn-xs search-btn",style: ""
+  br
+  table.table
+    tr
+      / th Control Type
+      / th Type
+      th Name
+      th Value
+      th Code
+      th Label
+      th Description
+      th style='min-width:300px;'
+
+    - for selection_control in @selection_controls
+      tr
+        td= selection_control.name
+        td= selection_control.value
+        td= selection_control.code
+        td= selection_control.label
+        td= selection_control.description
+        td
+          .btn-group.pull-right
+            = link_to selection_control_path(selection_control), class: 'btn btn-default btn-xs' do
+              i.fa.fa-eye
+            = link_to edit_selection_control_path(selection_control), class: 'btn btn-default btn-xs' do
+              i.fa.fa-pencil
+            = link_to selection_control_path(selection_control), method: :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-default btn-xs' do
+              i.fa.fa-trash-o
+  /= paginate @selection_controls
+
+  
+

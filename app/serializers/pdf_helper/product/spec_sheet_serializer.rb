@@ -32,20 +32,25 @@ class PdfHelper::Product::SpecSheetSerializer < PdfHelper::Base
     paths = []
 
     object.function_list.each do |function|
+      puts function
       next if function.blank?
       paths << function_icon(function)
     end
 
+    puts paths
     return paths
   end
 
   def function_icon function
+    puts function
     # return "/products/function_icons/#{function.humanize.downcase}.jpg"
-    pdf_icon_url = FunctionIcon.find_by(code: "#{function}").icon_url.from(12)
-    # pdf_icon_url = "/products/function_icons/no image.jpg"
-
-    return pdf_icon_url
-
+    # pdf_icon_url = FunctionIcon.find_by(code: "#{function}").icon_url.from(12)
+    pdf_icon_url = Function.where(function_code: "#{function}").pluck(:url)[0]
+    if pdf_icon_url
+     return "/products/function_icons/#{pdf_icon_url}"
+    else 
+      return '/products/function_icons/no_image.jpg'
+    end
   end
 
 

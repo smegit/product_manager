@@ -2,6 +2,7 @@ module Trailable
   extend ActiveSupport::Concern
 
   def papertrail_history
+    puts 'in papertrail_history'
     versions.map{|version| version_hash(version)}
   end
 
@@ -32,8 +33,11 @@ private
   end
 
   def build_change_description version
+    puts 'Version list below'
+    puts version.changeset
     version.changeset.map do |k, v|
-
+      puts "k => #{k}"
+      puts "v => #{v}"
       next if skip_validation(v) || skip_value(k)
       next if k == 'data'
 
@@ -49,6 +53,11 @@ private
   end
 
   def build_label_for_array_field label, v0, v1
+    puts 'in build_label_for_array_field'
+    puts "label #{label}"
+    puts "v0 #{v0}"
+    puts "v1 #{v1}"
+
     v0 = v0.reject { |x| x.empty? }
     v1 = v1.reject { |x| x.empty? }
 

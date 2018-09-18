@@ -64,7 +64,7 @@
       tr
         th Function List
         td
-          ul
+          ul style="column-count: 2;"
             - @product.function_list.reject { |x| x.empty? }.each do |function|
               li
                 => image_tag(function_icon(function))
@@ -139,6 +139,41 @@
             li = link_to "#{file.attachment.file.filename}", file.attachment.url, target: '_blank'
       - else
         p = "No Documents Uploaded."
+
+  / hr
+  / h3 Approvals
+  / .row
+  /   .col-xs-12
+  /     - if @product.approvals.any?
+  /       ul
+  /         - @product.approvals.each do |file|
+  /           li = link_to "#{file.approval_no}", file.approval_doc.url, target: '_blank'
+  /     - else
+  /       p = "No Approvals Uploaded."
+
+  hr
+  h3 Approvals
+  .row
+    .col-xs-12
+      - if @product.approvals.any?
+        table class="table table-sm"
+          tr 
+            th Approval NO.
+            th Approval Type
+            th Description
+            th Effective Date
+            th Expiry Date
+            th Status
+          - for appr in @product.approvals
+            tr 
+              td = link_to "#{appr.approval_no}", approval_path(appr)
+              td.approval_type = appr.approval_type
+              td = appr.description
+              td = appr.effective_date
+              td = appr.expiry_date
+              td = appr.status 
+      - else
+        p = "No Approvals Uploaded."
 
 br
 br

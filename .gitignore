@@ -1,5 +1,6 @@
 # ignore images
 /files/products_test/
+/files/products
 /public/development/*
 
 *.rbc
@@ -18,9 +19,13 @@ capybara-*.html
 
 /public/system
 /public/uploads/
+/public/pdf/images/products/file_list/*
 /public/pdf/images/products/*.tif
+/public/pdf/images/products/*.TIF
 /public/pdf/images/products/*.jpg
 /public/pdf/images/products/*.png
+
+
 
 .byebug_history
 .DS_Store
@@ -59,3 +64,5 @@ Makefile
 /public/packs
 /public/packs-test
 /node_modules
+
+

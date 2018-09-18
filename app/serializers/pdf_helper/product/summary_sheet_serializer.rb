@@ -5,6 +5,7 @@ class PdfHelper::Product::SummarySheetSerializer < PdfHelper::Base
              :description
 
   def model_number
+    puts object.to_yaml
     object.model_number
   end
 

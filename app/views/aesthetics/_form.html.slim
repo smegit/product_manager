@@ -1,0 +1,24 @@
+/ = simple_form_for(@aesthetic) do |f|
+/   = f.error_notification
+/
+/   .form-inputs
+/     = f.input :control_type
+/     = f.input :aesthetic_description
+/     = f.input :aesthetic_code
+/
+/   .form-actions
+/     = f.button :submit
+
+
+h3 #{@aesthetic.control_type}
+br
+
+/ .row
+/   .col-xs-6
+/     = f.input :control_type, as: :string
+.row
+  .col-xs-6
+    = f.input :aesthetic_code, as: :string
+.row
+  .col-xs-6
+    = f.input :aesthetic_description, as: :string

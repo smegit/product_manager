@@ -12,7 +12,7 @@
       / .col-xs-4
       /   = select_tag :by_feature_type, options_for_select(Options::Products::Types.select_form), prompt: 'All Feature Types', class: "form-control"
 
-      = submit_tag "", style: "display: none;"
+      = submit_tag "Search / Reset", class: "btn btn-info btn-xs search-btn",style: ""
   br
   table.table
     tr

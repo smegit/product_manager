@@ -10,6 +10,9 @@ module ProductPdf
       # @product = product
       @object = PdfHelper::Product::SpecSheetSerializer.new(product)
 
+      puts 'initialize'
+      puts @object.to_yaml
+
       add_header([1,2,3])
       add_footer([1,2,3])
 
@@ -30,6 +33,9 @@ module ProductPdf
           feature_image
           function_icons(@object.function_icon_paths)
 
+          puts 'short_details'
+          puts @object.short_details.to_yaml
+
           grid_list(@object.short_details)
         end
 
@@ -43,7 +49,9 @@ module ProductPdf
           move_down 220
 
           #Image attachments
-          product_image if @object.object.image_attachments.count > 1
+          puts 'Image Attachment'
+          puts @object.object.image_attachments.count
+          product_image if @object.object.image_attachments.count >= 1
         end
       end
     end
@@ -104,7 +112,9 @@ module ProductPdf
       size = (bounds.width*0.9)
       bounding_box([0, cursor], width: size, height: size) do
         debug_stroke_bounds
-        image upload_url(@object.cover_image_path), at: [0, cursor], height: (bounds.width) if @object.cover_image_path.present?
+        # image upload_url(@object.cover_image_path), at: [0, cursor], width: (bounds.width) if @object.cover_image_path.present?
+        image upload_url(@object.cover_image_path), width: (bounds.width), :vposition => :center if @object.cover_image_path.present?
+
       end
       move_down 10
     end

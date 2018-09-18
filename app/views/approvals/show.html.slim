@@ -1,5 +1,5 @@
 .container
-  h3 #{@approval.approval_type}
+  h3 Approval No. #{@approval.approval_no}
   .btn-group.pull-right
     = link_to edit_approval_path(@approval), class: 'btn btn-default btn-xs' do
       i.fa.fa-pencil
@@ -12,14 +12,70 @@
     tr
       th Type
       td = @approval.approval_type
-    / tr
-    /   th Category
-    /   td = @feature.feature_type
 
     tr
       th Date
       td = @approval.date
 
     tr
+      th Approval No
+      td = @approval.approval_no
+
+    tr
       th Sub Type
       td = @approval.sub_type
+
+    tr
+      th Description
+      td = @approval.description
+
+    tr
+      th Standard
+      td = @approval.standard
+
+    tr
+      th Reference
+      td = @approval.reference
+
+    tr
+      th Effective Date
+      td = @approval.effective_date
+
+    tr
+      th Expiry Date
+      td = @approval.expiry_date
+
+    tr
+      th Status
+      td = @approval.approval_type
+
+    tr
+      th Notes
+      td = @approval.notes
+  
+  h3 Products
+  .row
+    .col-xs-12
+      - if @approval.products.any?
+        table class="table table-sm"
+          tr 
+            th Model NO.
+            th Description
+          - for prd in @approval.products
+            tr
+              td = link_to "#{prd.model_number}", product_path(prd)
+              td = prd.description
+      - else
+        p = "No Products Connected."
+
+  h3 Documents
+  .row
+    .col-xs-12
+      - if @approval.approval_doc.present?
+        ul
+          li = link_to "#{@approval.approval_doc.url}", @approval.approval_doc.url, target: '_blank'
+      - else
+        p = "No Documents Uploaded."
+  .btn-group.pull-left
+    = link_to approvals_path, class: 'btn btn-default btn-xs' do
+      i.fa.fa-arrow-left

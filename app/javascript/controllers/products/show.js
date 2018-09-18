@@ -9,8 +9,9 @@ class Controller extends BaseController {
 
 };
 
-let bindHistoryModal = function() {
+let bindHistoryModal = function () {
   this.root.find('.btn-history').on('click', (e) => {
+    console.log('bindHistoryModal called');
     e.preventDefault();
 
     let url = e.target.href

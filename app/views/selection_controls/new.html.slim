@@ -1,0 +1,20 @@
+/ h1 New selection_control
+
+/ == render 'form'
+
+/ = link_to 'Back', selection_controls_path
+
+
+
+.container
+  .row
+    .col-xs-12
+      h1 New Selection Control
+
+  .row
+    .col-xs-12
+      = simple_form_for @selection_control do |f|
+        = render partial: 'form', locals: { f: f }
+        .bottom.bottom-full
+          => f.submit 'Create', class: 'btn btn-primary'
+          =< link_to 'Cancel' , :back,  class: 'btn btn-default'

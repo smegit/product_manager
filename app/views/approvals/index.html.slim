@@ -24,23 +24,36 @@
     .col-xs-6
       h1 Approvals
     .col-xs-2.col-xs-offset-4
-      = link_to "+ Add Approval", new_feature_path, class: 'btn btn-success btn-xs pull-right'
+      = link_to "+ Add Approval", new_approval_path, class: 'btn btn-success btn-xs pull-right'
   br
- 
+  .row
+    = form_tag(approvals_path, method: :get) do
+      .col-xs-4
+        = text_field_tag :search_approvals, nil, placeholder: "Search Approvals ...", class: "form-control"
+      / .col-xs-4
+      /   = select_tag :by_feature_type, options_for_select(Options::Products::Types.select_form), prompt: 'All Feature Types', class: "form-control"
+
+      = submit_tag "Search / Reset", class: "btn btn-info btn-xs search-btn",style: ""
+  br
+
   table.table
     tr
-      th Name
+      th Approval No
       / th Type
-      th Date 
+      th Type
       th Sub Type
+      th Expiry Date
+      th Status
       th style='min-width:300px;'
 
     - for approval in @approvals
       tr
-        td= approval.approval_type
+        td= approval.approval_no
         / td= I18n.t(feature.feature_type, scope: [:options, :product_types])
-        td= approval.date
+        td= approval.approval_type
         td= approval.sub_type
+        td= approval.expiry_date
+        td= approval.status
         td
           .btn-group.pull-right
             = link_to approval_path(approval), class: 'btn btn-default btn-xs' do
@@ -49,5 +62,4 @@
               i.fa.fa-pencil
             = link_to approval_path(approval), method: :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-default btn-xs' do
               i.fa.fa-trash-o
-
-
+  = paginate @approvals

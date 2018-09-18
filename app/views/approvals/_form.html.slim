@@ -1,17 +1,61 @@
-h3 #{@approval.approval_no}
+h3 Approval No. #{@approval.approval_no}
 br
 
 .row
   .col-xs-6
-    = f.input :approval_type, as: :string
-/ .row
-/   .col-xs-6
-/     = f.input :feature_type, as: :select, collection: Options::Products::Types.select_form, include_blank: false, prompt: "Select Category"
-
+    /= f.input :approval_type, as: :string
+    = f.input :approval_type, as: :select, collection: SelectionControl.where(name: 'approval type').pluck(:label), placeholder: "Choose a approval type"
+  .col-xs-6
+    = f.input :date, as: :string, placeholder: "DD/MM/YYYY"
 .row
   .col-xs-6
-    = f.input :date, as: :string
+    = f.input :approval_no, as: :string
+  .col-xs-6
+    = f.input :sub_type, as: :string
+.row
+  .col-xs-6
+    = f.input :description, as: :string
+  .col-xs-6
+    = f.input :standard, as: :string
+.row
+  .col-xs-6
+    = f.input :reference, as: :string
+  .col-xs-6
+    = f.input :effective_date, as: :string, placeholder: "DD/MM/YYYY"
+.row
+  .col-xs-6
+    = f.input :expiry_date, as: :string, placeholder: "DD/MM/YYYY"
+  .col-xs-6
+    = f.input :status, as: :select, collection: ['Active', 'Inactive']
+.row
+  .col-xs-12
+    = f.input :notes, as: :text
 
 .row
   .col-xs-12
-    = f.input :sub_type, as: :text
+    h3 Associated Products
+    = f.association :products, collection: Hash[Product.all.map { |product| [product.model_number, product.id] }], label: "Choose Model Number", input_html: { data: { toggle: 'multi-select2-fixed' }, multiple: true }
+.row
+  .col-xs-6
+    h3 Approval Document
+    = f.file_field :approval_doc
+
+.nested-fields.file-item
+  .file-container
+  - if @approval.approval_doc.present?
+    ul
+      li = link_to "#{@approval.approval_doc.url}", @approval.approval_doc.url, target: '_blank'
+  - else
+    p = "No Documents Uploaded."
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br

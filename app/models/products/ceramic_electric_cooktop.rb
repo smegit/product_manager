@@ -8,6 +8,7 @@ class CeramicElectricCooktop < Product
     timers: :string,
     power_levels: :string,
     gas_connection: [:string, array: true, default: []],
-    cutout: [:string, array: true, default: []]
+    cutout: [:string, array: true, default: []],
+    function_list: [:string, array: true, default: []]
 
 end

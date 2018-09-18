@@ -1,0 +1,56 @@
+/ p#notice = notice
+/
+/ p
+/   strong Control type:
+/   = @function.control_type
+/ p
+/   strong Product type:
+/   = @function.product_type
+/ p
+/   strong Function code:
+/   = @function.function_code
+/ p
+/   strong Descritpion:
+/   = @function.description
+/
+/ = link_to 'Edit', edit_function_path(@function)
+/ '|
+/ = link_to 'Back', functions_path
+
+
+.container
+  h3 Function
+  .btn-group.pull-right
+    = link_to edit_function_path(@function), class: 'btn btn-default btn-xs' do
+      i.fa.fa-pencil
+
+  br
+  br
+  br
+
+.container
+  table.table
+    / tr
+    /   th Control Type
+    /   td = @function.control_type
+    / tr
+    /   th Category
+    /   td = @feature.feature_type
+    tr
+      th Product Type
+      td = @function.product_type
+
+    tr
+      th Function Code
+      td = @function.function_code
+
+    tr
+      th Description
+      td = @function.description
+    tr
+      th Icon
+      td.icon_size = image_tag(@function.url)
+
+  .btn-group.pull-left
+    = link_to functions_path, class: 'btn btn-default btn-xs' do
+      i.fa.fa-arrow-left

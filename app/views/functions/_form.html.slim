@@ -1,0 +1,35 @@
+/ = simple_form_for(@function) do |f|
+/   = f.error_notification
+/
+/   .form-inputs
+/     = f.input :control_type
+/     = f.input :product_type
+/     = f.input :function_code
+/     = f.input :description
+/
+/   .form-actions
+/     = f.button :submit
+
+
+
+/ .row
+/   .col-xs-6
+/     = f.input :control_type, as: :string
+.row
+  .col-xs-6
+    = f.input :product_type, as: :string
+.row
+  .col-xs-6
+    = f.input :function_code, as: :string
+.row
+  .col-xs-6
+    = f.input :description, as: :string
+.row
+  .col-xs-6
+    = f.input :url, as: :string
+.row
+  .col-xs-6.icon_size
+    = image_tag(@function.url)
+.row
+  .col-xs-6
+    = f.file_field :url

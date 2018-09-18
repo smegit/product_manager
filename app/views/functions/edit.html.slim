@@ -1,0 +1,20 @@
+/ h1 Editing function
+/
+/ == render 'form'
+/
+/ = link_to 'Show', @function
+/ '|
+/ = link_to 'Back', functions_path
+
+.container
+  .row
+    .col-xs-12
+      h1 Edit Function
+
+  .row
+    .col-xs-12
+      = simple_form_for @function do |f|
+        = render partial: 'form', locals: { f: f }
+        .bottom.bottom-full
+          => f.submit 'Update', class: 'btn btn-primary'
+          =< link_to "Cancel", :back, class: 'btn btn-default'
