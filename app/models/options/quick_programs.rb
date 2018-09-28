@@ -16,7 +16,7 @@ module Options
                 )
 
       def to_s
-        I18n.t @option, scope: [:options, :quick_program_list]
+        I18n.t @option, scope: [:options, :quick_programs_list]
       end
 
     end

@@ -9,17 +9,21 @@ tr
         - dynamic_list(@product.capacity).each do |accessory|
           li
             =< "#{accessory}"
-tr
-  th Programmability
-  td
-    - if !dynamic_list(@product.programmability).nil?
-      ul
-        - dynamic_list(@product.programmability).each do |accessory|
-          li
-            =< "#{accessory}"
+/ tr
+/   th Programmability
+/   td
+/     - if !dynamic_list(@product.programmability).nil?
+/       ul
+/         - dynamic_list(@product.programmability).each do |accessory|
+/           li
+/             =< "#{accessory}"
 tr
   th Size
   td = @product.size
+
+tr
+  th Style
+  td = @product.style
 tr
   th End of Cycle Indicator
   td = @product.end_of_cycle_indicator
@@ -91,5 +95,7 @@ tr
         - dynamic_list(@product.quick_programs_list).each do |accessory|
           li
             =< "#{accessory}"
-
+tr
+  th Total Programs
+  td = @product.total_programs
 

@@ -1,25 +1,33 @@
 .row
+  / .col-xs-6
+  /   = f.input :function_list, collection: Options::Functions::Types.select_form, label: "Choose Functions", input_html: { data: { toggle: 'multi-select2-fixed' }, multiple: true }, include_hidden: false
   .col-xs-6
-    = f.input :function_list, collection: Options::Functions::Types.select_form, label: "Choose Functions", input_html: { data: { toggle: 'multi-select2-fixed' }, multiple: true }, include_hidden: false
-  .col-xs-6
-    = f.input :device_display
-.row
+    = f.input :cleaning
   .col-xs-6
     = f.input :coffee_bean_capacity
+  
+.row
+  .col-xs-6
+    = f.input :device_display
+  .col-xs-6
+    = f.input :functions, collection: dynamic_list(@product.functions), label: "Functions", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }, include_hidden: false
+  
+.row
+  .col-xs-6
+      = f.input :installation
+  .col-xs-6
+      = f.input :lighting
+.row
+  .col-xs-6
+    = f.input :programmability, collection: dynamic_list(@product.programmability), label: "Programmability", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }, include_hidden: false
   .col-xs-6
     = f.input :pump_pressure
 .row
   .col-xs-6
-    = f.input :water_tank_capacity
+    = f.input :size
   .col-xs-6
     = f.input :thermostat
+
 .row
   .col-xs-6
-    = f.input :installation
-  .col-xs-6
-    = f.input :programmability, collection: dynamic_list(@product.programmability), label: "Programmability", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }, include_hidden: false
-.row
-  .col-xs-6
-    = f.input :cleaning
-  .col-xs-6
-    = f.input :lighting
+    = f.input :water_tank_capacity

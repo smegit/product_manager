@@ -2,11 +2,22 @@ class ClassicDoubleOven < Product
 
   jsonb_accessor :data,
     device_display: :string,
-    auto_menus: :string,
     installation: :string,
 
-    main_oven: :string,
+    # Added attribute capacity
+    capacity: [:string, array: true, default: []],
+    cleaning: :string,
+    cooking_levels: :string,
+    lighting: :string,
+    thermostat: :string,
+    programmability: [:string, array: true, default: []],
+    function_list: [:string, array: true, default: []],
+    total_functions: [:string, array: true, default: []],
 
+
+     # no
+    main_oven: :string,
+    auto_menus: :string,
     capacity_main_oven: [:string, array: true, default: []],
     total_functions_main_oven: [:string, array: true, default: []],
     cooking_levels_main_oven: :string,
@@ -26,22 +37,5 @@ class ClassicDoubleOven < Product
     lighting_aux_oven: :string,
 
     function_list_main_oven: [:string, array: true, default: []],
-    function_list_aux_oven: [:string, array: true, default: []],
-
-    # Added attribute capacity
-    capacity: [:string, array: true, default: []],
-    cleaning: [:string, array: true, default: []],
-    cooking_levels: :string,
-    function_list: [:string, array: true, default: []],
-    lighting: :string,
-    programmability: [:string, array: true, default: []],
-    thermostat: :string,
-    total_functions: [:string, array: true, default: []]
-
-
-
-
-
-
-
+    function_list_aux_oven: [:string, array: true, default: []]
 end

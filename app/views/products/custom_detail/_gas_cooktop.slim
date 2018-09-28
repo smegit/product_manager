@@ -28,3 +28,24 @@ tr
         - dynamic_list(@product.cutout).each do |accessory|
           li
             =< "#{accessory}"
+tr
+  th Timers
+  td
+    - if !dynamic_list(@product.timers).nil?
+      ul
+        - dynamic_list(@product.timers).each do |accessory|
+          li
+            =< "#{accessory}"
+tr
+  th Controls
+  td = @product.controls
+tr
+  th Pan Size
+  td = @product.pan_size
+
+tr
+  th Power levels
+  td = @product.power_levels
+tr
+  th Size
+  td = @product.size

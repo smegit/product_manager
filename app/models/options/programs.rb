@@ -51,7 +51,7 @@ module Options
                 )
 
       def to_s
-        I18n.t @option, scope: [:options, :program_list]
+        I18n.t @option, scope: [:options, :programs_list]
       end
 
     end

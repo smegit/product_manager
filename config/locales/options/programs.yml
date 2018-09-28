@@ -1,6 +1,6 @@
 en:
   options:
-    program_list:
+    programs_list:
       soak:                            "Soak"
       normal_eco:                      "Normal Eco"
       eco:                             "Eco"

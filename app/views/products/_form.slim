@@ -13,8 +13,13 @@ br
     = f.input :cover_image_cache, as: :hidden
 
 .row
+  .col-xs-12
+    h3 Basic Details
+.row
   .col-xs-6
     = f.input :price, as: :string
+  .col-xs-6
+    = f.input :ean, as: :string
 
 .row
   .col-xs-6
@@ -24,26 +29,21 @@ br
     = f.input :aesthetic, as: :select, collection: Aesthetic.pluck('DISTINCT aesthetic_description')
 
 .row
-  .col-xs-12
-    h3 Features
-    #product_features
-      = f.association :features, collection: Feature.all, label: "Choose features", input_html: { data: { toggle: 'multi-select2-fixed' }, multiple: true }
-
-.row
   .col-xs-6
     = f.input :dimensions, as: :string
   .col-xs-6
-    = f.input :supplied_accessories, collection: supplied_accessories(@product), label: "Supplied Accessories", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
+    = f.input :finish, collection: dynamic_list(@product.finish), label: "Finish", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
+
+  
 .row
+  .col-xs-6
+    = f.input :supplied_accessories, collection: supplied_accessories(@product), label: "Supplied Accessories", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
   .col-xs-6
     = f.input :optional_accessories, collection: optional_accessories(@product), label: "Optional Accessories", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
 
-= render "products/custom_fields/#{f.object.type.underscore}", f: f
+/ = render "products/custom_fields/#{f.object.type.underscore}", f: f
 
-.row
-  .col-xs-6
-    = f.input :finish, collection: dynamic_list(@product.finish), label: "Finish", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
-
+  
 .row
   .col-xs-6
     = f.input :safety, collection: dynamic_list(@product.safety), label: "Safety", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
@@ -52,13 +52,26 @@ br
 
 .row
   .col-xs-6
-    = f.input :notes
+    = f.input :warranty
+  .col-xs-6
+    = f.input :status, as: :string
 
 .row
   .col-xs-6
-    = f.input :warranty
-  .col-xs-6
-    = f.input :status, as: :radio_buttons, collection: [['Active', true], ['Inactive', false]]
+    = f.input :notes
+    
+.row
+  .col-xs-12
+    h3 Features
+    #product_features
+      = f.association :features, collection: Feature.all, label: "Choose features", input_html: { data: { toggle: 'multi-select2-fixed' }, multiple: true }
+
+.row
+  .col-xs-12
+    h3 Custome Details
+    
+= render "products/custom_fields/#{f.object.type.underscore}", f: f
+
 
 .row
   .col-xs-12

@@ -12,9 +12,15 @@ tr
 tr
   th Power Levels
   td = @product.power_levels
+
 tr
   th Timers
-  td = @product.timers
+  td
+    - if !dynamic_list(@product.timers).nil?
+      ul
+        - dynamic_list(@product.timers).each do |accessory|
+          li
+            =< "#{accessory}"
 tr
   th Size
   td = @product.size
@@ -30,3 +36,13 @@ tr
         - dynamic_list(@product.cutout).each do |accessory|
           li
             =< "#{accessory}"
+
+tr
+  th Gas Connection
+  td = @product.gas_connection
+tr
+  th Ignition
+  td = @product.ignition
+tr
+  th Pan Size
+  td = @product.pan_size

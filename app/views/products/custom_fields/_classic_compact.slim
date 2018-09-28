@@ -1,20 +1,6 @@
 .row
   .col-xs-6
-    = f.input :total_functions, collection: dynamic_list(@product.total_functions), label: "Total Functions", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
-  .col-xs-6
-    = f.input :function_list, collection: Options::Functions::Types.select_form, label: "Choose Functions", input_html: { data: { toggle: 'multi-select2-fixed' }, multiple: true }
-.row
-  .col-xs-6
-    = f.input :capacity, collection: dynamic_list(@product.capacity), label: "Capacity", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
-  .col-xs-6
-    = f.input :device_display
-
-.row
-  .col-xs-6
-    = f.input :auto_menus
-  .col-xs-6
     = f.input :cooking_levels
-.row
   .col-xs-6
     = f.input :thermostat
 
@@ -34,3 +20,15 @@
     = f.input :cleaning
   .col-xs-6
     = f.input :lighting
+
+.row
+  .col-xs-6
+    = f.input :capacity, collection: dynamic_list(@product.capacity), label: "Capacity", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
+  .col-xs-6
+    = f.input :device_display
+
+.row
+  .col-xs-6
+    = f.input :total_functions, collection: dynamic_list(@product.total_functions), label: "Total Functions", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
+  .col-xs-6
+    = f.input :function_list, collection: Options::Functions::Types.select_form, label: "Choose Functions", input_html: { data: { toggle: 'multi-select2-fixed' }, multiple: true }

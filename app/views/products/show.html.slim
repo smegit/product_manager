@@ -37,6 +37,9 @@
       th Description
       td = @product.description
     tr
+      th Ean
+      td = @product.ean
+    tr
       th Finish
       td
         - if !dynamic_list(@product.finish).nil?
@@ -59,6 +62,15 @@
     tr
       th Dimensions
       td = @product.dimensions
+    tr
+      th Power
+      td = @product.power
+    tr
+      th Warranty
+      td = @product.warranty
+    tr
+      th Status
+      td = @product.status
 
     - if @product.try(:function_list).present?
       tr
@@ -83,7 +95,7 @@
     tr
       th Optional Accessories
       td
-        - if !supplied_accessories(@product).nil?
+        - if !optional_accessories(@product).nil?
           ul
             - optional_accessories(@product).each do |accessory|
               li

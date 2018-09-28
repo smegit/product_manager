@@ -303,6 +303,23 @@ class PermittedParams < Struct.new(:params, :user)
 
       :temperature,
 
+      # added 
+      :ean, 
+      :freezer_door,
+      :main_oven,
+      :gas_connection, 
+      :pan_size,
+      accessories: [], 
+      nb_of_drawers: [], 
+      nb_drawers: [], 
+      nb_shelves: [],
+      total_functions: [],
+      nb_door_shelves: [],
+      timers: [],
+      
+
+      # added end
+
       approval_ids: [],
 
       # approval_nos: [],
@@ -452,6 +469,8 @@ class PermittedParams < Struct.new(:params, :user)
         _destroy
 
       ],
+      
+     
 
     ]
 

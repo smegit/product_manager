@@ -28,38 +28,38 @@ module DataImport
       end
     end
 
-    def import_system_control
-      puts 'starting system_control importing'
-      counter = 0
-      Dir.glob(@system_control_path + '/*.csv').each do |file|
-        counter += 1
-        puts "Importing Library Files #{counter}/#{Dir.glob(@system_control_path + '/*.csv').count}"
-        File.open(file, 'r') do |file|
-          @system_control_library = SmarterCSV.process(file, convert_values_to_numeric: false, remove_empty_values: false, remove_zero_values: false)
-          puts 'in file'
-        end
+    # def import_system_control
+    #   puts 'starting system_control importing'
+    #   counter = 0
+    #   Dir.glob(@system_control_path + '/*.csv').each do |file|
+    #     counter += 1
+    #     puts "Importing Library Files #{counter}/#{Dir.glob(@system_control_path + '/*.csv').count}"
+    #     File.open(file, 'r') do |file|
+    #       @system_control_library = SmarterCSV.process(file, convert_values_to_numeric: false, remove_empty_values: false, remove_zero_values: false)
+    #       puts 'in file'
+    #     end
 
-        # puts @function_icons_library
+    #     # puts @function_icons_library
 
-        @system_control_library.each do |row|
-          if row[:control_type] == 'functions'
-            prod_type_array = row[:type].split(',')
-            # puts prod_type_array
-            prod_type_array.each do |t|
-              function = Function.create!(control_type: 'functions')
-              function.update_attributes(product_type: t, function_code: row[:code], description: row[:function_des])
-            end
+    #     @system_control_library.each do |row|
+    #       if row[:control_type] == 'functions'
+    #         prod_type_array = row[:type].split(',')
+    #         # puts prod_type_array
+    #         prod_type_array.each do |t|
+    #           function = Function.create!(control_type: 'functions')
+    #           function.update_attributes(product_type: t, function_code: row[:code], description: row[:function_des])
+    #         end
 
-          elsif row[:control_type] == 'aesthetic'
-            puts 'aesthetic controls'
-            aesthetic = Aesthetic.create!(control_type: 'aesthetic')
-            aesthetic.update_attributes(aesthetic_code: row[:code], aesthetic_description: row[:des])
-          else
-            next
-          end
-        end
-      end
-    end
+    #       elsif row[:control_type] == 'aesthetic'
+    #         puts 'aesthetic controls'
+    #         aesthetic = Aesthetic.create!(control_type: 'aesthetic')
+    #         aesthetic.update_attributes(aesthetic_code: row[:code], aesthetic_description: row[:des])
+    #       else
+    #         next
+    #       end
+    #     end
+    #   end
+    # end
 
     # def import_file_list
 
@@ -206,7 +206,8 @@ module DataImport
 
         aesthetic: aesthetic_type(product[:aesthetic]),
 
-        status: product_status(product[:status]),
+        #status: product_status(product[:status]),
+        status: product[:status],
 
         dimensions: product[:dimensions],
 
@@ -440,6 +441,14 @@ module DataImport
         :supplied_accessories_oven_right,
 
         # Added attributes
+        :timers,
+        :cutout,
+        :functions,
+        :accessories,
+        :nb_of_drawers,
+        :nb_drawers,
+        :nb_shelves,
+        :nb_door_shelves,
 
 
       ].include?(key)
@@ -470,7 +479,7 @@ module DataImport
 
         :lighting,
 
-        :timers,
+        # :timers,
 
         :controls,
 
@@ -600,7 +609,7 @@ module DataImport
 
         :burners,
 
-        :cutout,
+        # :cutout,
 
         :noise_rating,
 
@@ -668,17 +677,14 @@ module DataImport
 
         # Added fields
 
-        :nb_of_drawers,
 
-        :nb_drawers,
-
-        :nb_shelves,
-
-        :accessories,
+        #:accessories,
 
         :freezer_door,
+        :pan_size,
+        
 
-        :nb_door_shelves,
+        
 
         :interior_finish
 

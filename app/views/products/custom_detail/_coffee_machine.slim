@@ -1,21 +1,27 @@
 tr
-  th Device Display
-  td = @product.device_display
+  th Cleaning
+  td = @product.cleaning
 tr
   th Coffee Bean Capacity
   td = @product.coffee_bean_capacity
 tr
-  th Pump Pressure
-  td = @product.pump_pressure
+  th Device Display
+  td = @product.device_display
 tr
-  th Water Tank Capacity
-  td = @product.water_tank_capacity
-tr
-  th Thermostat
-  td = @product.thermostat
+  th Functions
+  td
+    - if !dynamic_list(@product.functions).nil?
+      ul
+        - dynamic_list(@product.functions).each do |accessory|
+          li
+            =< "#{accessory}"
 tr
   th Installation
   td = @product.installation
+tr
+  th Lighting
+  td = @product.lighting
+
 tr
   th Programmability
   td
@@ -25,8 +31,17 @@ tr
           li
             =< "#{accessory}"
 tr
-  th Cleaning
-  td = @product.cleaning
+  th Pump Pressure
+  td = @product.pump_pressure
 tr
-  th Lighting
-  td = @product.lighting
+  th Size
+  td = @product.size
+tr
+  th Thermostat
+  td = @product.thermostat
+tr
+  th Water Tank Capacity
+  td = @product.water_tank_capacity
+
+
+

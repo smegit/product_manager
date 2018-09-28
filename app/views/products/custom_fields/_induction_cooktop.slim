@@ -10,11 +10,17 @@
     = f.input :controls
 .row
   .col-xs-6
-    = f.input :timers
+    = f.input :timers, collection: dynamic_list(@product.timers), label: "Timers", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
   .col-xs-6
     = f.input :power_levels
 .row
-  / .col-xs-6
-  /   = f.input :gas_connection, collection: dynamic_list(@product.gas_connection), label: "Gas Connections", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
+  .col-xs-6
+    = f.input :gas_connection
   .col-xs-6
     = f.input :cutout, collection: dynamic_list(@product.cutout), label: "Cutout", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
+
+.row
+  .col-xs-6
+    = f.input :ignition
+  .col-xs-6
+    = f.input :pan_size

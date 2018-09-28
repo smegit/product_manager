@@ -2,37 +2,28 @@
   .col-xs-6
     = f.input :gross_capacity, collection: dynamic_list(@product.gross_capacity), label: "Gross Capacity", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
   .col-xs-6
-    = f.input :shelves_main_compartment, collection: dynamic_list(@product.shelves_main_compartment), label: "Shelves (Main Compartment)", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
+    = f.input :accessories, collection: dynamic_list(@product.accessories), label: "Accessories", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
 
 .row
-  .col-xs-6
-    = f.input :drawers_main_compartment, collection: dynamic_list(@product.drawers_main_compartment), label: "Drawers (Main Compartment)", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
-  .col-xs-6
-    = f.input :lighting_main_compartment, collection: dynamic_list(@product.lighting_main_compartment), label: "Lighting (Main Compartment)", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
-.row
-  .col-xs-6
-    = f.input :shelves_inner_door, collection: dynamic_list(@product.shelves_inner_door), label: "Shelves (Inner Door)", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
-  .col-xs-6
-    = f.input :accessories_inner_door, collection: dynamic_list(@product.accessories_inner_door), label: "Accessories (Inner Door)", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
-
-.row
-  .col-xs-6
-    = f.input :shelves_freezer, collection: dynamic_list(@product.shelves_freezer), label: "Shelves (Freezer)", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
-  .col-xs-6
-    = f.input :drawers_freezer, collection: dynamic_list(@product.drawers_freezer), label: "Drawers (Freezer)", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
-.row
-  .col-xs-6
-    = f.input :accessories_freezer, collection: dynamic_list(@product.accessories_freezer), label: "Accessories (Freezer)", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
   .col-xs-6
     = f.input :defrost
+  .col-xs-6
+    = f.input :lighting
 
 .row
   .col-xs-6
-    = f.input :performance
-  .col-xs-6
     = f.input :energy_consumption
-.row
   .col-xs-6
     = f.input :star_rating
+    
+.row
   .col-xs-6
     = f.input :noise
+  .col-xs-6
+    = f.input :nb_of_drawers, collection: dynamic_list(@product.nb_of_drawers), label: "Number of drawers", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
+
+.row
+  .col-xs-6
+    = f.input :nb_drawers, collection: dynamic_list(@product.nb_drawers), label: "Number drawers", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
+  .col-xs-6
+    = f.input :nb_shelves, collection: dynamic_list(@product.nb_shelves), label: "Number shelves", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }

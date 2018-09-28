@@ -14,7 +14,12 @@ tr
   td = @product.power_levels
 tr
   th Timers
-  td = @product.timers
+  td 
+    - if !dynamic_list(@product.timers).nil?
+        ul
+          - dynamic_list(@product.timers).each do |accessory|
+            li
+              =< "#{accessory}"
 tr
   th Size
   td = @product.size

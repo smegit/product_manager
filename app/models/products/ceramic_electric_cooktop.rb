@@ -5,10 +5,12 @@ class CeramicElectricCooktop < Product
     installation: :string,
     controls: :string,
     size: :string,
-    timers: :string,
+    timers: [:string, array: true, default: []],
     power_levels: :string,
-    gas_connection: [:string, array: true, default: []],
     cutout: [:string, array: true, default: []],
+    
+    # no 
+    gas_connection: [:string, array: true],
     function_list: [:string, array: true, default: []]
 
 end

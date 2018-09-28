@@ -5,9 +5,10 @@
     = f.input :function_list, collection: Options::Functions::Types.select_form, label: "Choose Functions", input_html: { data: { toggle: 'multi-select2-fixed' }, multiple: true }
 .row
   .col-xs-6
-    = f.input :programs_list, collection: Options::Programs::Types.select_form, label: "Choose Programs", input_html: { data: { toggle: 'multi-select2-fixed' }, multiple: true }
+    = f.input :programs_list, collection: dynamic_list(@product.programs_list), label: "Programs", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
   .col-xs-6
-    = f.input :quick_programs_list, collection: Options::QuickPrograms::Types.select_form, label: "Choose Quick Programs", input_html: { data: { toggle: 'multi-select2-fixed' }, multiple: true }
+    = f.input :quick_programs_list, collection: dynamic_list(@product.quick_programs_list), label: "Quick Programs", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
+
 .row
   .col-xs-6
     = f.input :capacity, collection: dynamic_list(@product.capacity), label: "Capacity", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
@@ -16,7 +17,7 @@
 
 .row
   .col-xs-6
-    = f.input :style, label: "Type"
+    = f.input :style, label: "Style"
   .col-xs-6
     = f.input :total_programs, label: "Programs"
 .row

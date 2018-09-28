@@ -6,11 +6,19 @@ tr
   td = @product.device_display
 
 tr
-  th Capacity (GAS HOB)
+  th Auto Menus
+  td = @product.auto_menus
+
+tr
+  th Main Oven
+  td = @product.main_oven
+
+tr
+  th Capacity
   td
-    - if !dynamic_list(@product.capacity_gas_hob).nil?
+    - if !dynamic_list(@product.capacity).nil?
       ul
-        - dynamic_list(@product.capacity_gas_hob).each do |accessory|
+        - dynamic_list(@product.capacity).each do |accessory|
           li
             =< "#{accessory}"
 
@@ -18,59 +26,6 @@ tr
   th Gas Input
   td = @product.gas_input
 
-tr
-  th Safety (GAS HOB)
-  td
-    - if !dynamic_list(@product.safety_gas_hob).nil?
-      ul
-        - dynamic_list(@product.safety_gas_hob).each do |accessory|
-          li
-            =< "#{accessory}"
-
-tr
-  th Supplied Accessories (GAS HOB)
-  td
-    - if !dynamic_list(@product.supplied_accessories_gas_hob).nil?
-      ul
-        - dynamic_list(@product.supplied_accessories_gas_hob).each do |accessory|
-          li
-            =< "#{accessory}"
-
-tr
-  th Capacity (ELECTRIC HOB)
-  td
-    - if !dynamic_list(@product.capacity_electric_hob).nil?
-      ul
-        - dynamic_list(@product.capacity_electric_hob).each do |accessory|
-          li
-            =< "#{accessory}"
-
-tr
-  th Safety (ELECTRIC HOB)
-  td
-    - if !dynamic_list(@product.safety_electric_hob).nil?
-      ul
-        - dynamic_list(@product.safety_electric_hob).each do |accessory|
-          li
-            =< "#{accessory}"
-
-tr
-  th Supplied Accessories (ELECTRIC HOB)
-  td
-    - if !dynamic_list(@product.supplied_accessories_electric_hob).nil?
-      ul
-        - dynamic_list(@product.supplied_accessories_electric_hob).each do |accessory|
-          li
-            =< "#{accessory}"
-
-tr
-  th Capacity (Main Oven)
-  td
-    - if !dynamic_list(@product.capacity).nil?
-      ul
-        - dynamic_list(@product.capacity).each do |accessory|
-          li
-            =< "#{accessory}"
 tr
   th Total Functions
   td
@@ -88,14 +43,7 @@ tr
   th Cooking Levels
   td = @product.cooking_levels
 
-tr
-  th Supplied Accessories (Main Oven)
-  td
-    - if !dynamic_list(@product.supplied_accessories_main_oven).nil?
-      ul
-        - dynamic_list(@product.supplied_accessories_main_oven).each do |accessory|
-          li
-            =< "#{accessory}"
+
 tr
   th Thermostat
   td = @product.thermostat
