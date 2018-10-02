@@ -1,20 +1,21 @@
 class WasherDryer < Product
 
     jsonb_accessor :data,
-      device_display: :string,
-      size: :string,
-      drum_construction: :string,
-      capacity: [:string, array: true, default: []],
-      door: :string,
-      programs_list: [:string, array: true, default: []],
-      feature_list: [:string, array: true, default: []],
-      auxiliary_list: [:string, array: true, default: []],
-      spin_speed: :string,
-      water_rating: :string,
-      energy_rating: :string,
-      electrical_input: :string,
-      total_current: :string,
-      function_list: [:string, array: true, default: []]
-  
-  end
+        auxiliary_functions: [:string, array: true, default: []],
+        capacity: [:string, array: true, default: []],
+        device_display: :string,
+        door: :string,
+        drum_construction: :string,
+        electrical_input: :string,
+        energy_rating: :string,
+        feature_list: [:string, array: true, default: []],
+        programs_list: [:string, array: true, default: []],
+        size: :string,
+        spin_speed: :string,
+        total_current: :string,
+        water_rating: :string,
+
+        # no
+        function_list: [:string, array: true, default: []]
+end
   

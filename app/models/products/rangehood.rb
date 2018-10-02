@@ -1,14 +1,16 @@
 class Rangehood < Product
 
     jsonb_accessor :data,
-      installation: :string,
-      motor: :string,
-      max_airflow: :string,
-      noise_rating: :string,
-      illumination: :string,
-      speeds: :string,
       delay_stop: :string,
       ducting_options: [:string, array: true, default: []],
+      illumination: :string,
+      installation: :string,
+      max_airflow: :string,
+      motor: :string,
+      noise_rating: :string,
+      speeds: :string,
+
+      # no
       function_list: [:string, array: true, default: []] 
 end
   

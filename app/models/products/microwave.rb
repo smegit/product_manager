@@ -1,25 +1,23 @@
 class Microwave < Product
 
   jsonb_accessor :data,
-    device_display: :string,
-    cavity_type: :string,
-    turntable: :string,
-    power_levels: :string,
-    microwave_power: :string,
-    grill_power: :string,
-    capacity: [:string, array: true, default: []],
-    convection_power: :string,
     auto_cook_functions: :string,
-    other_functions: [:string, array: true, default: []],
-    defrost: :string,
-    lighting: :string,
-    control_panel: :string,
+    capacity: [:string, array: true, default: []],
+    cavity_type: :string,
     clock: :string,
+    control_panel: :string,
+    convection_power: :string,
+    defrost: :string,
+    device_display: :string,
+    grill_power: :string,
+    installation: :string,
+    lighting: :string,
+    microwave_power: :string,
+    other_functions: [:string, array: true, default: []],
+    power_levels: :string,
     timer: :string,
-    function_list: [:string, array: true, default: []],
+    turntable: :string,
 
-    # Add attributes
-    installation: :string
-
-
+    # no
+    function_list: [:string, array: true, default: []]
 end

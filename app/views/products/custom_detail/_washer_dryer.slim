@@ -7,9 +7,15 @@ tr
 tr
   th Drum Construction
   td = @product.drum_construction
+
 tr
   th Capacity
-  td = @product.capacity
+  td
+    - if !dynamic_list(@product.capacity).nil?
+      ul
+        - dynamic_list(@product.capacity).each do |accessory|
+          li
+            =< "#{accessory}"
 tr
   th Door
   td = @product.door
@@ -31,11 +37,11 @@ tr
           li
             =< "#{accessory}"
 tr
-  th Auxiliary List
+  th Auxiliary Functions
   td
-    - if !dynamic_list(@product.auxiliary_list).nil?
+    - if !dynamic_list(@product.auxiliary_functions).nil?
       ul
-        - dynamic_list(@product.auxiliary_list).each do |accessory|
+        - dynamic_list(@product.auxiliary_functions).each do |accessory|
           li
             =< "#{accessory}"
 tr

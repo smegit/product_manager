@@ -24,3 +24,15 @@ tr
 tr
   th Timer
   td = @product.timer
+
+tr
+  th Size
+  td = @product.size
+tr
+  th Functions
+  td
+    - if !dynamic_list(@product.functions).nil?
+      ul
+        - dynamic_list(@product.functions).each do |accessory|
+          li
+            =< "#{accessory}"

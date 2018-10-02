@@ -309,6 +309,11 @@ class PermittedParams < Struct.new(:params, :user)
       :main_oven,
       :gas_connection, 
       :pan_size,
+      :interior_finish,
+      :quote_display,
+      :cavity,
+      :drawer,
+      :power_supply,
       accessories: [], 
       nb_of_drawers: [], 
       nb_drawers: [], 
@@ -316,6 +321,8 @@ class PermittedParams < Struct.new(:params, :user)
       total_functions: [],
       nb_door_shelves: [],
       timers: [],
+      functions: [],
+      auxiliary_functions: [],
       
 
       # added end

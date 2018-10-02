@@ -329,6 +329,9 @@ module DataImport
       elsif aesthetic == 'Victoria'
 
         'victoria'
+      elsif aesthetic == 'Dolce Stil Novo'
+
+        'dolce stil novo'
 
       end
 
@@ -449,6 +452,7 @@ module DataImport
         :nb_drawers,
         :nb_shelves,
         :nb_door_shelves,
+        :auxiliary_functions,
 
 
       ].include?(key)
@@ -681,12 +685,12 @@ module DataImport
         #:accessories,
 
         :freezer_door,
-        :pan_size,
-        
+        :pan_size,    
+        :interior_finish,
+        :quote_display,
+        :cavity,
+        :temperature,
 
-        
-
-        :interior_finish
 
 
       ].include?(key)

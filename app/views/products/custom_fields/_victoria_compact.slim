@@ -1,8 +1,8 @@
 .row
   .col-xs-6
     = f.input :total_functions, collection: dynamic_list(@product.total_functions), label: "Total Functions", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
-  .col-xs-6
-    = f.input :auto_menus
+  / .col-xs-6
+  /   = f.input :auto_menus
 .row
   .col-xs-6
     = f.input :function_list, collection: Options::Functions::Types.select_form, label: "Choose Functions", input_html: { data: { toggle: 'multi-select2-fixed' }, multiple: true }
