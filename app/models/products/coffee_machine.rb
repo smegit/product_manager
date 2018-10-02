@@ -11,6 +11,9 @@ class CoffeeMachine < Product
         pump_pressure: :string,
         size: :string,
         thermostat: :string,
-        water_tank_capacity: :string
+        water_tank_capacity: :string,
   
+        # no
+        function_list: [:string, array: true, default: []]
+
 end
