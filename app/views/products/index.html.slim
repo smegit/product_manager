@@ -10,33 +10,38 @@
   br
   .row
     = form_tag(products_path, method: :get) do
+      / .col-xs-2
+      /   = select_tag "type", options_for_select(@products.collect{|x| [x.type, x.type]})
       .col-xs-4
         = text_field_tag :search_products, nil, placeholder: "Search products ...", class: "form-control"
       = submit_tag "Search / Reset", class: "btn btn-info btn-xs search-btn",style: ""
 
   br
-  table.table
+  table.table class="table table-hover"
     tr
       th Model #
-      th Range
-      th Price
       th Description
-      th style='width:300px;'
+      th Aesthetic
+      th Type
+      
+      //th style='width:300px;'
 
     - for product in @products
-      tr
+      tr onclick="location.href='#{product_path(product)}'"
         td= product.model_number
-        td= I18n.t product.type, scope: [:options, :product_types]
-        td= number_to_currency(product.price)
         td= product.description
-        td
-          .btn-group.pull-right
-            = link_to product_path(product), class: 'btn btn-default btn-xs' do
-              i.fa.fa-eye
-            = link_to edit_product_path(product), class: 'btn btn-default btn-xs' do
-              i.fa.fa-pencil
-            = link_to product_path(product), method: :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-default btn-xs' do
-              i.fa.fa-trash-o
+        td= product.aesthetic
+        
+        td= I18n.t product.type, scope: [:options, :product_types]
+        /td= number_to_currency(product.price)
+        / td
+        /   .btn-group.pull-right
+        /     = link_to product_path(product), class: 'btn btn-default btn-xs' do
+        /       i.fa.fa-eye
+        /     = link_to edit_product_path(product), class: 'btn btn-default btn-xs' do
+        /       i.fa.fa-pencil
+        /     = link_to product_path(product), method: :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-default btn-xs' do
+        /       i.fa.fa-trash-o
 
   = paginate @products
 

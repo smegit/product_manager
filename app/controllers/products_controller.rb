@@ -3,7 +3,7 @@ class ProductsController < BaseController
   before_action :set_paper_trail_whodunnit
   has_scope :search_products
   def index
-    @products = apply_scopes(Product).page(params[:page]).per(10).order(type: :asc)
+    @products = apply_scopes(Product).page(params[:page]).per(100).order(type: :asc)
     # puts Feature.all
     # puts Hash[Product.all.map { |product| [product.model_number, product.id] }]
   end

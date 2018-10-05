@@ -1,11 +1,12 @@
 .container
-  h3 Product #{@product.model_number}
+  h3 #{@product.model_number}  #{@product.description}
   = I18n.t @product.type, scope: [:options, :product_types]
 
   .btn-group.pull-right
     = link_to edit_product_path(@product), class: 'btn btn-default btn-xs' do
       i.fa.fa-pencil
-
+    = link_to product_path(@product), method: :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-default btn-xs' do
+      i.fa.fa-trash-o
     = link_to history_product_path(@product), class: 'btn btn-default btn-xs btn-history' do
       i.fa.fa-folder
 
