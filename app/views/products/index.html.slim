@@ -8,12 +8,19 @@
     .col-xs-2.col-xs-offset-4
       = link_to "+ Add Prodct", model_selection_new_product_path, class: 'btn btn-default btn-xs btn-model-selection'
   br
+  / .row
+  /  .col-xs-2
+  /   = select_tag "by_type", options_for_select(Product.unique_type ), class: "form-control"
   .row
     = form_tag(products_path, method: :get) do
-      / .col-xs-2
-      /   = select_tag "type", options_for_select(@products.collect{|x| [x.type, x.type]})
+      .col-xs-2
+        = select_tag "by_type", options_for_select(Product.unique_type ), prompt: "Filter by  type",include_blank: true, class: "form-control", onchange: 'this.form.submit();'
+      .col-xs-2
+        = select_tag "by_aesthetic", options_for_select(Product.unique_aesthetic ), prompt: "Filter by aesthetic",include_blank: true, class: "form-control", onchange: 'this.form.submit();'
       .col-xs-4
-        = text_field_tag :search_products, nil, placeholder: "Search products ...", class: "form-control"
+        = text_field_tag :search_products, nil, placeholder: "Try typing anything...", class: "form-control", onchange: 'this.form.submit();'
+        /= text_field_tag :by_type, nil, placeholder: "Search products ...", class: "form-control"
+
       = submit_tag "Search / Reset", class: "btn btn-info btn-xs search-btn",style: ""
 
   br

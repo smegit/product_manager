@@ -24,6 +24,9 @@ class Product < ApplicationRecord
   pg_search_scope :search_products,
                   against: %i[model_number type description],
                   using: { tsearch: { prefix: true } }
+  scope :by_type, -> type { where(type: type) }
+  scope :by_aesthetic, -> aesthetic { where(aesthetic: aesthetic) }
+
   validates :model_number, presence: true, uniqueness: { case_sensitive: false }
   validates :type, presence: true, exclusion: { in: %w(Product), message: ": Please select product type." }
   before_validation :assign_type
@@ -37,6 +40,15 @@ class Product < ApplicationRecord
   def assign_type
     self.type = self.class.to_s if type.blank?
   end
+
+  def self.unique_type
+    self.distinct.pluck(:type) 
+  end
+
+  def self.unique_aesthetic
+    self.distinct.pluck(:aesthetic).reject { |x| x.to_s.empty? }
+  end
+
 end
 
 

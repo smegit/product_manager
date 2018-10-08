@@ -2,6 +2,8 @@ class ProductsController < BaseController
   before_action :load_product, only: %i[show edit update destroy history]
   before_action :set_paper_trail_whodunnit
   has_scope :search_products
+  has_scope :by_type
+  has_scope :by_aesthetic
   def index
     @products = apply_scopes(Product).page(params[:page]).per(100).order(type: :asc)
     # puts Feature.all

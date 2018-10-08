@@ -7,6 +7,10 @@ class Controller extends BaseController {
         bindModelSelectionModal.call(this);
     }
 
+    onSearchKeyUp() {
+        console.log('onSearchKeyUp called');
+    }
+
 };
 
 let bindModelSelectionModal = function () {
