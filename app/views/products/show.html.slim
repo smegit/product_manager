@@ -147,9 +147,16 @@
   .row
     .col-xs-12
       - if @product.file_attachments.any?
-        ul
-          - @product.file_attachments.each do |file|
-            li = link_to "#{file.attachment.file.filename}", file.attachment.url, target: '_blank'
+        table class="table table-sm"
+          tr 
+            th File Name
+            th File Type
+            th Description
+          - for file in @product.file_attachments
+            tr 
+              td = link_to "#{file.attachment.file.filename}", file.attachment.url, target: '_blank'
+              td = file.file_type
+              td = file.description
       - else
         p = "No Documents Uploaded."
 

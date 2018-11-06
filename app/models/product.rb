@@ -35,6 +35,15 @@ class Product < ApplicationRecord
     own_papertrail_history = papertrail_history || []
   end
 
+  def self.to_csv
+    attributes = %w{id model_number type description aesthetic dimensions finish supplied_accessories optional_accessories safety power warranty status notes ean cover_image price }
+    CSV.generate(headers: true) do |csv|
+      csv << attributes
+      all.each do |product|
+        csv<< attributes.map{ |attr| product.send(attr) }
+      end
+    end
+  end
 
   private
   def assign_type

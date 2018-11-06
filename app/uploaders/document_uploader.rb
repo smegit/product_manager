@@ -9,7 +9,7 @@ class DocumentUploader < CarrierWave::Uploader::Base
   end
 
   def store_dir
-    puts "#{model.class.to_s.underscore} #{mounted_as}   #{model.id}"
+    puts " path___ #{model.class.to_s.underscore} #{mounted_as}   #{model.id} #{model} "
     "#{ENV["HEROKU_RAILS_ENV"] || Rails.env}/uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
 

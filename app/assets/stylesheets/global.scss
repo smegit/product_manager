@@ -296,3 +296,16 @@ abbr[title], abbr[data-original-title] {
   height: 34px;
   padding: 0px 10px !important;
 }
+
+.export-btn {
+  background-color: #5bc0de;
+  color: white;
+ 
+  padding: 9px 11px;
+  border-radius: 3px;
+  text-align: center;
+  
+  text-decoration: none;
+  display: block;
+  float: right;
+}

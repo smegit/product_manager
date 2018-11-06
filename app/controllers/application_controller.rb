@@ -1,6 +1,8 @@
 class ApplicationController < ActionController::Base
   include Pundit
   include JsonResponseConcern
+  # added
+  include Response
 
   protect_from_forgery with: :exception
 

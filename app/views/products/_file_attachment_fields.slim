@@ -10,3 +10,6 @@
   - else
     = f.input :attachment, as: :file
     = f.input :attachment_cache, as: :hidden
+    /= f.input :file_type, as: :string
+    = f.input :file_type, as: :select, collection: SelectionControl.where(name: 'file type').map{ |ft| [ft.label, ft.value]}, label: "File Type"
+    = f.input :description, as: :string

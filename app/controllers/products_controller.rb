@@ -8,6 +8,11 @@ class ProductsController < BaseController
     @products = apply_scopes(Product).page(params[:page]).per(100).order(type: :asc)
     # puts Feature.all
     # puts Hash[Product.all.map { |product| [product.model_number, product.id] }]
+    respond_to do |format| 
+      format.html
+      format.csv { send_data @products.to_csv, filename: "products-#{Date.today}.csv" }
+      format.json {json_response(@products)}
+    end
   end
 
   def show

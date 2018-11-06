@@ -473,6 +473,12 @@ class PermittedParams < Struct.new(:params, :user)
 
         remove_attachment
 
+        file_type
+
+        type
+        
+        description
+
         _destroy
 
       ],
