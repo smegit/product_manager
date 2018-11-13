@@ -36,7 +36,7 @@ class Product < ApplicationRecord
   end
 
   def self.to_csv
-    attributes = %w{id model_number type description aesthetic dimensions finish supplied_accessories optional_accessories safety power warranty status notes ean cover_image price }
+    attributes = %w{id model_number type description aesthetic dimensions finish supplied_accessories optional_accessories safety power warranty status data notes ean price }
     CSV.generate(headers: true) do |csv|
       csv << attributes
       all.each do |product|
