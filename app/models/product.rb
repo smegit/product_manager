@@ -35,14 +35,30 @@ class Product < ApplicationRecord
     own_papertrail_history = papertrail_history || []
   end
 
-  def self.to_csv
-    attributes = %w{id model_number type description aesthetic dimensions finish supplied_accessories optional_accessories safety power warranty status data notes ean price }
+  def self.to_csv(ptype)
+
+    puts ptype
+    cl = Product.find_by(type: ptype)
+    #puts t
+    #puts p_type
+    # cl = Product.find_by(type: p_type)
+    # puts cl.class
+    #attributes = %w{id  model_number type description aesthetic dimensions finish supplied_accessories optional_accessories safety power warranty status data notes ean price }
+    attributes = Product.column_names() + cl.data.keys
+    attributes.delete('data')
+    #attributes << cl.data.keys
     CSV.generate(headers: true) do |csv|
       csv << attributes
-      all.each do |product|
+      #puts all
+      Product.where(type: ptype).each do |product|
+        #puts product
         csv<< attributes.map{ |attr| product.send(attr) }
       end
     end
+  end
+
+  def self.tester(num)
+    puts num
   end
 
   private
@@ -57,6 +73,7 @@ class Product < ApplicationRecord
   def self.unique_aesthetic
     self.distinct.pluck(:aesthetic).reject { |x| x.to_s.empty? }
   end
+
 
 end
 

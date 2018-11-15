@@ -20,8 +20,10 @@
       .col-xs-4
         = text_field_tag :search_products, nil, placeholder: "Try to type anything...", class: "form-control"
         /= text_field_tag :by_type, nil, placeholder: "Search products ...", class: "form-control"
-
-      = submit_tag "Search / Reset", class: "btn btn-info btn-xs search-btn",style: ""    
+      / .col-xs-2
+      /   = link_to "Export", products_path(format: "csv"), class: "export-btn"
+      .col-xs-2
+        = submit_tag "Search / Reset", class: "btn btn-info btn-xs search-btn",style: ""    
 
   br
   table.table class="table table-hover pointer"
@@ -50,7 +52,13 @@
         /     = link_to product_path(product), method: :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-default btn-xs' do
         /       i.fa.fa-trash-o
   .row
-    = link_to "Export", products_path(format: "csv"), class: "export-btn"
+      = form_tag(products_export_path(format: "csv"), method: :get) do
+        .col-xs-1
+          = label_tag 'Export'
+        .col-xs-2
+          = select_tag "p_type", options_for_select(Product.unique_type), prompt: "Select type to Export",include_blank: true, class: "form-control", onchange: 'this.form.submit();'
+        / .col-xs-2
+        /   = text_field_tag :by_type, params[:by_type]
   = paginate @products
   
 

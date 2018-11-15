@@ -67,6 +67,8 @@ Rails.application.routes.draw do
     
   end
 
+  get 'products_export', to: 'products#export', as: 'products_export'
+
   resources :features
 
 

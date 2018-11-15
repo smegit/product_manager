@@ -1,17 +1,36 @@
 class ProductsController < BaseController
   before_action :load_product, only: %i[show edit update destroy history]
+  # before_action :load_products_by_type, only: %i[export]
   before_action :set_paper_trail_whodunnit
   has_scope :search_products
   has_scope :by_type
+  
   has_scope :by_aesthetic
   def index
     @products = apply_scopes(Product).page(params[:page]).per(100).order(type: :asc)
     # puts Feature.all
     # puts Hash[Product.all.map { |product| [product.model_number, product.id] }]
+    t = params[:by_type].to_s
+    # puts params[:by_type].to_s
     respond_to do |format| 
       format.html
-      format.csv { send_data @products.to_csv, filename: "products-#{Date.today}.csv" }
+      #format.csv { send_data Product.where(type: "ClassicCompact").to_csv, filename: "products-#{Date.today}.csv" }
+      #format.csv { send_data Product.where(type: params[:by_type]).to_csv(:by_type), filename: "products-#{Date.today}.csv" }
+      
+      
+      format.csv { send_data apply_scopes(Product).to_csv, filename: "products-#{Date.today}.csv" }
       format.json {json_response(@products)}
+    end
+  end
+
+  def export
+    puts 'export called'
+    @ptype = params[:p_type]
+    respond_to do |format| 
+      #format.csv { send_data Product.where(type: "ClassicCompact").to_csv, filename: "products-#{Date.today}.csv" }
+      #format.csv { send_data Product.where(type: params[:by_type]).to_csv(:by_type), filename: "products-#{Date.today}.csv" }
+      format.json {json_response(@products)}
+      format.csv { send_data Product.to_csv(@ptype), filename: "products-#{@ptype}-#{Date.today}.csv" }
     end
   end
 
@@ -106,6 +125,12 @@ class ProductsController < BaseController
     @product = Product.friendly.find params[:id]
     # puts @product.approvals.to_yaml
   end
+
+  def load_products_by_type
+    @ptype = params[:by_type]
+    @products_by_type = Product.where(type: params[:by_type])
+  end
+
 
   def fetch_pdf
     case params.fetch('pdf', '')
