@@ -1,0 +1,74 @@
+
+tr
+  th Accessories
+  td
+    - if !dynamic_list(@product.accessories).nil?
+      ul
+        - dynamic_list(@product.accessories).each do |accessory|
+          li
+            =< "#{accessory}"
+
+
+tr
+  th Defrost
+  td = @product.defrost
+
+tr
+  th Energy Consumption
+  td = @product.energy_consumption
+
+tr
+  th Freezer Door
+  td = @product.freezer_door
+
+tr
+  th Gross Capacity
+  td
+    - if !dynamic_list(@product.gross_capacity).nil?
+      ul
+        - dynamic_list(@product.gross_capacity).each do |accessory|
+          li
+            =< "#{accessory}"
+
+
+tr
+  th Installation
+  td = @product.installation
+
+tr
+  th Lighting
+  td = @product.lighting
+
+tr
+  th Door Shelves
+  td
+    - if !dynamic_list(@product.door_shelves).nil?
+      ul
+        - dynamic_list(@product.door_shelves).each do |accessory|
+          li
+            =< "#{accessory}"
+
+
+tr
+  th Drawers
+  td
+    - if !dynamic_list(@product.drawers).nil?
+      ul
+        - dynamic_list(@product.drawers).each do |accessory|
+          li
+            =< "#{accessory}"
+
+
+tr
+  th Shelves
+  td
+    - if !dynamic_list(@product.shelves).nil?
+      ul
+        - dynamic_list(@product.shelves).each do |accessory|
+          li
+            =< "#{accessory}"
+
+
+tr
+  th Star Rating
+  td = @product.star_rating

@@ -1,0 +1,41 @@
+.row
+  .col-xs-6
+    = f.input :auto_menus
+  .col-xs-6
+    = f.input :capacity, collection: dynamic_list(@product.capacity), label: "Capacity", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
+  
+.row
+  .col-xs-6
+    = f.input :cavity
+  .col-xs-6
+    = f.input :cleaning
+
+.row
+  .col-xs-6
+    = f.input :cooking_levels
+  .col-xs-6
+    = f.input :device_display
+
+.row
+  .col-xs-6
+    = f.input :installation
+  .col-xs-6
+    = f.input :lighting
+
+
+.row
+  .col-xs-6
+    = f.input :microwave_power
+  .col-xs-6
+    = f.input :programmability
+
+
+.row
+  .col-xs-6
+    = f.input :total_functions, collection: dynamic_list(@product.total_functions), label: "Total Functions", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
+  .col-xs-6
+    = f.input :thermostat
+
+.row
+  .col-xs-6
+    = f.input :water_tank_capacity

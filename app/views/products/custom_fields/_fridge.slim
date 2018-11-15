@@ -1,0 +1,35 @@
+.row
+  .col-xs-6
+    = f.input :accessories, collection: dynamic_list(@product.accessories), label: "Accessories", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
+  .col-xs-6
+    = f.input :defrost
+
+.row
+  .col-xs-6
+    = f.input :energy_consumption
+  .col-xs-6
+    = f.input :freezer_door
+
+
+.row
+  .col-xs-6
+    = f.input :gross_capacity, collection: dynamic_list(@product.gross_capacity), label: "Gross Capacity", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
+  .col-xs-6
+    = f.input :installation
+
+.row
+  .col-xs-6
+    = f.input :lighting
+  .col-xs-6
+    = f.input :door_shelves, collection: dynamic_list(@product.door_shelves), label: "Door Shelves", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
+
+
+.row
+  .col-xs-6
+    = f.input :drawers, collection: dynamic_list(@product.drawers), label: "Drawers", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
+  .col-xs-6
+    = f.input :shelves, collection: dynamic_list(@product.shelves), label: "Shelves", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
+
+.row
+  .col-xs-6
+    = f.input :star_rating

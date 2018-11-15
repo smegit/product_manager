@@ -45,6 +45,11 @@ en:
       FreestandingCooker2:            'Freestanding Cooker 2'
       Rangehood:                      'Rangehood'
       CoffeeMachine:                  'Coffee Machine'
+      BBQ:                            'BBQ'
+      DolceCompact:                   'Dolce Compact'
+      DolceWine:                      'Dolce Wine'
+      Domino:                         'Domino'
+      Fridge:                         'Fridge'
 
 
 

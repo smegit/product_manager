@@ -1,0 +1,24 @@
+.row
+  .col-xs-6
+    = f.input :capacity, collection: dynamic_list(@product.capacity), label: "Capacity", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
+  .col-xs-6
+    = f.input :air_filter
+.row
+  .col-xs-6
+    = f.input :cooling
+  .col-xs-6
+    = f.input :device_display
+
+.row
+  .col-xs-6
+    = f.input :door
+  .col-xs-6
+    = f.input :installation
+.row
+  .col-xs-6
+    = f.input :shelves, collection: dynamic_list(@product.shelves), label: "Shelves", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
+  .col-xs-6
+    = f.input :lighting
+.row
+  .col-xs-6
+    = f.input :thermostat

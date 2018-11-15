@@ -1,0 +1,41 @@
+tr
+  th Air Filter
+  td = @product.air_filter
+
+
+tr
+  th Capacity
+  td
+    - if !dynamic_list(@product.capacity).nil?
+      ul
+        - dynamic_list(@product.capacity).each do |accessory|
+          li
+            =< "#{accessory}"
+tr
+  th Cooling
+  td = @product.cooling
+tr
+  th Device Display
+  td = @product.device_display
+
+tr
+  th Door
+  td = @product.door
+tr
+  th Installation
+  td = @product.installation 
+tr
+  th Lighting
+  td = @product.lighting 
+
+tr
+  th Shelves
+  td 
+    - if !dynamic_list(@product.shelves).nil?
+        ul
+          - dynamic_list(@product.shelves).each do |accessory|
+            li
+              =< "#{accessory}"
+tr
+  th Thermostat
+  td = @product.thermostat

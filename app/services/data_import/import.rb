@@ -453,6 +453,9 @@ module DataImport
         :nb_shelves,
         :nb_door_shelves,
         :auxiliary_functions,
+        :door_shelves,
+        :shelves,
+        :drawers
 
 
       ].include?(key)
@@ -690,6 +693,7 @@ module DataImport
         :quote_display,
         :cavity,
         :temperature,
+        :gas_output
 
 
 

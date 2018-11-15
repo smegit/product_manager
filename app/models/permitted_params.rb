@@ -314,6 +314,9 @@ class PermittedParams < Struct.new(:params, :user)
       :cavity,
       :drawer,
       :power_supply,
+      :air_filter,
+      :cooling,
+
       accessories: [], 
       nb_of_drawers: [], 
       nb_drawers: [], 
@@ -323,6 +326,10 @@ class PermittedParams < Struct.new(:params, :user)
       timers: [],
       functions: [],
       auxiliary_functions: [],
+      shelves: [],
+      door_shelves: [],
+      drawers: [],
+      
       
 
       # added end
