@@ -52,7 +52,8 @@ class Product < ApplicationRecord
       #puts all
       Product.where(type: ptype).each do |product|
         #puts product
-        csv<< attributes.map{ |attr| product.send(attr) }
+        #csv<< attributes.map{ |attr| product.send(attr) }
+        csv<< attributes.map{ |attr| product.send(attr).kind_of?(Array) ? product.send(attr).join("\n") : product.send(attr)}
       end
     end
   end
