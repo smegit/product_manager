@@ -46,14 +46,14 @@ class Product < ApplicationRecord
     #attributes = %w{id  model_number type description aesthetic dimensions finish supplied_accessories optional_accessories safety power warranty status data notes ean price }
     attributes = Product.column_names() + cl.data.keys
     attributes.delete('data')
+    attributes << 'features'
+  
     #attributes << cl.data.keys
     CSV.generate(headers: true) do |csv|
       csv << attributes
-      #puts all
       Product.where(type: ptype).each do |product|
-        #puts product
-        #csv<< attributes.map{ |attr| product.send(attr) }
-        csv<< attributes.map{ |attr| product.send(attr).kind_of?(Array) ? product.send(attr).join("\n") : product.send(attr)}
+        #csv<< attributes.map{ |attr| product.send(attr).kind_of?(Array) ? product.send(attr).join("\n") : product.send(attr)}
+        csv<< attributes.map{ |attr| attr == 'features' ? product.send(attr).pluck('name').join("\n") : (product.send(attr).kind_of?(Array) ? product.send(attr).join("\n") : product.send(attr))}
       end
     end
   end
