@@ -696,6 +696,8 @@ module DataImport
         :gas_output,
         :bowl_dimensions,
         :sink_volume,
+        :air_filter,
+        :cooling
 
 
       ].include?(key)
