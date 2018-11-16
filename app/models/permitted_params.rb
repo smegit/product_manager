@@ -316,6 +316,8 @@ class PermittedParams < Struct.new(:params, :user)
       :power_supply,
       :air_filter,
       :cooling,
+      :bowl_dimensions,
+      :sink_volume,
 
       accessories: [], 
       nb_of_drawers: [], 

@@ -693,8 +693,9 @@ module DataImport
         :quote_display,
         :cavity,
         :temperature,
-        :gas_output
-
+        :gas_output,
+        :bowl_dimensions,
+        :sink_volume,
 
 
       ].include?(key)

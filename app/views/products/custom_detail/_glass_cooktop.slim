@@ -1,0 +1,23 @@
+tr
+  th Capacity
+  td
+    - if !dynamic_list(@product.capacity).nil?
+      ul
+        - dynamic_list(@product.capacity).each do |accessory|
+          li
+            =< "#{accessory}"
+
+tr
+  th Gas Connection
+  td
+    - if !dynamic_list(@product.gas_connection).nil?
+      ul
+        - dynamic_list(@product.gas_connection).each do |accessory|
+          li
+            =< "#{accessory}"
+tr
+  th Ignition
+  td = @product.ignition
+tr
+  th Installation
+  td = @product.installation

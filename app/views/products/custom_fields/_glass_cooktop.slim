@@ -1,0 +1,11 @@
+.row
+  .col-xs-6
+    = f.input :capacity, collection: dynamic_list(@product.capacity), label: "Capacity", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
+  .col-xs-6
+    = f.input :gas_connection, collection: dynamic_list(@product.gas_connection), label: "Gas Connections", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
+
+.row
+  .col-xs-6
+    = f.input :ignition
+  .col-xs-6
+    = f.input :installation

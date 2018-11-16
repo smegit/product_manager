@@ -1,0 +1,16 @@
+tr
+  th Accessories
+  td
+    - if !dynamic_list(@product.accessories).nil?
+      ul
+        - dynamic_list(@product.accessories).each do |accessory|
+          li
+            =< "#{accessory}"
+
+tr
+  th Bowl Dimensions
+  td = @product.bowl_dimensions
+
+tr
+  th Sink Volume
+  td = @product.sink_volume

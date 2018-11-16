@@ -1,0 +1,8 @@
+.row
+  .col-xs-6
+    = f.input :accessories, collection: dynamic_list(@product.accessories), label: "Accessories", input_html: { data: { toggle: 'multi-select2-accessories' }, multiple: true }
+.row
+  .col-xs-6
+    = f.input :bowl_dimensions
+  .col-xs-6
+    = f.input :sink_volume

@@ -39,3 +39,5 @@
 .row
   .col-xs-6
     = f.input :water_tank_capacity
+  .col-xs-6
+    = f.input :function_list, collection: Options::Functions::Types.select_form, label: "Choose Functions", input_html: { data: { toggle: 'multi-select2-fixed' }, multiple: true }
