@@ -1,0 +1,397 @@
+id,model_number,type,description,aesthetic,dimensions,finish,supplied_accessories,optional_accessories,safety,power,warranty,status,created_at,updated_at,slug,notes,ean,cover_image,price,door,capacity,cleaning,lighting,gas_input,door_glass,thermostat,installation,description_2,function_list,cooking_levels,device_display,interior_finish,programmability,total_functions,features
+715,TRA93BL,VictoriaFreestandingCooker2,Victoria 90cm Thermoseal Freestanding Cooker,,898mmW x 895 - 910mmH x 598mmD (Height excludes 135mm splashback),black enamelled metal,"1 x Cast-iron wok stand
+1 x Cast-iron moka stand","PRTX - Pizza Stone
+PPR2 - Gourmet Cooking Stone
+PALPZ - Single-handle pizza paddle
+38508/510 - Baking Dish
+GT1P-2 - Partial telescopic guides
+GT1T-2 - Total telescopic guides",Flame failure device fitted to each burner,"220-240V, 50/60Hz,8300W,34.6A Connection",Two years parts and Labour,"",16/11/2018,16/11/2018,tra93bl,"","","",0.0,Side opening,"6 burners
+Front left (wok) 15.2 mj/hr
+Rear left 3.9 mj/hr
+Front centre 3.9 mj/hr
+Rear centre 7.5 mj/hr
+Front right 7.5 mj/hr
+Rear right 12 mj/hr",Vapour Clean,1 x 40W halogen,"Set for natural gas, regulator supplied, adapt for ULPG, no regulator required",Triple glazed,50-260°C,Freestanding,"","main_oven
+supercook
+fan_forced
+fan_grill
+convection
+grill
+half_grill
+vapour_clean
+defrost
+auxiliary_oven
+fan_forced
+grill
+grill",4,5 button LED programmer,"",Fully programmable,6,"ever clean enamel
+ever clean enamel
+ever clean enamel
+fully programmable
+fully programmable
+fully programmable
+15.2 mj/hr wok burner
+15.2 mj/hr wok burner
+15.2 mj/hr wok burner
+thermoseal
+thermoseal
+thermoseal
+separate grill
+separate grill
+separate grill"
+714,TRA4110P,VictoriaFreestandingCooker2,"110cm Victoria Thermoseal ,Freestanding Cooker",,"1100mmW x 895 - 920mmH x 600mmD,(Height excludes 135mm splashback)",panna (cream) enamelled metal,"1 x Cast-iron wok stand
+1 x Teppanyaki Plate
+1 x Metal scraper","PRTX - Pizza Stone
+PPR2 - Gourmet Cooking Stone
+PALPZ - Single-handle pizza paddle
+38508/510 - Baking Dish
+GT1P-2 - Partial telescopic guides
+GT1T-2 - Total telescopic guides",Flame failure device fitted to each burner,2700W,Two years parts and Labour,"",16/11/2018,16/11/2018,tra4110p,"","","",0.0,Side opening,"7 burners
+Right (wok) 16.5 mj/hr
+Center right front:  3.9 mj/hr
+Center right rear: 12 mj/hr
+Center left front: 12 mj/hr
+Center left rear: 3.9 mj/hr
+Left front: 7.5 mj/hr
+Left rear: 7.5 mj/hr",Vapour Clean,1 x 40W halogen,"Set for natural gas, regulator supplied, adapt for ULPG, no regulator required",Triple glazed,50-260°C,Freestanding,"Electric oven, gas hob","main_oven
+eco_fan_forced
+convection
+grill
+fan_grill
+bakers_function
+defrost
+auxiliary_oven
+fan_assisted
+convection
+base_heat
+fan_grill
+bakers_function
+defrost",4,5 button LED programmer,Ever Clean enamel,Fully programmable,6,"ever clean enamel
+ever clean enamel
+ever clean enamel
+fully programmable
+fully programmable
+fully programmable
+thermoseal
+thermoseal
+thermoseal
+separate grill
+separate grill
+separate grill
+16.5 mj/hr wok burner
+16.5 mj/hr wok burner
+16.5 mj/hr wok burner"
+719,TR4110IPG,VictoriaFreestandingCooker2,"110cm Victoria Thermoseal ,Freestanding Cooker",,"1100mmW x 895 - 910mmH x 600mmD,(Height excludes 135mm splashback)",pastel green enamelled metal,1 x Scraper,"PRTX - Pizza Stone
+PPR2 - Gourmet Cooking Stone
+PALPZ - Single-handle pizza paddle
+38508/510 - Baking Dish
+GT1P-2 - Partial telescopic guides
+GT1T-2 - Total telescopic guides","Thermal protection
+ residual heat indicators",2700W,Two years parts and Labour,"",16/11/2018,16/11/2018,tr4110ipg,"","","",0.0,Side opening,"5 zones
+Front left 175mmØ 1300W/1400W boost
+Rear left 215mmØ 2300W/3000W boost
+Centre 265mmØ 2300W/3000W boost
+Front right 175mmØ 1300W/1400W boost
+Rear right 215mmØ 2300W/3000W boost",Vapour Clean,1 x 40W halogen,"",Triple glazed,50-260°C,Freestanding,"Electric oven, Induction hob","main_oven
+base_heat
+bakers_function
+convection
+fan_grill
+eco
+grill
+auxiliary_oven
+base_heat
+bakers_function
+convection
+fan_assisted
+fan_grill
+defrost",4,5 button LED programmer,Ever Clean enamel,Fully programmable,7,"ever clean enamel
+ever clean enamel
+ever clean enamel
+fully programmable
+fully programmable
+fully programmable
+thermoseal
+thermoseal
+thermoseal
+boost function
+boost function
+boost function
+separate grill
+separate grill
+separate grill"
+720,TR4110IRW,VictoriaFreestandingCooker2,"110cm Victoria Thermoseal ,Freestanding Cooker",,"1100mmW x 895 - 910mmH x 600mmD,(Height excludes 135mm splashback)",red wine enamelled metal,1 x Scraper,"PRTX - Pizza Stone
+PPR2 - Gourmet Cooking Stone
+PALPZ - Single-handle pizza paddle
+38508/510 - Baking Dish
+GT1P-2 - Partial telescopic guides
+GT1T-2 - Total telescopic guides","Thermal protection
+ residual heat indicators",2700W,Two years parts and Labour,"",16/11/2018,16/11/2018,tr4110irw,"","","",0.0,Side opening,"5 zones
+Front left 175mmØ 1300W/1400W boost
+Rear left 215mmØ 2300W/3000W boost
+Centre 265mmØ 2300W/3000W boost
+Front right 175mmØ 1300W/1400W boost
+Rear right 215mmØ 2300W/3000W boost",Vapour Clean,1 x 40W halogen,"",Triple glazed,50-260°C,Freestanding,"Electric oven, Induction hob","main_oven
+base_heat
+bakers_function
+convection
+fan_grill
+eco
+grill
+auxiliary_oven
+base_heat
+bakers_function
+convection
+fan_assisted
+fan_grill
+defrost",4,5 button LED programmer,Ever Clean enamel,Fully programmable,7,"ever clean enamel
+ever clean enamel
+ever clean enamel
+fully programmable
+fully programmable
+fully programmable
+thermoseal
+thermoseal
+thermoseal
+boost function
+boost function
+boost function
+separate grill
+separate grill
+separate grill"
+721,TR4110IWH,VictoriaFreestandingCooker2,"110cm Victoria Thermoseal ,Freestanding Cooker",,"1100mmW x 895 - 910mmH x 600mmD,(Height excludes 135mm splashback)",white enamelled metal,1 x Scraper,"PRTX - Pizza Stone
+PPR2 - Gourmet Cooking Stone
+PALPZ - Single-handle pizza paddle
+38508/510 - Baking Dish
+GT1P-2 - Partial telescopic guides
+GT1T-2 - Total telescopic guides","Thermal protection
+ residual heat indicators",2700W,Two years parts and Labour,"",16/11/2018,16/11/2018,tr4110iwh,"","","",0.0,Side opening,"5 zones
+Front left 175mmØ 1300W/1400W boost
+Rear left 215mmØ 2300W/3000W boost
+Centre 265mmØ 2300W/3000W boost
+Front right 175mmØ 1300W/1400W boost
+Rear right 215mmØ 2300W/3000W boost",Vapour Clean,1 x 40W halogen,"",Triple glazed,50-260°C,Freestanding,"Electric oven, Induction hob","main_oven
+base_heat
+bakers_function
+convection
+fan_grill
+eco
+grill
+auxiliary_oven
+base_heat
+bakers_function
+convection
+fan_assisted
+fan_grill
+defrost",4,5 button LED programmer,Ever Clean enamel,Fully programmable,7,"ever clean enamel
+ever clean enamel
+ever clean enamel
+fully programmable
+fully programmable
+fully programmable
+thermoseal
+thermoseal
+thermoseal
+boost function
+boost function
+boost function
+separate grill
+separate grill
+separate grill"
+718,TR4110IP,VictoriaFreestandingCooker2,"110cm Victoria Thermoseal ,Freestanding Cooker",,"1100mmW x 895 - 910mmH x 600mmD,(Height excludes 135mm splashback)",panna enamelled metal,1 x Scraper,"PRTX - Pizza Stone
+PPR2 - Gourmet Cooking Stone
+PALPZ - Single-handle pizza paddle
+38508/510 - Baking Dish
+GT1P-2 - Partial telescopic guides
+GT1T-2 - Total telescopic guides","Thermal protection
+ residual heat indicators",2700W,Two years parts and Labour,"",16/11/2018,16/11/2018,tr4110ip,"","","",0.0,Side opening,"5 zones
+Front left 175mmØ 1300W/1400W boost
+Rear left 215mmØ 2300W/3000W boost
+Centre 265mmØ 2300W/3000W boost
+Front right 175mmØ 1300W/1400W boost
+Rear right 215mmØ 2300W/3000W boost",Vapour Clean,1 x 40W halogen,"",Triple glazed,50-260°C,Freestanding,"Electric oven, Induction hob","main_oven
+base_heat
+bakers_function
+convection
+fan_grill
+eco
+grill
+auxiliary_oven
+base_heat
+bakers_function
+convection
+fan_assisted
+fan_grill
+defrost",4,5 button LED programmer,Ever Clean enamel,Fully programmable,7,"ever clean enamel
+ever clean enamel
+ever clean enamel
+fully programmable
+fully programmable
+fully programmable
+thermoseal
+thermoseal
+thermoseal
+boost function
+boost function
+boost function
+separate grill
+separate grill
+separate grill"
+722,TR4110IX,VictoriaFreestandingCooker2,"110cm Victoria Thermoseal ,Freestanding Cooker",,"1100mmW x 895 - 910mmH x 600mmD,(Height excludes 135mm splashback)",stainless steel,1 x Scraper,"PRTX - Pizza Stone
+PPR2 - Gourmet Cooking Stone
+PALPZ - Single-handle pizza paddle
+38508/510 - Baking Dish
+GT1P-2 - Partial telescopic guides
+GT1T-2 - Total telescopic guides","Thermal protection
+ residual heat indicators",2700W,Two years parts and Labour,"",16/11/2018,16/11/2018,tr4110ix,"","","",0.0,Side opening,"5 zones
+Front left 175mmØ 1300W/1400W boost
+Rear left 215mmØ 2300W/3000W boost
+Centre 265mmØ 2300W/3000W boost
+Front right 175mmØ 1300W/1400W boost
+Rear right 215mmØ 2300W/3000W boost",Vapour Clean,1 x 40W halogen,"",Triple glazed,50-260°C,Freestanding,"Electric oven, Induction hob","main_oven
+base_heat
+bakers_function
+convection
+fan_grill
+eco
+grill
+auxiliary_oven
+base_heat
+bakers_function
+convection
+fan_assisted
+fan_grill
+defrost",4,5 button LED programmer,Ever Clean enamel,Fully programmable,7,"ever clean enamel
+ever clean enamel
+ever clean enamel
+fully programmable
+fully programmable
+fully programmable
+thermoseal
+thermoseal
+thermoseal
+boost function
+boost function
+boost function
+separate grill
+separate grill
+separate grill"
+713,TRA4110BL,VictoriaFreestandingCooker2,"110cm Victoria Thermoseal ,Freestanding Cooker",,"1100mmW x 895 - 920mmH x 600mmD,(Height excludes 135mm splashback)",black enamelled metal,"1 x Cast-iron wok stand
+1 x Teppanyaki Plate
+1 x Metal scraper","PRTX - Pizza Stone
+PPR2 - Gourmet Cooking Stone
+PALPZ - Single-handle pizza paddle
+38508/510 - Baking Dish
+GT1P-2 - Partial telescopic guides
+GT1T-2 - Total telescopic guides",Flame failure device fitted to each burner,2700W,Two years parts and Labour,"",16/11/2018,16/11/2018,tra4110bl,"","","",0.0,Side opening,"7 burners
+Right (wok) 16.5 mj/hr
+Center right front:  3.9 mj/hr
+Center right rear: 12 mj/hr
+Center left front: 12 mj/hr
+Center left rear: 3.9 mj/hr
+Left front: 7.5 mj/hr
+Left rear: 7.5 mj/hr",Vapour Clean,1 x 40W halogen,"Set for natural gas, regulator supplied, adapt for ULPG, no regulator required",Triple glazed,50-260°C,Freestanding,"Electric oven, gas hob","main_oven
+eco_fan_forced
+convection
+grill
+fan_grill
+bakers_function
+defrost
+auxiliary_oven
+fan_assisted
+convection
+base_heat
+fan_grill
+bakers_function
+defrost",4,5 button LED programmer,Ever Clean enamel,Fully programmable,6,"ever clean enamel
+ever clean enamel
+ever clean enamel
+fully programmable
+fully programmable
+fully programmable
+thermoseal
+thermoseal
+thermoseal
+separate grill
+separate grill
+separate grill
+16.5 mj/hr wok burner
+16.5 mj/hr wok burner
+16.5 mj/hr wok burner"
+716,TRA93P,VictoriaFreestandingCooker2,Victoria 90cm Thermoseal Freestanding Cooker,,898mmW x 895 - 910mmH x 598mmD (Height excludes 135mm splashback),panna (cream) enamelled metal,"1 x Cast-iron wok stand
+1 x Cast-iron moka stand","PRTX - Pizza Stone
+PPR2 - Gourmet Cooking Stone
+PALPZ - Single-handle pizza paddle
+38508/510 - Baking Dish
+GT1P-2 - Partial telescopic guides
+GT1T-2 - Total telescopic guides",Flame failure device fitted to each burner,"220-240V, 50/60Hz,8300W,34.6A Connection",Two years parts and Labour,"",16/11/2018,16/11/2018,tra93p,"","","",0.0,Side opening,"6 burners
+Front left (wok) 15.2 mj/hr
+Rear left 3.9 mj/hr
+Front centre 3.9 mj/hr
+Rear centre 7.5 mj/hr
+Front right 7.5 mj/hr
+Rear right 12 mj/hr",Vapour Clean,1 x 40W halogen,"Set for natural gas, regulator supplied, adapt for ULPG, no regulator required",Triple glazed,50-260°C,Freestanding,"","main_oven
+supercook
+fan_forced
+fan_grill
+convection
+grill
+half_grill
+vapour_clean
+defrost
+auxiliary_oven
+fan_forced
+grill
+grill",4,5 button LED programmer,"",Fully programmable,6,"ever clean enamel
+ever clean enamel
+ever clean enamel
+fully programmable
+fully programmable
+fully programmable
+15.2 mj/hr wok burner
+15.2 mj/hr wok burner
+15.2 mj/hr wok burner
+thermoseal
+thermoseal
+thermoseal
+separate grill
+separate grill
+separate grill"
+717,TR4110IBL,VictoriaFreestandingCooker2,"110cm Victoria Thermoseal ,Freestanding Cooker",,"1100mmW x 895 - 910mmH x 600mmD,(Height excludes 135mm splashback)",black enamelled metal,1 x Scraper,"PRTX - Pizza Stone
+PPR2 - Gourmet Cooking Stone
+PALPZ - Single-handle pizza paddle
+38508/510 - Baking Dish
+GT1P-2 - Partial telescopic guides
+GT1T-2 - Total telescopic guides","Thermal protection
+ residual heat indicators",2700W,Two years parts and Labour,"",16/11/2018,16/11/2018,tr4110ibl,"","","",0.0,Side opening,"5 zones
+Front left 175mmØ 1300W/1400W boost
+Rear left 215mmØ 2300W/3000W boost
+Centre 265mmØ 2300W/3000W boost
+Front right 175mmØ 1300W/1400W boost
+Rear right 215mmØ 2300W/3000W boost",Vapour Clean,1 x 40W halogen,"",Triple glazed,50-260°C,Freestanding,"Electric oven, Induction hob","main_oven
+base_heat
+bakers_function
+convection
+fan_grill
+eco
+grill
+auxiliary_oven
+base_heat
+bakers_function
+convection
+fan_assisted
+fan_grill
+defrost",4,5 button LED programmer,Ever Clean enamel,Fully programmable,7,"ever clean enamel
+ever clean enamel
+ever clean enamel
+fully programmable
+fully programmable
+fully programmable
+thermoseal
+thermoseal
+thermoseal
+boost function
+boost function
+boost function
+separate grill
+separate grill
+separate grill"

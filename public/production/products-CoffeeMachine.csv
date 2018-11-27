@@ -1,0 +1,182 @@
+id,model_number,type,description,aesthetic,dimensions,finish,supplied_accessories,optional_accessories,safety,power,warranty,status,created_at,updated_at,slug,notes,ean,cover_image,price,size,cleaning,lighting,functions,thermostat,installation,pump_pressure,device_display,programmability,water_tank_capacity,coffee_bean_capacity,features
+15,CMSC45,CoffeeMachine,60cm Linear Built-in Coffee Machine,,595mmW x 455mmH x 381mmD,Fingerprint proof stainless steel Stopsol® reflective glass,"frothing nozzle for cappuccino
+adjustable coffee dispenser
+drip tray","",no,"1350W, 10A, 3-pin plug",Two years parts and labour,"",02/10/2018,02/10/2018,cmsc45,"","","",0.0,"",Automatic rinsing and descaling operation,2 x LED Lights,"fully automatic coffee preparation (for regular or double coffee)
+steam function (cappuccino
+ latte)
+hot water function (tea or other hot drinks)
+rinsing function",3 x adjustable temperatures,"Flush fitment, built-in",15 bar,Multilanguage LCD,"5 coffee strength levels
+extra light
+light
+medium
+strong
+extra strong
+Water quantity:
+short/espresso
+medium
+long",1.8 litres,220 grams,"fully automatic
+15 bar pressure
+choice of coffee strength and length
+fully adjustable parameters incl. temperature
+easy to use milk frother gives barista results"
+16,CMSC45B,CoffeeMachine,60cm Linear Built-in Coffee Machine - Bianco,,595mmW x 455mmH x 381mmD,Fingerprint proof stainless steel White Stopsol® reflective glass,"frothing nozzle for cappuccino
+adjustable coffee dispenser
+drip tray","",no,"1350W, 10A, 3-pin plug",Two years parts and labour,"",02/10/2018,02/10/2018,cmsc45b,"","","",0.0,"",Automatic rinsing and descaling operation,2 x LED Lights,"fully automatic coffee preparation (for regular or double coffee)
+steam function (cappuccino
+ latte)
+hot water function (tea or other hot drinks)
+rinsing function",3 x adjustable temperatures,"Flush fitment, built-in",15 bar,Multilanguage LCD,"5 coffee strength levels
+extra light
+light
+medium
+strong
+extra strong
+Water quantity:
+short/espresso
+medium
+long",1.8 litres,220 grams,"fully automatic
+15 bar pressure
+choice of coffee strength and length
+fully adjustable parameters incl. temperature
+easy to use milk frother gives barista results"
+17,CMSC45NE,CoffeeMachine,60cm Linear Built-in Coffee Machine - Nero,,595mmW x 455mmH x 381mmD,Fingerprint proof stainless steel Black Stopsol® reflective glass,"frothing nozzle for cappuccino
+adjustable coffee dispenser
+drip tray","",no,"1350W, 10A, 3-pin plug",Two years parts and labour,"",02/10/2018,02/10/2018,cmsc45ne,"","","",0.0,"",Automatic rinsing and descaling operation,2 x LED Lights,"fully automatic coffee preparation (for regular or double coffee)
+steam function (cappuccino
+ latte)
+hot water function (tea or other hot drinks)
+rinsing function",3 x adjustable temperatures,"Flush fitment, built-in",15 bar,Multilanguage LCD,"5 coffee strength levels
+extra light
+light
+medium
+strong
+extra strong
+Water quantity:
+short/espresso
+medium
+long",1.8 litres,220 grams,"fully automatic
+15 bar pressure
+choice of coffee strength and length
+fully adjustable parameters incl. temperature
+easy to use milk frother gives barista results"
+18,CMSC451,CoffeeMachine,60cm Linear Built-in Coffee Machine,,595mmW x 455mmH x 381mmD,Fingerprint proof stainless steel Stopsol® reflective glass,"frothing nozzle for cappuccino
+adjustable coffee dispenser
+drip tray","",no,"1350W, 10A, 3-pin plug",Two years parts and labour,"",02/10/2018,02/10/2018,cmsc451,"","","",0.0,"",Automatic rinsing and descaling operation,2 x LED Lights,"fully automatic coffee preparation (for regular or double coffee)
+steam function (cappuccino
+ latte)
+hot water function (tea or other hot drinks)
+rinsing function
+Automatic milk frother",3 x adjustable temperatures,"Flush fitment, built-in",15 bar,Multilanguage LCD,"5 coffee strength levels
+extra light
+light
+medium
+strong
+extra strong
+Water quantity:
+short/espresso
+medium
+long",1.8 litres,220 grams,"fully automatic
+15 bar pressure
+choice of coffee strength and length
+fully adjustable parameters incl. temperature
+automatic milk frother gives barista results"
+19,CMSC451B,CoffeeMachine,60cm Linear Built-in Coffee Machine - Bianco,,595mmW x 455mmH x 381mmD,Fingerprint proof stainless steel White Stopsol® reflective glass,"frothing nozzle for cappuccino
+adjustable coffee dispenser
+drip tray","",no,"1350W, 10A, 3-pin plug",Two years parts and labour,"",02/10/2018,02/10/2018,cmsc451b,"","","",0.0,"",Automatic rinsing and descaling operation,2 x LED Lights,"fully automatic coffee preparation (for regular or double coffee)
+steam function (cappuccino
+ latte)
+hot water function (tea or other hot drinks)
+rinsing function
+Automatic milk frother",3 x adjustable temperatures,"Flush fitment, built-in",15 bar,Multilanguage LCD,"5 coffee strength levels
+extra light
+light
+medium
+strong
+extra strong
+Water quantity:
+short/espresso
+medium
+long",1.8 litres,220 grams,"fully automatic
+15 bar pressure
+choice of coffee strength and length
+fully adjustable parameters incl. temperature
+automatic milk frother gives barista results"
+20,CMSC451NE,CoffeeMachine,60cm Linear Built-in Coffee Machine - Nero,,595mmW x 455mmH x 381mmD,Fingerprint proof stainless steel Black Stopsol® reflective glass,"frothing nozzle for cappuccino
+adjustable coffee dispenser
+drip tray","",no,"1350W, 10A, 3-pin plug",Two years parts and labour,"",02/10/2018,02/10/2018,cmsc451ne,"","","",0.0,"",Automatic rinsing and descaling operation,2 x LED Lights,"fully automatic coffee preparation (for regular or double coffee)
+steam function (cappuccino
+ latte)
+hot water function (tea or other hot drinks)
+rinsing function
+Automatic milk frother",3 x adjustable temperatures,"Flush fitment, built-in",15 bar,Multilanguage LCD,"5 coffee strength levels
+extra light
+light
+medium
+strong
+extra strong
+Water quantity:
+short/espresso
+medium
+long",1.8 litres,220 grams,"fully automatic
+15 bar pressure
+choice of coffee strength and length
+fully adjustable parameters incl. temperature
+automatic milk frother gives barista results"
+21,CMS4601NR,CoffeeMachine,45cm Dolce Stil Novo built in coffee machine,,595mmW x 455mmH x 415mmD,Black with Copper Trim,1 x Removable milk jug,"",Thermal protection,"220-240V, 50/60 Hz,1350W,5.6A connection",Five years parts and labour,"",02/10/2018,02/10/2018,cms4601nr,"","","",0.0,"",Automatic descaling,2 x LED,"Fully automatic coffee preparation 
+Automatic cappuccino maker
+ with adjustable froth
+Ground coffee option
+Hot water function (tea or other hot drinks)
+Rinsing function",3 x Adjustable temperatures,Built-in,15 bar,Clear text display - touch control,"5 Preset coffee strengths: single or double shot
+extra light
+ light
+ medium
+ strong
+ extra strong
+3 Variable coffee lenghts: 
+short/espresso
+ medium
+ long",1.8L,220g,"15 bar pressure
+adjustable strength
+adjustable length
+adjustable temperature
+automatic steam function"
+22,CMS4601NX,CoffeeMachine,45cm Dolce Stil Novo built in coffee machine,,595mmW x 455mmH x 415mmD,Black with stainless steel trim,1 x Removable milk jug,"",Thermal protection,"220-240V, 50/60 Hz,1350W,5.6A connection",Five years parts and labour,"",02/10/2018,02/10/2018,cms4601nx,"","","",0.0,"",Automatic descaling,2 x LED,"Fully automatic coffee preparation 
+Automatic cappuccino maker
+ with adjustable froth
+Ground coffee option
+Hot water function (tea or other hot drinks)
+Rinsing function",3 x Adjustable temperatures,Built-in,15 bar,Clear text display - touch control,"5 Preset coffee strengths: single or double shot
+extra light
+ light
+ medium
+ strong
+ extra strong
+3 Variable coffee lenghts: 
+short/espresso
+ medium
+ long",1.8L,220g,"15 bar pressure
+adjustable strength
+adjustable length
+adjustable temperature
+automatic steam function"
+23,CMS6451X,CoffeeMachine,60cm Classic built in coffeee machine,,595mmW x 455mmH x 381mmD,"Fingerprint proof stainless steel 
+Eclipse high visibility black glass",1 x Removable milk jug,"",Thermal protection,"220-240V, 50/60 Hz,1350W,10A connection",Two years parts and labour,NEW,02/10/2018,02/10/2018,cms6451x,"","","",0.0,"Fascia,Drawer,Capacity,Installation,Power supply,Temperature,Timer,Warranty,Notes",Automatic descaling,2 x LED,"Fully automatic coffee preparation 
+Automatic cappuccino maker
+ with adjustable froth
+Ground coffee option
+Hot water function (tea or other hot drinks)
+Rinsing function",3 x Adjustable temperatures,Built-in,15 bar,LCD,"5 Preset coffee strengths: single or double shot
+extra light
+ light
+ medium
+ strong
+ extra strong
+3 Variable coffee lenghts: 
+short/espresso
+ medium
+ long",1.8L,220g,"15 bar pressure
+easy to use milk frother gives barista results
+choice of coffee strength
+choice of coffee length
+fully adjustable parameters incl temperature"

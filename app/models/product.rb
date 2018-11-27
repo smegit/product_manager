@@ -68,7 +68,7 @@ class Product < ApplicationRecord
   end
 
   def self.unique_type
-    self.distinct.pluck(:type) 
+    self.distinct.order(:type).pluck(:type) 
   end
 
   def self.unique_aesthetic

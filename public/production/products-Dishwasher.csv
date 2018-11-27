@@ -1,0 +1,586 @@
+id,model_number,type,description,aesthetic,dimensions,finish,supplied_accessories,optional_accessories,safety,power,warranty,status,created_at,updated_at,slug,notes,ean,cover_image,price,size,noise,style,timer,drying,baskets,capacity,filtration,wash_system,water_usage,energy_usage,feature_list,temperatures,water_rating,energy_rating,function_list,programs_list,device_display,total_programs,water_softener,water_connection,quick_programs_list,end_of_cycle_indicator,features
+24,DWAFIP364,Dishwasher,60cm Professional Series Fully Integrated dishwasher,,"","","","",Active Acquastop,"240V, 50/60Hz,5450W,1N, 32A / 3N, 16A",Two years parts and labour,"",02/10/2018,02/10/2018,dwafip364,"","","",0.0,600mmW x 820mmH x 570mmD,45 dBA,Fully-integrated,"1-9 Hours, with automatic soak",Natural condenser drying with SmartDry (Enersave),3 Levels,15 Place settings,Stainless steel 5 stage filter,Orbital Wash System,11.6 Litres,140 kWh/year,"16 Minute Wash
+4 Professional wash settings
+Aquatest turbidity sensor
+½ Load FlexiZone
+Fully adjustable baskets
+self-balancing hinges","38º, 45º, 55º, 65º, 70º C",5 Star,4 Star,"","Soak
+Normal ECO
+Eco
+Auto 60-70
+Ultraclean
+Pro Glasses
+Ultra Rapid
+Universal
+Intensive",LED,5 + 4 Professional programs,No,Hot or cold Water Connection (60ºC Max),"",Acoustic signal,"active acquastop
+5 stage filtration system
+orbital wash system
+professional programs
+16 minute wash"
+25,DWAFI314,Dishwasher,60cm Fully Integrated dishwasher,,"","","","",Total Aquastop,"230-240V, 50 Hz,1900 W,10A",Two years parts and labour,"",02/10/2018,02/10/2018,dwafi314,"","","",0.0,598mmW x 820mmH minimum x 550mmD (excluding door),47 dBA,Fully-integrated,3-6-9 hour delay timer,Natural condenser,3 Levels,14 Place settings,5-stage water filtration system,Orbital Wash System,9.6 Litres,243 kWh/year,"Delay start timer
+½ Load FlexiZone
+Height adjustable upper basket","45°, 50°, 65°, 70°C",5.5 Star,3.5 Star,"flexitab
+flexizone
+delay","Soak
+Normal ECO
+ECO
+Intensive 65°
+Super","",5 programs,No,Hot or cold Water Connection (60ºC Max),"","","5 stage filtration system
+orbital wash system
+total aquastop"
+26,DWAFI4510,Dishwasher,45cm Fully Integrated dishwasher,,"","","","",Active Acquastop,"230-240V, 50/60 Hz,1900W,10A",Two years parts and labour,"",02/10/2018,02/10/2018,dwafi4510,"","","",0.0,448mmW x 818-868mmH x 550mmD,48 Dba,Fully-integrated,"3-6-9-Hours, with automatic soak",natural condenser drying,2 Levels,10 Place settings,Stainless steel 5 stage filter,Swing wash system,11.3 Litres,226 kWh/year,"Compact size
+Half Load
+separate cutlery basket","45°, 50°, 65°, 70°C",3.5 Star,3 Star,"","Soak
+Normal ECO
+Eco
+Normal
+Super",LED Lights,5,No,Hot or cold Water Connection (60ºC Max),"",Acoustic signal,"active acquastop
+5 stage filtration system
+swing wash system"
+27,DWAFI6D15PO,Dishwasher,60cm Diamond Series Fully Integrated Push to open dishwasher,,"","","","",Active Acquastop,"230-240V, 50/60 Hz,1800W,10A",Two years parts and labour,"",02/10/2018,02/10/2018,dwafi6d15po,"","","",0.0,598mmW x 858-928mmH x 547mmD,42 dBA,Fully-integrated,"Up to 24 hours, with automatic soak",Natural condenser drying with SmartDry (Enersave),3 Levels,15 Place settings,Stainless steel 5 stage filter,Planetary Wash System,9.7 Litres,243 kWh/year,"Push to Open
+Internal LED lights
+Aquatest turbidity sensor
+Quicktime wash setting for each program
+½ Load FlexiZone
+Fully adjustable baskets
+Self balancing hinges","38°, 45°, 50°, 65°, 70°C",6 Star,4 Star,"quicktime
+flexizone
+delay
+flexitab
+enersave
+flexizone
+delay
+flexitab
+enersave","Soak
+Normal ECO
+Eco
+Auto 60-70
+Ultraclean
+Normal ECO
+Eco
+Auto 60-70
+Ultraclean",LED,5 + 5 Quick Programs,Yes - electronically adjustable,Hot or cold Water Connection (60ºC Max),"Rapid 27
+Normal Quick
+Eco Quick
+Daily Quick
+Strong and Fast
+Normal Quick
+Eco Quick
+Daily Quick
+Strong and Fast",ActiveLight,"planetary wash system
+tall tank
+active acquastop
+5 stage filtration system
+smartdry (enersave)
+flexi duo cutlery tray"
+28,DWAFI6D15T,Dishwasher,60cm Diamond Series Fully Integrated dishwasher,,"","","","",Active Acquastop,"230-240V, 50/60 Hz,1800W,10A",Two years parts and labour,"",02/10/2018,02/10/2018,dwafi6d15t,"","","",0.0,598mmW x 860-930mmH x 547mmD,42 dBA,Fully-integrated,"Up to 24 hours, with automatic soak",Natural condenser drying with SmartDry (Enersave),3 Levels,15 Place settings,Stainless steel 5 stage filter,Planetary Wash System,9.7 Litres,243 kWh/year,"Internal LED lights
+Aquatest turbidity sensor
+Quicktime wash setting for each program
+½ Load FlexiZone
+Fully adjustable baskets
+Self balancing hinges","38°, 45°, 50°, 65°, 70°C",6 Star,4 Star,"quicktime
+flexizone
+delay
+flexitab
+enersave
+flexizone
+delay
+flexitab
+enersave","Soak
+Normal ECO
+Eco
+Auto 60-70
+Ultraclean
+Normal ECO
+Eco
+Auto 60-70
+Ultraclean",LED,5 + 5 Quick Programs,Yes - electronically adjustable,Hot or cold Water Connection (60ºC Max),"Rapid 27
+Normal Quick
+Eco Quick
+Daily Quick
+Strong and Fast
+Normal Quick
+Eco Quick
+Daily Quick
+Strong and Fast",ActiveLight,"planetary wash system
+tall tank
+active acquastop
+5 stage filtration system
+smartdry (enersave)
+flexi duo cutlery tray"
+29,DWAFI6214,Dishwasher,60cm Fully-Integrated Dishwasher,,"",Black,"","",Total Acquastop,"220-240V, 50/60Hz,1800W,10A",Two years parts and labour,"",02/10/2018,02/10/2018,dwafi6214,"","","",0.0,598mmW x x 818-888mmH x 570mmD,47dBA,Fully-integrated,"3-6-9 hours, with automatic soak",Natural condenser drying,2 Levels + cutlery basket,14 Place settings,Stainless steel 5 stage filter,Orbital Wash System,11.3 Litres,267 kWh/year,"Upper basket height adjustment (3 levels)
+1/2 load FlexiZone
+Self Balancing Hinges","45ºC, 50ºC, 65ºC, 70ºC",5 Star,3.5 Star,"","",LED,5,No,Hot or cold Water Connection (60ºC Max),"",Acoustic signal,"active acquastop
+orbital wash system
+child safety lock
+height adjustable top basket (3 levels)
+1/2 load flexizone"
+30,DWAFI6314,Dishwasher,60cm Fully Integrated dishwasher,,"","","","",Active Acquastop,"230-240V, 50/60 Hz,1800 W,10A",Two years parts and labour,"",02/10/2018,02/10/2018,dwafi6314,"","","",0.0,598mmW x 818mm-888mmH x 570mmD,47 dBA,Fully-integrated,"3-6-9 Hours, with automatic soak",Natural condenser drying with SmartDry (Enersave),3 Levels,14 Place settings,Stainless steel 5 stage filter,Orbital Wash System,9.7 Litres,243 kWh/year,"Quicktime wash setting for each program
+½ Load FlexiZone
+Height adjustable upper basket
+Self balancing hinges","45°, 50°, 65°, 70°C",5.5 Star,3.5 Star,"flexitab
+flexizone
+quicktime
+delay","Soak
+Normal ECO
+Eco
+Intensive 65°
+Ultraclean",LED lights,5 + 5 Quick Programs,No,Hot or cold Water Connection (60ºC Max),"Rapid 27
+Eco Quick
+Daily Quick
+Normal Quick
+Strong and Fast",Acoustic signal,"active acquastop
+5 stage filtration system
+orbital wash system
+cutlery tray"
+31,DWAFI6315T,Dishwasher,60cm Fully Integrated dishwasher,,"","","","","Active Acquastop
+Contol Lock","230-240V, 50/60 Hz,1800W,10A",Two years parts and labour,"",02/10/2018,02/10/2018,dwafi6315t,"","","",0.0,598mmW x 858mm - 928mmH max x 547mmD,42 dBA,Fully-integrated,"Up to 9 hours, with automatic soak",Natural condenser drying with SmartDry (Enersave),3 Levels,15 Place settings,Stainless steel 5 stage filter,Orbital Wash System,9.7 Litres,243 kWh/year,"Aquatest turbidity sensor
+Quicktime wash setting for each program
+½ Load FlexiZone
+Fully adjustable upper and middle baskets
+Self balancing hinges","38°, 45°, 50°, 65°, 70°C",6 Star,4 Star,"quicktime
+flexizone
+delay
+flexitab
+enersave","Soak
+Normal ECO
+Eco
+Auto 60-70
+Ultraclean",LED,5 + 5 Quick Programs,Yes - with electronic setting,Hot or cold Water Connection (60ºC Max),"Rapid 27
+Normal Quick
+Eco Quick
+Daily Quick
+Strong and Fast","On display, with acoustic signal","tall tank
+active acquastop
+5 stage filtration system
+smartdry (enersave)
+orbital wash system
+cutlery tray"
+32,DWAFI75,Dishwasher,60cm Fully Integrated dishwasher,,"","","","",Total Aquastop,"230-240V, 50/60 Hz,0.73 kWh,10A",Two years parts and labour,"",02/10/2018,02/10/2018,dwafi75,"","","",0.0,559mmW x 578mmH x 550mmD,48 dBA,Fully-integrated,"Up to 9 hours, with automatic soak","","",7 place settings,5 stage self-cleaning filter,Orbital Wash System,8.4 Litres,162 kWh/year,"","38°, 45°, 50°, 65°, 70°C",3.5 Star,3 Stars,"","",Electronic display,10 programs,No,Hot or cold Water Connection (60ºC Max),"","","5 stage filtration system
+orbital wash system
+total aquastop"
+33,DWAI6D15XT,Dishwasher,60cm Diamond Series Semi Integrated dishwasher,,"","","","",Active Acquastop,"230-240V, 50/60 Hz,1800W,10A",Two years parts and labour,"",02/10/2018,02/10/2018,dwai6d15xt,"","","",0.0,598mmW x 860-930mmH x 547mmD,42 dBA,Semi-integrated,"Up to 24 hours, with automatic soak",Natural condenser drying with SmartDry (Enersave),3 Levels,15 Place settings,Stainless steel 5 stage filter,Planetary Wash System,9.7 Litres,243 kWh/year,"Internal LED lights
+Aquatest turbidity sensor
+Quicktime wash setting for each program
+½ Load FlexiZone
+Fully adjustable baskets
+Self balancing hinges","38°, 45°, 50°, 65°, 70°C",6 Star,5 Star,"quicktime
+flexizone
+delay
+flexitab
+enersave
+flexizone
+delay
+flexitab
+enersave","Soak
+Normal ECO
+Eco
+Auto 60-70
+Ultraclean
+Normal ECO
+Eco
+Auto 60-70
+Ultraclean",LCD,5 + 5 Quick Programs,No,Hot or cold Water Connection (60ºC Max),"Rapid 27
+Normal Quick
+Eco Quick
+Daily Quick
+Strong and Fast
+Normal Quick
+Eco Quick
+Daily Quick
+Strong and Fast",ActiveLight,"planetary wash system
+tall tank
+active acquastop
+5 stage filtration system
+smartdry (enersave)
+flexi duo cutlery tray"
+34,DWAI6214X,Dishwasher,60cm Semi-Integrated Dishwasher,,"",Stainless steel,"","","Child safety system (door lock)
+Total Acquastop","220-240V, 50/60Hz,1800W,10A",Two years parts and labour,"",02/10/2018,02/10/2018,dwai6214x,"","","",0.0,598mmW x 570mmD x 818-868mmH,49dBA,Semi-integrated,"3-6-9 hours, with automatic soak",Natural condenser drying,2 Levels + cutlery basket,14 Place settings,Stainless steel 5 stage filter,Orbital Wash System,11.3 litres,267 kWh/year,"Height adjustable upper basket
+Self balancing hinges","45ºC, 50ºC, 65ºC, 70ºC",5 Star,3.5 Star,"","",LED,5,No,Hot or cold Water Connection (60ºC Max),"",Acoustic signal,"active acquastop
+orbital wash system
+flexitabs
+self balancing hinges
+child safety lock"
+35,DWAI6314X,Dishwasher,60cm Semi Integrated dishwasher,,"","","","","Active Acquastop
+Child safety system (door lock)","230-240V, 50/60 Hz,1800W,10A,",Two years parts and labour,"",02/10/2018,02/10/2018,dwai6314x,"","","",0.0,598mmW x 818-868mmH x 570mmD,47 dBA,Semi-integrated,3-6-9-12 Hours,Natural condenser drying,3 Levels,14 Place settings,Stainless steel 5 stage filter,Orbital Wash System,9.7 Litres,243 kWh/year,"Quicktime wash setting for each program
+½ Load FlexiZone
+Height adjustable upper basket
+Self balancing hinges","45°, 50°, 65°, 70°C",5.5 Star,3.5 Star,"flexitab
+flexizone
+quicktime
+delay","Soak
+Normal ECO
+Eco
+Intensive 65°
+Ultraclean",LED Lights,5 + 5 Quick Programs,No,Hot or cold Water Connection (60ºC Max),"Rapid 27
+Eco Quick
+Daily Quick
+Normal Quick
+Strong and Fast",Acoustic signal,"active acquastop
+5 stage filtration system
+orbital wash system
+cutlery tray"
+57,ST201XA,Dishwasher,60cm Compact Dishwasher,,"",Stainless steel door and handle,"","",n.a,"220-240V, 50/60Hz,1280W,10A",Two years parts and labour,"",02/10/2018,02/10/2018,st201xa,"","","",0.0,590mmW x 475mmH x 518mmD,n.a,Built-in,Delay start timer up to 24 hour,Residual heat hot air,1 level,6 Place settings,3 stage filter,Single spray arm,8.7,191 kWh/year,30 minute rapid cycle,"40ºC, 45ºC, 50ºC, 55ºC, 60ºC, 70ºC",2.5 Star,2 Star,"","",LED,7,"",Hot or cold Water Connection (60ºC Max),"",Acoustic signal,"compact size
+easy to use
+30 minute rapid cycle"
+36,DWAI6315XT,Dishwasher,60cm Semi Integrated dishwasher,,"","","","",Active Acquastop,"230-240V, 50/60 Hz,1800W,10A,",Two years parts and labour,"",02/10/2018,02/10/2018,dwai6315xt,"","","",0.0,598mmW x 858-928mmH x 547mmD,42 dBA,Semi-integrated,"Up to 24 hours, with automatic soak",Natural condenser drying with SmartDry (Enersave),3 Levels,15 Place settings,Stainless steel 5 stage filter,Orbital Wash System,9.7 Litres,243 kWh/year,"Aquatest turbidity sensor
+Quicktime wash setting for each program
+½ Load FlexiZone
+Fully adjustable upper and middle baskets
+Self balancing hinges","38°, 45°, 50°, 65°, 70°C",6 Star,4 Star,"quicktime
+flexizone
+delay
+flexitab
+enersave","Soak
+Normal ECO
+Eco
+Auto 60-70
+Ultraclean",4 Digit LCD,5 + 5 Quick Programs,No,Hot or cold Water Connection (60ºC Max),"Rapid 27
+Normal Quick
+Eco Quick
+Daily Quick
+Strong and Fast","On display, with acoustic signal","tall tank
+active acquastop
+5 stage filtration system
+smartdry (enersave)
+orbital wash system
+cutlery tray"
+37,DWAUP364X,Dishwasher,60cm Professional Series Underbench dishwasher,,"",Stainless steel,"","",Active Acquastop,"240V, 50/60Hz,5450W,1N, 32A / 3N, 16A",Two years parts and labour,"",02/10/2018,02/10/2018,dwaup364x,"","","",0.0,600mmW x 820mmH x 570mmD,45 dBA,Underbench,"1-9 Hours, with automatic soak",Natural condenser drying with SmartDry (Enersave),3 Levels,15 Place settings,Stainless steel 5 stage filter,Orbital Wash System,11.6 Litres,140 kWh/year,"16 Minute Wash
+4 Professional wash settings
+Aquatest turbidity sensor
+½ Load FlexiZone
+Fully adjustable baskets
+self-balancing hinges","45,50,65,75°C",5 Star,4 Star,"","Soak
+Normal ECO
+Eco
+Auto 60-70
+Ultraclean
+Pro Glasses
+Ultra Rapid
+Universal
+Intensive",LCD,5 + 4 Professional programs,No,Hot or cold Water Connection (60ºC Max),"","On display, with acoustic signal","active acquastop
+5 stage filtration system
+orbital wash system
+professional programs
+16 minute wash"
+38,DWAU6D15XT,Dishwasher,60cm Diamond Series Underbench dishwasher,,"","","","","Active Acquastop
+Contol Lock","230-240V, 50/60 Hz,1800W,10A,",Two years parts and labour,"",02/10/2018,02/10/2018,dwau6d15xt,"","","",0.0,598mmW x 860-930mmH x 570mmD,42 dBA,Underbench,"Up to 24 hours, with automatic soak",Natural condenser drying with SmartDry (Enersave),3 Levels,15 Place settings,Stainless steel 5 stage filter,Planetary Wash System,9.7 Litres,243 kWh/year,"Internal LED lights
+Aquatest turbidity sensor
+Quicktime wash setting for each program
+½ Load FlexiZone
+Fully adjustable baskets
+Self balancing hinges","38º, 45°, 50°, 65°, 70°C",6 Star,6 Star,"quicktime
+flexizone
+delay
+flexitab
+enersave
+flexizone
+delay
+flexitab
+enersave","Soak
+Normal ECO
+Eco
+Auto 60-70
+Ultraclean
+Normal ECO
+Eco
+Auto 60-70
+Ultraclean",LCD,5 + 5 Quick Programs,No,Hot or cold Water Connection (60ºC Max),"Rapid 27
+Normal Quick
+Eco Quick
+Daily Quick
+Strong and Fast
+Normal Quick
+Eco Quick
+Daily Quick
+Strong and Fast","On display, with acoustic signal","planetary wash system
+tall tank
+active acquastop
+5 stage filtration system
+smartdry (enersave)
+flexi duo cutlery tray"
+39,DWAU6214X,Dishwasher,Stainless Steel Underbench Dishwasher,,"",Stainless steel,"","","Child safety system (door lock)
+Total Acquastop","220-240V, 50/60Hz,1800W,10A",Two years parts and labour,"",02/10/2018,02/10/2018,dwau6214x,"","","",0.0,598mmW x 818-888mmH x 570mmD,49dBA,Underbench,"3-6-9 hours, with automatic soak",Natural condenser drying,2 levels,14 Place settings,Stainless steel 5 stage filter,Orbital Wash System,11.3 litres,267 kWh/year,"Height adjustable upper basket
+Self balancing hinges","45ºC, 50ºC, 65ºC, 70ºC",5 Star,3.5 Star,"","",LED,5,No,Hot or cold Water Connection (60ºC Max),"",Acoustic signal,"active acquastop
+orbital wash system
+flexitabs
+self balancing hinges
+child safety lock"
+40,DWAU6314X,Dishwasher,60cm Underbench Dishwasher,,"",Stainless steel,"","","Active Acquastop
+Child safety system (door lock)","230-240V, 50/60 Hz,1800W,10A,",Two years parts and labour,"",02/10/2018,02/10/2018,dwau6314x,"","","",0.0,598mmW x 818-888mmH x 570mmD,47 dBA,Underbench,"3-6-9-12 Hours, with automatic soak",Natural condenser drying,3 Levels,14 Place settings,Stainless steel 5 stage filter,Orbital Wash System,9.7 Litres,243 kWh/year,"Aquatest turbidity sensor
+Quicktime wash setting for each program
+½ Load FlexiZone
+Fully adjustable upper and middle baskets
+Self balancing hinges","45°, 50°, 65°, 70°C",5.5 stars,3.5 Star,"flexitab
+flexizone
+quicktime
+delay","Soak
+Normal ECO
+Eco
+Intensive 65°
+Ultraclean",LED Lights,5 + 5 Quick Programs,No,Hot or cold Water Connection (60ºC Max),"Rapid 27
+Eco Quick
+Daily Quick
+Normal Quick
+Strong and Fast",Acoustic signal,"active acquastop
+5 stage filtration system
+orbital wash system
+child safety system"
+41,DWAU6315X,Dishwasher,60cm Underbench dishwasher,,"",Stainless steel,"","","Active Acquastop
+Child safety system (door lock)","230-240V, 50/60 Hz,1800W,10A,",Two years parts and labour,"",02/10/2018,02/10/2018,dwau6315x,"","","",0.0,598mmW x 818mm-888mmH x 570mmD,47 dBA,Underbench,"Up to 24 hours, with automatic soak",Natural condenser drying with SmartDry (Enersave),3 Levels,15 Place settings,Stainless steel 5 stage filter,Orbital Wash System,9.7 Litres,243 kWh/year,"Aquatest turbidity sensor
+Quicktime wash setting for each program
+½ Load FlexiZone
+Fully adjustable upper and middle baskets
+Self balancing hinges","45°, 50°, 65°, 70°C",6 Star,4 Star,"quicktime
+flexizone
+delay
+flexitab
+enersave","Soak
+Normal ECO
+Eco
+Auto 60-70
+Ultraclean",LCD,5 + 5 Quick Programs,No,Hot or cold Water Connection (60ºC Max),"Rapid 27
+Normal Quick
+Eco Quick
+Daily Quick
+Strong and Fast","On display, with acoustic signal","active acquastop
+5 stage filtration system
+smartdry (enersave)
+orbital wash system
+cutlery tray"
+42,DWA4510X,Dishwasher,45cm Freestanding dishwasher,,"","","","",Active Acquastop,"230-240V, 50/60 Hz,1900W,10A,",Two years parts and labour,"",02/10/2018,02/10/2018,dwa4510x,"","","",0.0,850mmH x 600mmD x 448mmW,48 dBA,Freestanding/built-in,"3-6-9-Hours, with automatic soak",natural condenser drying,2 Levels,10 Place settings,Stainless steel 5 stage filter,Swing wash system,11.3 Litres,226 kWh/year,"Compact size
+Half Load
+separate cutlery basket","40°, 55°, 65°, 70°C",3.5 Star,3 Star,"","Soak
+Normal ECO
+Eco
+Normal
+Super",LED Lights,5,No,Hot or cold Water Connection (60ºC Max),"",Acoustic signal,"active acquastop
+5 stage filtration system
+swing wash system"
+43,DWA6D15X,Dishwasher,60cm Diamond Series Freestanding dishwasher,,"",Stainless steel,"","",Active Acquastop,"230-240V, 50/60 Hz,1800W,10A,",Two years parts and labour,"",02/10/2018,02/10/2018,dwa6d15x,"","","",0.0,598mmW x 850mmH x 600mmD,47 dBA,Freestanding,"Up to 24 hours, with automatic soak",Natural condenser drying with SmartDry (Enersave),3 Levels,15 Place settings,Stainless steel 5 stage filter,Planetary Wash System,9.7 Litres,240 kWh/year,"Internal LED lights
+Aquatest turbidity sensor
+Quicktime wash setting for each program
+½ Load FlexiZone
+Fully adjustable baskets
+Self balancing hinges","38°, 45°, 50°, 65°, 70°C",6 Star,4 Star,"quicktime
+flexizone
+delay
+flexitab
+enersave
+flexizone
+delay
+flexitab
+enersave","Soak
+Normal ECO
+Eco
+Auto 60-70
+Ultraclean
+Normal ECO
+Eco
+Auto 60-70
+Ultraclean",LCD,5 + 5 Quick Programs,Yes - electronically adjustable,Hot or cold Water Connection (60ºC Max),"Rapid 27
+Normal Quick
+Eco Quick
+Daily Quick
+Strong and Fast
+Normal Quick
+Eco Quick
+Daily Quick
+Strong and Fast","On display, with acoustic signal","planetary wash system
+active acquastop
+5 stage filtration system
+smartdry (enersave)
+flexi duo cutlery tray"
+44,DWA6214S,Dishwasher,60cm Freestanding dishwasher,,"",Silver,"","","Active Acquastop
+Child safety system (door lock)","230-240V, 50/60 Hz,1800W,10A,",Two years parts and labour,"",02/10/2018,02/10/2018,dwa6214s,"","","",0.0,598mmW x 850mmH x 600mmD,49 dBA,Freestanding,"3-6-9-Hours, with automatic soak",Natural condenser drying,2 Levels,14 Place settings,Stainless steel 5 stage filter,Orbital wash system,11.3 Liters,267 kWh/year,"Height adjustable upper basket
+Self balancing hinges","45°, 55°, 65°, 70°C",5 Star,3.5 Star,"flexizone
+delay","Soak
+Normal ECO
+Eco
+Intensive 65°
+Ultraclean",LED Lights,5,No,Hot or cold Water Connection (60ºC Max),"",Acoustic signal,"active acquastop
+5 stage filtration system
+orbital wash system"
+45,DWA6214W,Dishwasher,60cm Freestanding dishwasher,,"",White,"","","Active Acquastop
+Child safety system (door lock)","230-240V, 50/60 Hz,1800W,10A,",Two years parts and labour,"",02/10/2018,02/10/2018,dwa6214w,"","","",0.0,598mmW x 850mmH x 600mmD,49 dBA,Freestanding,"3-6-9-12 Hours, with automatic soak",Natural condenser drying,2 Levels,14 Place settings,Stainless steel 5 stage filter,Orbital wash system,11.3 Liters,267 kWh/year,"Height adjustable upper basket
+Self balancing hinges","45°, 55°, 65°, 70°C",5 Star,3.5 Star,"flexizone
+delay","Soak
+Normal ECO
+Eco
+Intensive 65°
+Ultraclean",LED Lights,5,No,Hot or cold Water Connection (60ºC Max),"",Acoustic signal,"active acquastop
+5 stage filtration system
+orbital wash system"
+46,DWA6314B,Dishwasher,60cm Freestanding dishwasher,,"",Black,"","","Active Acquastop
+Child safety system (door lock)","230-240V, 50/60 Hz,1800W,10A,",Two years parts and labour,"",02/10/2018,02/10/2018,dwa6314b,"","","",0.0,598mmW x 850mmH x 600mmD,47 dBA,Freestanding,"3-6-9-12 hours, with automatic soak",Natural condenser drying,3 Levels,14 Place settings,Stainless steel 5 stage filter,Orbital Wash System,9.7 Litres,243 kWh/year,"Quicktime wash setting for each program
+½ Load FlexiZone
+Height adjustable upper basket
+Self balancing hinges","38°, 45°, 50°, 65°, 70°C",5.5 Star,3.5 Star,"flexitab
+flexizone
+quicktime
+delay","Soak
+Normal ECO
+Eco
+Intensive 65°
+Ultraclean",LED lights,5 + 5 Quick Programs,No,Hot or cold Water Connection (60ºC Max),"Rapid 27
+Eco Quick
+Daily Quick
+Normal Quick
+Strong and Fast","On display, with acoustic signal","active acquastop
+5 stage filtration system
+orbital wash system
+cutlery tray"
+47,DWA6314W,Dishwasher,60cm Freestanding dishwasher,,"",White,"","","Active Acquastop
+Child safety system (door lock)","230-240V, 50/60 Hz,1800W,10A,",Two years parts and labour,"",02/10/2018,02/10/2018,dwa6314w,"","","",0.0,598mmW x 850mmH x 600mmD,47 dBA,Freestanding,"3-6-9-12 hours, with automatic soak",Natural condenser drying,3 Levels,14 Place settings,Stainless steel 5 stage filter,Orbital Wash System,9.7 Litres,243 kWh/year,"Quicktime wash setting for each program
+½ Load FlexiZone
+Height adjustable upper basket
+Self balancing hinges","38°, 45°, 50°, 65°, 70°C",5.5 Star,3.5 Star,"flexitab
+flexizone
+quicktime
+delay","Soak
+Normal ECO
+Eco
+Intensive 65°
+Ultraclean",LED lights,5 + 5 Quick Programs,No,Hot or cold Water Connection (60ºC Max),"Rapid 27
+Eco Quick
+Daily Quick
+Normal Quick
+Strong and Fast","On display, with acoustic signal","active acquastop
+5 stage filtration system
+orbital wash system
+cutlery tray"
+48,DWA6314X,Dishwasher,60cm Freestanding dishwasher,,"",Stainless steel,"","","Active Acquastop
+Child safety system (door lock)","230-240V, 50/60 Hz,1800W,10A,",Two years parts and labour,"",02/10/2018,02/10/2018,dwa6314x,"","","",0.0,598mmW x 850mmH x 600mmD,47 dBA,Freestanding,"3-6-9-12 hours, with automatic soak",Natural condenser drying,3 Levels,14 Place settings,Stainless steel 5 stage filter,Orbital Wash System,9.7 Litres,243 kWh/year,"Quicktime wash setting for each program
+½ Load FlexiZone
+Height adjustable upper basket
+Self balancing hinges","38°, 45°, 50°, 65°, 70°C",5.5 Star,3.5 Star,"flexitab
+flexizone
+quicktime
+delay","Soak
+Normal ECO
+Eco
+Intensive 65°
+Ultraclean",LED lights,5 + 5 Quick Programs,No,Hot or cold Water Connection (60ºC Max),"Rapid 27
+Eco Quick
+Daily Quick
+Normal Quick
+Strong and Fast","On display, with acoustic signal","active acquastop
+5 stage filtration system
+orbital wash system
+cutlery tray"
+49,DWA6315W,Dishwasher,60cm Freestanding dishwasher,,"",White,"","","Active Acquastop
+Child safety system (door lock)","230-240V, 50/60 Hz,1800W,10A,",Two years parts and labour,"",02/10/2018,02/10/2018,dwa6315w,"","","",0.0,598mmW x 850mmH x 600mmD,47 dBA,Freestanding,"Up to 24 hours, with automatic soak",Natural condenser drying with SmartDry (Enersave),3 Levels,15 Place settings,Stainless steel 5 stage filter,Orbital Wash System,9.7 Litres,243 kWh/year,"Aquatest turbidity sensor
+Quicktime wash setting for each program
+½ Load FlexiZone
+Fully adjustable upper and middle baskets
+Self balancing hinges","38°, 45°, 50°, 65°, 70°C",6 Star,4 Star,"quicktime
+flexizone
+delay
+flexitab
+enersave","Soak
+Normal ECO
+Eco
+Auto 60-70
+Ultraclean",LCD,5 + 5 Quick Programs,Yes - with electronic setting,Hot or cold Water Connection (60ºC Max),"Rapid 27
+Normal Quick
+Eco Quick
+Daily Quick
+Strong and Fast","On display, with acoustic signal","active acquastop
+5 stage filtration system
+smartdry (enersave)
+orbital wash system
+cutlery tray"
+50,DWA6315X,Dishwasher,60cm Freestanding dishwasher,,"",Stainless Steel + silver panel,"","","Active Acquastop
+Child safety system (door lock)","230-240V, 50/60 Hz,1800W,10A,",Two years parts and labour,"",02/10/2018,02/10/2018,dwa6315x,"","","",0.0,598mmW x  850mmH x 600mmD,47 dBA,Freestanding,"Up to 24 hours, with automatic soak",Natural condenser drying with SmartDry (Enersave),3 Levels,15 Place settings,Stainless steel 5 stage filter,Orbital Wash System,9.7 Litres,243 kWh/year,"Aquatest turbidity sensor
+Quicktime wash setting for each program
+½ Load FlexiZone
+Fully adjustable upper and middle baskets
+Self balancing hinges","38°, 45°, 50°, 65°, 70°C",6 Star,4 Star,"quicktime
+flexizone
+delay
+flexitab
+enersave","Soak
+Normal ECO
+Eco
+Auto 60-70
+Ultraclean",LCD,5 + 5 Quick Programs,Yes,Hot or cold Water Connection (60ºC Max),"Rapid 27
+Normal Quick
+Eco Quick
+Daily Quick
+Strong and Fast","On display, with acoustic signal","active acquastop
+5 stage filtration system
+smartdry (enersave)
+orbital wash system
+cutlery tray"
+51,DWA6315X1,Dishwasher,60cm Freestanding dishwasher,,"",Stainless steel,"","","Active Acquastop
+Child safety system (door lock)","230-240V, 50/60 Hz,1800W,10A,",Two years parts and labour,"",02/10/2018,02/10/2018,dwa6315x1,"","","",0.0,598mmW x 850mmH x 600mmD,47 dBA,Freestanding,"Up to 24 hours, with automatic soak",Natural condenser drying with SmartDry (Enersave),3 Levels,15 Place settings,Stainless steel 5 stage filter,Orbital Wash System,9.7 Litres,243 kWh/year,"Aquatest turbidity sensor
+Quicktime wash setting for each program
+½ Load FlexiZone
+Fully adjustable upper and middle baskets
+Self balancing hinges","38°, 45°, 50°, 65°, 70°C",6 Star,4 Star,"quicktime
+flexizone
+delay
+flexitab
+enersave","Soak
+Normal ECO
+Eco
+Auto 60-70
+Ultraclean",LCD,5 + 5 Quick Programs,Yes,Hot or cold Water Connection (60ºC Max),"Rapid 27
+Normal Quick
+Eco Quick
+Daily Quick
+Strong and Fast","On display, with acoustic signal","active acquastop
+5 stage filtration system
+smartdry (enersave)
+orbital wash system
+cutlery tray"
+52,DWIFABNE-1,Dishwasher,60m FAB Retro Underbench dishwasher,,"",Black,"","",Active Acquastop,"230-240V, 50/60 Hz,1900W,10A,",Two years parts and labour,"",02/10/2018,02/10/2018,dwifabne-1,"","","",0.0,"598mmW x 818-888mmH x 630mmD ,(including handle)",45 dBA,Underbench,1-9 hour delay timer,Natural condenser drying,2 Levels,14 Place settings,Stainless steel 5 stage filter,Orbital Wash System,12.6 Litres,264 kWh/year,"Aquatest turbidity sensor
+Fully adjustable baskets
+self balancing hinges","38, 45, 50, 65, 70°C",4.5 Star,3.5 Star,"delay
+flexitabs
+aqua_test
+orbital_system","Soak
+Normal ECO
+Eco
+Auto 60-70
+Super",LED Display,5,Yes,Hot or cold Water Connection (60ºC Max),"",Acoustic signal,"active acquastop
+5 stage filtration system
+orbital wash system
+black finish to match fab fridge"
+53,DWIFABP-1,Dishwasher,60m FAB Retro Underbench dishwasher,,"",Panna (cream),"","",Active Acquastop,"230-240V, 50/60 Hz,1900W,10A,",Two years parts and labour,"",02/10/2018,02/10/2018,dwifabp-1,"","","",0.0,"598mmW x 818-888mmH x 630mmD ,(including handle)",43 dBA,Underbench,1-9 hour delay timer,Natural condenser drying,2 Levels,14 Place settings,Stainless steel 5 stage filter,Orbital Wash System,12.6 Litres,264 kWh/year,"Aquatest turbidity sensor
+Fully adjustable baskets
+self balancing hinges","38, 45, 50, 65, 70°C",4.5 Star,3.5 Star,"delay
+flexitabs
+aqua_test
+orbital_system","Soak
+Normal ECO
+Eco
+Auto 60-70
+Super",LED Display,5,Yes,Hot or cold Water Connection (60ºC Max),"",Acoustic signal,"active acquastop
+5 stage filtration system
+orbital wash system
+panna (cream) finish to match fab fridge"
+54,DWIFABR-1,Dishwasher,60m FAB Retro Underbench dishwasher,,"",Red,"","",Active Acquastop,"230-240V, 50/60 Hz,1900W,10A,",Two years parts and labour,"",02/10/2018,02/10/2018,dwifabr-1,"","","",0.0,"598mmW x 818-888mmH x 630mmD ,(including handle)",44 dBA,Underbench,1-9 hour delay timer,Natural condenser drying,2 Levels,14 Place settings,Stainless steel 5 stage filter,Orbital Wash System,12.6 Litres,264 kWh/year,"Aquatest turbidity sensor
+Fully adjustable baskets
+self balancing hinges","38, 45, 50, 65, 70°C",4.5 Star,3.5 Star,"delay
+flexitabs
+aqua_test
+orbital_system","Soak
+Normal ECO
+Eco
+Auto 60-70
+Super",LED Display,5,Yes,Hot or cold Water Connection (60ºC Max),"",Acoustic signal,"active acquastop
+5 stage filtration system
+orbital wash system
+red finish to match fab fridge"
+55,STH903,Dishwasher,90cm Fully Integrated dishwasher,,"","","","",Active Acquastop,"230-240V, 50/60 Hz,1900W,10A",Two years parts and labour,"",02/10/2018,02/10/2018,sth903,"","","",0.0,856mmW x 578mmH x 553mmD,43 dBA,Fully-integrated,"1-9 Hours, with automatic soak",Natural condenser drying,1 Level (77cm wide),12 Place settings,Stainless steel 5 stage filter,"2 x  Orbital wash systems
+2 x full ceiling wash arms",14.7 Litres,281 kWh/year,"fits 32cm diameter plates
+Fits 70 & 90cm Oven trays
+6 collapsible dish racks
+Self balancing hinges","38º, 45º, 55º, 65º, 70º C",3 Star,3 Star,no_icons,"",LED,10,No,Hot or cold Water Connection (60ºC Max),"",Acoustic signal,"active acquastop
+5 stage filtration system
+orbital wash system
+horizontal orientation, easy loading"
+56,ST201A,Dishwasher,60cm Compact Dishwasher Fully Integrated,,"",Stainless steel door and handle,"","",n.a,"220-240V, 50/60Hz,1280W,10A",Two years parts and labour,"",02/10/2018,02/10/2018,st201a,"","","",0.0,590mmW x 500mmD x 475mmH,n.a,Built-in,Delay start timer up to 24 hour,Residual heat hot air,1 level,6 Place settings,3 stage filter,Single spray arm,8.7,191 kWh/year,30 minute rapid cycle,"40ºC, 45ºC, 50ºC, 55ºC, 60ºC, 70ºC",2.5 Star,2 Star,"","",LED,7,"",Hot or cold Water Connection (60ºC Max),"",Acoustic signal,"compact size
+easy to use
+30 minute rapid cycle"

@@ -1,0 +1,83 @@
+id,model_number,type,description,aesthetic,dimensions,finish,supplied_accessories,optional_accessories,safety,power,warranty,status,created_at,updated_at,slug,notes,ean,cover_image,price,size,cutout,timers,capacity,controls,installation,power_levels,features
+5,SA911XA-1,CeramicElectricCooktop,90cm Ceramic Electric Cooktop - Touch Control,,"","black ceramic surface
+ 12mm bevelled edge","","",hot surface  H  LED warning,"220-240V, 50/60Hz,7000W,29.17A",two years parts and labour,"",02/10/2018,02/10/2018,sa911xa-1,"","","",0.0,900mmW x 520mmD x 44mmH,860mmW x 490mmD,"1-99 minutes programmable cooking times
+ simultaneous and variable times
+ audible signal","4 zones
+Front left 1000/1200W
+Rear left 1200W
+Front right 1200W
+Rear right 1500/2400W",touch control,built in,9 per zone,"residual heat indicators
+high speed elements, full heat in 7 seconds
+touch control
+4 zones incl 2 x extendable zones
+programmable zones plus countdown timer"
+2,SA611XC-1,CeramicElectricCooktop,60cm Electric Ceramic Cooktop,"","","
+black ceramic surface
+ straight edging","","","
+hot surface  H  LED warning","240V, 50 Hz,25A connection",two years parts and labour,"",02/10/2018,08/10/2018,sa611xc-1,"","","",0.0,590mmW x 520mmD x 49mmH,"
+560mmW x 490mmD","","
+Four zones -
+Front right: 180mm
+ 1800W
+Rear left: 180mm
+ 1800W 
+Front left: 145mm
+ 1200W 
+Rear right: 145mm
+ 1200W",Touch control,built-in one-piece hob,9 heat settings per zone,"touch - sensor controls
+high-speed cooking
+space-saving design
+easy installation
+residual heat safety"
+4,SA711XA-1,CeramicElectricCooktop,70cm Ceramic Electric Cooktop - Touch Control,"","","
+black ceramic surface
+ 12mm bevelled edge","","","
+hot surface  H  LED warning","220-240V, 50/60Hz,6300W,27A",two years parts and labour,"",02/10/2018,02/11/2018,sa711xa-1,"","",/development/uploads/ceramic_electric_cooktop/cover_image/4/cover_image_6fac8d7a-cc8f-42b5-823f-ea120663b57d.jpg,0.0,700mmW x 520mmD x 55mmH,"
+660mmW x 490mmD","
+1-99 minutes programmable cooking times
+ simultaneous and variable times
+ audible signal","
+4 zones
+Front left 1200W
+Rear left 700/1700W
+Front right 1500/2200W
+Rear right 1200W",touch control,built in,9 per zone,"residual heat indicators
+high speed elements, full heat in 7 seconds
+touch control
+4 zones incl 2 x extendable zones
+programmable zones plus countdown timer"
+1,SA611XA-1,CeramicElectricCooktop,60cm Ceramic Electric Cooktop - Touch Control,"","","
+black ceramic surface
+ 12mm bevelled edge","","","
+hot surface  H  LED warning","220-240V, 50/60Hz,6000W,25A",two years parts and labour,"",02/10/2018,03/10/2018,sa611xa-1,"","","",99.0,590mmW x 520mmD x 49mmH,"
+560mmW x 490mmD","
+1-99 minutes programmable cooking times
+ simultaneous and variable times
+ audible signal
+123","
+4 zones
+Front left 1800W
+Rear left 1200W
+Front right 1200W
+Rear right 1800W",touch control,built in,9 per zone,"residual heat indicators
+high speed elements, full heat in 7 seconds
+touch control
+4 zones"
+3,SA661X1,CeramicElectricCooktop,60cm Induction Ceramic Cooktop,Dolce Stil Novo,"","
+Black ceramic","","","
+microthermic insulation
+residual heat indicators
+power ON indicator","240V, 50/60Hz,27.5A connection must be hard wired",Two years parts and labour,"",02/10/2018,05/10/2018,sa661x1,"","","",0.0,600mmW x 515mmD x 56mmH,"
+565mmW x 490mmD","
+n/a","
+Front left: 180mm
+ 1800W
+Rear left: 145mm
+ 1200W
+Front right: 145mm
+ 1200W
+Rear right: 140/210mm
+ 1100/2400W",knob control,built-in hob,6 per zone,"residual heat indicators
+high speed elements, full heat in 7 seconds
+ergonomic classic control knobs
+extension zone"
