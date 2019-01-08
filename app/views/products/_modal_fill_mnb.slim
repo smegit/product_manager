@@ -1,0 +1,29 @@
+= simple_form_for(@product, as: :product, method: :post, url: '/products') do |f|
+  #fill-mnb-modal.modal.fade role="dialog" tabindex="-1"
+    .modal-dialog.modal-sm role="document" 
+      .modal-content
+        .modal-header
+          button.close aria-label="Close" data-dismiss="modal" type="button"
+            span aria-hidden="true"  &times;
+          h4.modal-title Copy Product
+        .modal-body
+          .row
+            .col-xs-12 style="display: none;"
+              /= f.error_notification
+              = f.input :type,required: true, collection: @models
+          .row
+            .col-xs-12
+              /= f.error_notification
+              /= f.input :type,required: true, collection: @models
+              = f.input :model_number,required: true, as: :string
+          .row
+            .col-xm-12 style="display: none;"
+              = render partial: 'form', locals: { f: f }
+        .modal-footer
+          .row 
+            .col-xs-12
+              / = f.submit 'Create', class: 'btn btn-primary'      
+              = f.button :submit, "Create", class: "submit btn btn-primary", data: { disable_with: "Creating New Product..." }
+
+//<h1>hello</h2>
+/style="display: none;"

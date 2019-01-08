@@ -22,7 +22,13 @@
 
 
 # ENV['RAILS_ENV'] ='development'
-set :output, 'log/whenever.log'
-every 1.minute do # 1.minute 1.day 1.week 1.month 1.year is also supported
+set :output, '/home/deploy/smeg_it/current/log/whenever.log'
+every :day, at: '6:00pm' do # 1.minute 1.day 1.week 1.month 1.year is also supported
     rake "export:export_all_to_csv"
+end
+
+
+# Transfter files to file server
+every :day, at: '6:05pm' do
+    command "/home/deploy/smeg_it/current/ftprunner.sh"
 end

@@ -1,5 +1,5 @@
 class ProductsController < BaseController
-  before_action :load_product, only: %i[show edit update destroy history]
+  before_action :load_product, only: %i[show edit update destroy history copy]
   # before_action :load_products_by_type, only: %i[export]
   before_action :set_paper_trail_whodunnit
   has_scope :search_products
@@ -54,8 +54,9 @@ class ProductsController < BaseController
     # end
     puts 'create called'
     puts permitted_params.product
+    puts permitted_params.product.except!(:file_attachments_attributes)
     @models = Product.pluck('DISTINCT type')
-    @product = Product.new(permitted_params.product)
+    @product = Product.new(permitted_params.product.except!(:file_attachments_attributes, :schematic_attachments_attributes, :image_attachments_attributes))
     
     flash.now.alert = "Beware now!"
 
@@ -83,6 +84,22 @@ class ProductsController < BaseController
   end
 
   def edit; end
+  def copy
+    puts @product.inspect
+    puts 'copy called'
+    #puts json_success_response('/products/modal_fill_mnb', product: @product)
+    ##@product = Product.new
+    respond_to do |format|
+      format.json do
+        render json: json_success_response('/products/modal_fill_mnb', product: @product), status: :ok
+      end
+    end
+  end
+
+  def clone
+    puts 'clone called'
+  end
+
   def update
     if @product.update(permitted_params.product)
       redirect_to product_path(@product)
@@ -109,7 +126,8 @@ class ProductsController < BaseController
   def model_selection 
     puts 'in model selection'
     @product = Product.new
-    @models = Product.pluck('DISTINCT type')
+    # @models = Product.pluck('DISTINCT type')
+    @models = Product.unique_type
     puts @models
     respond_to do |format|
       format.json do

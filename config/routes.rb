@@ -61,9 +61,19 @@ Rails.application.routes.draw do
 
     end
 
+    member do
+
+      get :copy
+
+    end
     
+    member do
+
+      get :clone
+
+    end
     get 'model_selection', on: :new
-   
+
     
   end
 
