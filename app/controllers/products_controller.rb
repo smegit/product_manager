@@ -14,8 +14,8 @@ class ProductsController < BaseController
     # puts params[:by_type].to_s
     respond_to do |format| 
       format.html
-      #format.csv { send_data Product.where(type: "ClassicCompact").to_csv, filename: "products-#{Date.today}.csv" }
-      #format.csv { send_data Product.where(type: params[:by_type]).to_csv(:by_type), filename: "products-#{Date.today}.csv" }
+      # format.csv { send_data Product.where(type: "ClassicCompact").to_csv, filename: "products-#{Date.today}.csv" }
+      # format.csv { send_data Product.where(type: params[:by_type]).to_csv(:by_type), filename: "products-#{Date.today}.csv" }
       
       
       format.csv { send_data apply_scopes(Product).to_csv, filename: "products-#{Date.today}.csv" }
@@ -27,8 +27,8 @@ class ProductsController < BaseController
     puts 'export called'
     @ptype = params[:p_type]
     respond_to do |format| 
-      #format.csv { send_data Product.where(type: "ClassicCompact").to_csv, filename: "products-#{Date.today}.csv" }
-      #format.csv { send_data Product.where(type: params[:by_type]).to_csv(:by_type), filename: "products-#{Date.today}.csv" }
+      # format.csv { send_data Product.where(type: "ClassicCompact").to_csv, filename: "products-#{Date.today}.csv" }
+      # format.csv { send_data Product.where(type: params[:by_type]).to_csv(:by_type), filename: "products-#{Date.today}.csv" }
       format.json {json_response(@products)}
       format.csv { send_data Product.to_csv(@ptype), filename: "products-#{@ptype}-#{Date.today}.csv" }
     end
@@ -87,8 +87,8 @@ class ProductsController < BaseController
   def copy
     puts @product.inspect
     puts 'copy called'
-    #puts json_success_response('/products/modal_fill_mnb', product: @product)
-    ##@product = Product.new
+    # puts json_success_response('/products/modal_fill_mnb', product: @product)
+    # @product = Product.new
     respond_to do |format|
       format.json do
         render json: json_success_response('/products/modal_fill_mnb', product: @product), status: :ok

@@ -12,6 +12,7 @@ class Controller extends BaseController {
 };
 
 let bindHistoryModal = function () {
+  // handle click on the button
   this.root.find('.btn-history').on('click', (e) => {
     console.log('bindHistoryModal called');
     e.preventDefault();
@@ -29,16 +30,55 @@ let bindHistoryModal = function () {
       this.root.find('#modal-container .modal').modal('show')
     })
   })
+
+  // handle click on the icon
+  this.root.find('.fa-folder').on('click', (e) => {
+    console.log('bindHistoryModal called');
+    e.preventDefault();
+    e.stopPropagation();
+    let url = e.target.offsetParent.href
+
+    console.info(this.root.find('#modal-container .modal'))
+    $.ajax({
+      url: url,
+      method: 'get',
+      dataType: "json"
+    }).done((response) => {
+      console.info(response);
+      this.root.find('#modal-container').html(response.html)
+      this.root.find('#modal-container .modal').modal('show')
+    })
+  })
 }
 
 let bindCopyModal = function () {
   console.info(this);
+  // handle click on the button
   this.root.find('.btn-copy').on('click', (e) => {
     console.log('copy clicked');
     console.info(e);
     e.preventDefault();
     let url = e.target.href
+    console.log(url);
+    $.ajax({
+      url: url,
+      method: 'get',
+      dataType: "json"
+    }).done((response) => {
+      console.info(response);
+      this.root.find('#modal-container').html(response.html)
+      this.root.find('#modal-container .modal').modal('show')
+    })
+  })
 
+  // handle click on the icon
+  this.root.find('.fa-copy').on('click', (e) => {
+    console.log('copy clicked');
+    console.info(e);
+    e.preventDefault();
+    e.stopPropagation();
+    let url = e.target.offsetParent.href
+    console.log(url);
     $.ajax({
       url: url,
       method: 'get',
