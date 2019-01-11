@@ -56,7 +56,7 @@ class ProductsController < BaseController
     puts permitted_params.product
     puts permitted_params.product.except!(:file_attachments_attributes)
     @models = Product.pluck('DISTINCT type')
-    @product = Product.new(permitted_params.product.except!(:file_attachments_attributes, :schematic_attachments_attributes, :image_attachments_attributes))
+    @product = Product.new(permitted_params.product.except!(:file_attachments_attributes, :schematic_attachments_attributes, :image_attachments_attributes, :approval_ids))
     
     flash.now.alert = "Beware now!"
 
