@@ -7,3 +7,26 @@ body[data-controller="products"][data-action="show"] {
   }
 
 }
+
+
+#feature{
+  .feature-header{
+    h3 {
+      display: inline-block
+    }
+    button{
+      float: right;
+    }
+  }
+}
+
+#details{
+  .details-header{
+    h3 {
+      display: inline-block
+    }
+    button{
+      float: right;
+    }
+  }
+}

@@ -108,19 +108,27 @@
       th Notes
       td = @product.notes
 
-  h3 Features
-  table.table
-    tr
-      th Name
-      th Description
-    - @product.features.each do |feature|
-      tr
-        td = feature.name
-        td = feature.try(:long_description)
+  #feature
+    .feature-header
+      h3 Features 
+      button#featureBtn Show Feature List 
+    .feature-content 
+      table.table
+        tr
+          th Name
+          th Description
+        - @product.features.each do |feature|
+          tr
+            td = feature.name
+            td = feature.try(:long_description)
 
-  h3 Custom Details
-  table.table
-    = render "products/custom_detail/#{@product.type.underscore}", product: @product
+  #details
+    .details-header
+      h3 Custom Details
+      button#detailsBtn Show Detail List
+    .details-content
+      table.table
+        = render "products/custom_detail/#{@product.type.underscore}", product: @product
 
   hr
   h3 Schematic Images
@@ -202,3 +210,29 @@ br
 
 #modal-container
 #copy-modal-container
+
+#feature-list-modal.modal.fade aria-labelledby="feature-listLabel" aria-hidden="true" role="dialog" tabindex="-1" data={}
+  .modal-dialog.modal-dialog-centered role="document"
+    .modal-content
+      .modal-header
+        button.close aria-label="Close" data-dismiss="modal" type="button"
+          span aria-hidden="true"  &times;
+        h4#feature-listLabel.modal-title Feature List
+      .modal-body
+        ul.list-group
+          - @product.features.each do |feature|
+            li.list-group-item = feature.name
+
+
+#detail-list-modal.modal.fade aria-labelledby="detail-listLabel" aria-hidden="true" role="dialog" tabindex="-1" data={}
+  .modal-dialog.modal-dialog-centered role="document"
+    .modal-content
+      .modal-header
+        button.close aria-label="Close" data-dismiss="modal" type="button"
+          span aria-hidden="true"  &times;
+        h4#detail-listLabel.modal-title Detail List
+      .modal-body
+        ul.list-group
+          - @custom_attributes.each do |attr|
+              li = @product.attr
+            

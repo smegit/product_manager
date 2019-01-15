@@ -26,6 +26,7 @@ class Product < ApplicationRecord
                   using: { tsearch: { prefix: true } }
   scope :by_type, -> type { where(type: type) }
   scope :by_aesthetic, -> aesthetic { where(aesthetic: aesthetic) }
+  scope :by_status, -> status { where(status: status)}
 
   validates :model_number, presence: true, uniqueness: { case_sensitive: false }
   validates :type, presence: true, exclusion: { in: %w(Product), message: ": Please select product type." }
@@ -74,6 +75,11 @@ class Product < ApplicationRecord
   def self.unique_aesthetic
     self.distinct.pluck(:aesthetic).reject { |x| x.to_s.empty? }
   end
+
+  # def self.get_value_by_attr(attr)
+  #   self.attr
+  # end
+
 
 
 end

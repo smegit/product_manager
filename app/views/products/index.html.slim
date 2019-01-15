@@ -14,43 +14,60 @@
   .row
     = form_tag(products_path, method: :get) do
       .col-xs-2
-        = select_tag "by_type", options_for_select(Product.unique_type ), prompt: "Select type",include_blank: true, class: "form-control", onchange: 'this.form.submit();'
+        /= label_tag "type"
+        = select_tag "by_type", options_for_select(Product.unique_type, params[:by_type]), prompt: "Select type",include_blank: true, class: "form-control", onchange: 'this.form.submit();'
       .col-xs-2
-        = select_tag "by_aesthetic", options_for_select(Product.unique_aesthetic ), prompt: "Select aesthetic",include_blank: true, class: "form-control", onchange: 'this.form.submit();'
+        /= label_tag "Aesthetic"
+        = select_tag "by_aesthetic", options_for_select(Product.unique_aesthetic, params[:by_aesthetic] ), prompt: "Select aesthetic",include_blank: true, class: "form-control", onchange: 'this.form.submit();'
+        /, onchange: 'this.form.submit();'
       .col-xs-4
-        = text_field_tag :search_products, nil, placeholder: "Try to type anything...", class: "form-control"
+        / = label_tag "General Search"
+        = text_field_tag :search_products, nil, placeholder: "Try to type anything...", class: "form-control", value: params[:search_products]
         /= text_field_tag :by_type, nil, placeholder: "Search products ...", class: "form-control"
       / .col-xs-2
       /   = link_to "Export", products_path(format: "csv"), class: "export-btn"
-      .col-xs-2
-        = submit_tag "Search / Reset", class: "btn btn-info btn-xs search-btn",style: ""    
+      .col-xs-4
+        /= label_tag ""
+        => submit_tag "Search", class: "btn btn-info btn-xs search-btn",style: "" 
+        =< link_to '<button type="button" class="btn btn-info btn-xs search-btn">Reset</button>'.html_safe, products_path
+
+      / .col-xs-2   
+      /   /= button_tag "Reset", class: "btn btn-info btn-xs search-btn", onchange: 'this.form.reset();'
+      /   /= label_tag ""
+      /   = link_to '<button type="button" class="btn btn-info btn-xs search-btn">Reset</button>'.html_safe, products_path
+    
+      
 
   br
-  table.table class="table table-hover pointer"
-    tr
-      th Model #
-      th Description
-      th Aesthetic
-      th Type
-      
-      //th style='width:300px;'
 
-    - for product in @products
-      tr onclick="location.href='#{product_path(product)}'"
-        td= product.model_number
-        td= product.description
-        td= product.aesthetic
+  .row
+    = render "products/list"
+
+  / table.table class="table table-hover pointer"
+  /   tr
+  /     th Model #
+  /     th Description
+  /     th Aesthetic
+  /     th Type
+      
+  /     //th style='width:300px;'
+
+  /   - for product in @products
+  /     tr onclick="location.href='#{product_path(product)}'"
+  /       td= product.model_number
+  /       td= product.description
+  /       td= product.aesthetic
         
-        td= I18n.t product.type, scope: [:options, :product_types]
-        /td= number_to_currency(product.price)
-        / td
-        /   .btn-group.pull-right
-        /     = link_to product_path(product), class: 'btn btn-default btn-xs' do
-        /       i.fa.fa-eye
-        /     = link_to edit_product_path(product), class: 'btn btn-default btn-xs' do
-        /       i.fa.fa-pencil
-        /     = link_to product_path(product), method: :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-default btn-xs' do
-        /       i.fa.fa-trash-o
+  /       td= I18n.t product.type, scope: [:options, :product_types]
+  /       /td= number_to_currency(product.price)
+  /       / td
+  /       /   .btn-group.pull-right
+  /       /     = link_to product_path(product), class: 'btn btn-default btn-xs' do
+  /       /       i.fa.fa-eye
+  /       /     = link_to edit_product_path(product), class: 'btn btn-default btn-xs' do
+  /       /       i.fa.fa-pencil
+  /       /     = link_to product_path(product), method: :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-default btn-xs' do
+  /       /       i.fa.fa-trash-o
   .row
       = form_tag(products_export_path(format: "csv"), method: :get) do
         .col-xs-1

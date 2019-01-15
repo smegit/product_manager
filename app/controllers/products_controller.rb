@@ -7,7 +7,9 @@ class ProductsController < BaseController
   
   has_scope :by_aesthetic
   def index
+    puts 'index called'
     @products = apply_scopes(Product).page(params[:page]).per(100).order(type: :asc)
+    @selected_type =  '123'
     # puts Feature.all
     # puts Hash[Product.all.map { |product| [product.model_number, product.id] }]
     t = params[:by_type].to_s
@@ -141,6 +143,7 @@ class ProductsController < BaseController
   private
   def load_product
     @product = Product.friendly.find params[:id]
+    @custom_attributes = @product.data.keys
     # puts @product.approvals.to_yaml
   end
 

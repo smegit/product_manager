@@ -7,6 +7,8 @@ class Controller extends BaseController {
     console.log('show action called');
     bindHistoryModal.call(this);
     bindCopyModal.call(this);
+    bindFeatureBtn.call(this);
+    bindDetailsBtn.call(this);
   }
 
 };
@@ -88,6 +90,20 @@ let bindCopyModal = function () {
       this.root.find('#modal-container').html(response.html)
       this.root.find('#modal-container .modal').modal('show')
     })
+  })
+}
+
+let bindFeatureBtn = function () {
+  this.root.find('#featureBtn').on('click', (e) => {
+    console.log('Feature clicked');
+    this.root.find('#feature-list-modal').modal('show')
+  })
+}
+
+let bindDetailsBtn = function () {
+  this.root.find('#detailsBtn').on('click', (e) => {
+    console.log('Details clicked');
+    this.root.find('#detail-list-modal').modal('show')
   })
 }
 
