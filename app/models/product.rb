@@ -76,8 +76,8 @@ class Product < ApplicationRecord
     self.distinct.pluck(:aesthetic).reject { |x| x.to_s.empty? }
   end
 
-  # def self.get_value_by_attr(attr)
-  #   self.attr
+  # def self.get_value_by_attr
+  #   self.data.find()
   # end
 
 

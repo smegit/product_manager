@@ -3,16 +3,16 @@
   = I18n.t @product.type, scope: [:options, :product_types]
 
   .btn-group.pull-right
-    = link_to edit_product_path(@product), class: 'btn btn-default btn-xs' do
+    = link_to edit_product_path(@product), class: 'btn btn-default btn-xs', title: 'Edit' do
       i.fa.fa-pencil
-    = link_to copy_product_path(@product), class: 'btn btn-default btn-xs btn-copy' do
+    = link_to copy_product_path(@product), class: 'btn btn-default btn-xs btn-copy', title: 'Copy' do
       i.fa.fa-copy
-    = link_to product_path(@product), method: :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-default btn-xs' do
+    = link_to product_path(@product), method: :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-default btn-xs', title: 'Delete' do
       i.fa.fa-trash-o
-    = link_to history_product_path(@product), class: 'btn btn-default btn-xs btn-history' do
+    = link_to history_product_path(@product), class: 'btn btn-default btn-xs btn-history', title: 'Editing History' do
       i.fa.fa-folder
 
-    a.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button" class='btn btn-default btn-xs'
+    a.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button" class='btn btn-default btn-xs' title='PDFs'
       i.fa.fa-file-o
       |&nbsp;PDFS&nbsp;
       span.caret
@@ -219,9 +219,9 @@ br
           span aria-hidden="true"  &times;
         h4#feature-listLabel.modal-title Feature List
       .modal-body
-        ul.list-group
+        ul
           - @product.features.each do |feature|
-            li.list-group-item = feature.name
+            li = feature.name
 
 
 #detail-list-modal.modal.fade aria-labelledby="detail-listLabel" aria-hidden="true" role="dialog" tabindex="-1" data={}
@@ -234,5 +234,12 @@ br
       .modal-body
         ul.list-group
           - @custom_attributes.each do |attr|
-              li = @product.attr
-            
+            - if is_array(@product.data[attr])
+              ul
+                - dynamic_list(@product.data[attr]).each do |accessory|
+                  li
+                    =< "#{accessory}" 
+            - if !is_array(@product.data[attr])
+              ul
+                li = @product.data[attr]
+            hr

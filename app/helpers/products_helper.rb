@@ -37,4 +37,7 @@ module ProductsHelper
     list.try(:map) { |x| x }.reject { |x| x.blank? }
   end
 
+  def is_array content
+    return content.kind_of?(Array)
+  end
 end
