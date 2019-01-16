@@ -5,5 +5,5 @@ class  BBQ< Product
       size: :string,
       thermostat: :string,
       weight: :string  
-  end
+end
   

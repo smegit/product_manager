@@ -143,7 +143,7 @@ class ProductsController < BaseController
   private
   def load_product
     @product = Product.friendly.find params[:id]
-    @custom_attributes = @product.data.keys
+    @custom_attributes = @product.data==nil ?  [] : @product.data.keys
     # puts @product.approvals.to_yaml
   end
 

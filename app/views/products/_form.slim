@@ -71,8 +71,9 @@ br
 .row
   .col-xs-12
     h3 Custom Details
+    = render "products/custom_fields/#{f.object.type.underscore}", f: f
     
-= render "products/custom_fields/#{f.object.type.underscore}", f: f
+/= render "products/custom_fields/#{f.object.type.underscore}", f: f
 
 
 .row
