@@ -45,7 +45,8 @@ class Product < ApplicationRecord
     # cl = Product.find_by(type: p_type)
     # puts cl.class
     #attributes = %w{id  model_number type description aesthetic dimensions finish supplied_accessories optional_accessories safety power warranty status data notes ean price }
-    attributes = Product.column_names() + cl.data.keys
+    #attributes = Product.column_names() + cl.data.keys
+    attributes = Product.column_names() + (cl.data==nil ? []: cl.data.keys)
     attributes.delete('data')
     attributes << 'features'
   
